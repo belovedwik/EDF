@@ -1,0 +1,27 @@
+e:\MyProgs\EDF dev\EDF dev\obj\Debug\EDF_dev.Form1.resources
+e:\MyProgs\EDF dev\EDF dev\obj\Debug\EDF_dev.Properties.Resources.resources
+e:\MyProgs\EDF dev\EDF dev\obj\Debug\EDF dev.csproj.GenerateResource.Cache
+e:\MyProgs\EDF dev\EDF dev\obj\Debug\EDF dev.exe
+e:\MyProgs\EDF dev\EDF dev\obj\Debug\EDF dev.pdb
+e:\MyProgs\EDF dev\EDF dev\EDF dev.exe
+e:\MyProgs\EDF dev\EDF dev\EDF dev.pdb
+e:\MyProgs\EDF dev\EDF dev\obj\Debug\EDF dev.csprojResolveAssemblyReference.cache
+e:\MyProgs\EDF dev\EDF dev\bin\Debug\EDF dev.exe
+e:\MyProgs\EDF dev\EDF dev\bin\Debug\EDF dev.pdb
+D:\С#\test\EDF test\EDF dev\bin\Debug\EDF dev.exe
+D:\С#\test\EDF test\EDF dev\bin\Debug\EDF dev.pdb
+D:\С#\test\EDF test\EDF dev\obj\Debug\EDF_dev.Form1.resources
+D:\С#\test\EDF test\EDF dev\obj\Debug\EDF_dev.Properties.Resources.resources
+D:\С#\test\EDF test\EDF dev\obj\Debug\EDF dev.csproj.GenerateResource.Cache
+D:\С#\test\EDF test\EDF dev\obj\Debug\EDF dev.exe
+D:\С#\test\EDF test\EDF dev\obj\Debug\EDF dev.pdb
+C:\Projects\edf\trunk\EDF dev\bin\Debug\EDF dev.exe
+C:\Projects\edf\trunk\EDF dev\bin\Debug\EDF dev.pdb
+C:\Projects\edf\trunk\EDF dev\obj\Debug\EDF dev.csprojResolveAssemblyReference.cache
+C:\Projects\edf\trunk\EDF dev\obj\Debug\EDF_dev.Properties.Resources.resources
+C:\Projects\edf\trunk\EDF dev\obj\Debug\EDF dev.csproj.GenerateResource.Cache
+C:\Projects\edf\trunk\EDF dev\obj\Debug\EDF dev.exe
+C:\Projects\edf\trunk\EDF dev\obj\Debug\EDF dev.pdb
+C:\Projects\edf\trunk\EDF dev\obj\Debug\EDF_dev.Form2.resources
+C:\Projects\edf\trunk\EDF dev\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\edf\trunk\EDF dev\bin\Debug\Newtonsoft.Json.xml

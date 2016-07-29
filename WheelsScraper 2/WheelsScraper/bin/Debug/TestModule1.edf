@@ -1,0 +1,681 @@
+<?xml version="1.0"?>
+<ScraperSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>TestModule1</Name>
+  <MaxThreads>5</MaxThreads>
+  <MaxDelay>0</MaxDelay>
+  <EnableSchedule>false</EnableSchedule>
+  <Schedule>
+    <ScheduleItem>
+      <Start>0001-01-01T10:00:00</Start>
+      <End>0001-01-01T23:00:00</End>
+      <Interval>60</Interval>
+      <Enabled>false</Enabled>
+      <NextRunIn />
+    </ScheduleItem>
+  </Schedule>
+  <FtpAddress>ftp://ftp.</FtpAddress>
+  <FtpUsername />
+  <FtpPassword />
+  <LocalPath>c:\</LocalPath>
+
+  <LocalExportSettings>
+    <ExportSettings>
+      <FileName>TestModule1</FileName>
+      <ProfileName>Default</ProfileName>
+      <Zip>false</Zip>
+      <MaxRecords>0</MaxRecords>
+    </ExportSettings>
+  </LocalExportSettings>
+  <FtpExportSettings>
+    <ExportSettings>
+      <FileName>TestModule1</FileName>
+      <ProfileName>Default</ProfileName>
+      <Zip>false</Zip>
+      <MaxRecords>0</MaxRecords>
+    </ExportSettings>
+  </FtpExportSettings>
+  <LastRun>2013-10-28T05:20:03.1888886-04:00</LastRun>
+  <FileName>TestModule1</FileName>
+  <OverwriteFile>true</OverwriteFile>
+  <FtpFileName>TestModule1</FtpFileName>
+  <OverwriteFtpFile>false</OverwriteFtpFile>
+  <UseProxy>false</UseProxy>
+  <UseFtp>false</UseFtp>
+  <Fields>
+    <FieldInfo>
+      <Header>Product Type</Header>
+      <VisibleIndex>-1</VisibleIndex>
+      <Export>true</Export>
+      <CustomValue>3</CustomValue>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <FieldName>Name</FieldName>
+      <Header>Anchor Text</Header>
+      <VisibleIndex>0</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <FieldName>Name</FieldName>
+      <Header>Product Title</Header>
+      <VisibleIndex>1</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Sub Title</Header>
+      <VisibleIndex>2</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <FieldName>Brand</FieldName>
+      <Header>Brand</Header>
+      <VisibleIndex>3</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <FieldName>Description</FieldName>
+      <Header>Description</Header>
+      <VisibleIndex>4</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Additional Description</Header>
+      <VisibleIndex>5</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Bullet Point</Header>
+      <VisibleIndex>6</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <FieldName>Name</FieldName>
+      <Header>META Description</Header>
+      <VisibleIndex>7</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>META Keywords</Header>
+      <VisibleIndex>8</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <FieldName>LargeImageUrl1</FieldName>
+      <Header>General Image</Header>
+      <VisibleIndex>9</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <FieldName>Category</FieldName>
+      <Header>Main Category</Header>
+      <VisibleIndex>10</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Sub Category</Header>
+      <VisibleIndex>11</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Section Category</Header>
+      <VisibleIndex>12</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Specifications</Header>
+      <VisibleIndex>13</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Featured</Header>
+      <VisibleIndex>14</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Supplier</Header>
+      <VisibleIndex>15</VisibleIndex>
+      <Export>true</Export>
+      <CustomValue>Shopping Cart Elite</CustomValue>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Re-Order Supplier</Header>
+      <VisibleIndex>16</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Warehouse</Header>
+      <VisibleIndex>17</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Workflow</Header>
+      <VisibleIndex>18</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Processing Time</Header>
+      <VisibleIndex>19</VisibleIndex>
+      <Export>true</Export>
+      <CustomValue>5</CustomValue>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Handling Surcharge</Header>
+      <VisibleIndex>20</VisibleIndex>
+      <Export>true</Export>
+      <CustomValue>0</CustomValue>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Shipping Type</Header>
+      <VisibleIndex>21</VisibleIndex>
+      <Export>true</Export>
+      <CustomValue>dynamic</CustomValue>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Shipping Ground Rate</Header>
+      <VisibleIndex>22</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Shipping 3-Day Air Rate</Header>
+      <VisibleIndex>23</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Shipping 2-Day Air Rate</Header>
+      <VisibleIndex>24</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Shipping Next-Day Air Rate</Header>
+      <VisibleIndex>25</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Shipping Inter. North America</Header>
+      <VisibleIndex>26</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Shipping Inter. South America</Header>
+      <VisibleIndex>27</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Shipping Inter. Europe</Header>
+      <VisibleIndex>28</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Shipping Inter. Africa</Header>
+      <VisibleIndex>29</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Shipping Inter. Asia</Header>
+      <VisibleIndex>30</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Shipping Inter. Oceania</Header>
+      <VisibleIndex>31</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <FieldName>Quantity</FieldName>
+      <Header>Qty</Header>
+      <VisibleIndex>32</VisibleIndex>
+      <Export>true</Export>
+      <CustomValue />
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Items Per Qty</Header>
+      <VisibleIndex>33</VisibleIndex>
+      <Export>true</Export>
+      <CustomValue>1</CustomValue>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <FieldName>PartNumber</FieldName>
+      <Header>ASIN</Header>
+      <VisibleIndex>34</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <FieldName>ModelNumber</FieldName>
+      <Header>Manufacturer Part Number</Header>
+      <VisibleIndex>35</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <FieldName>ImageUrl</FieldName>
+      <Header>Application Specific Image</Header>
+      <VisibleIndex>36</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Application Specifications</Header>
+      <VisibleIndex>37</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Warning Note</Header>
+      <VisibleIndex>38</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <FieldName>Cost</FieldName>
+      <Header>MSRP</Header>
+      <VisibleIndex>39</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <FieldName>MSRP</FieldName>
+      <Header>Jobber</Header>
+      <VisibleIndex>40</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <FieldName>Cost</FieldName>
+      <Header>Web Price</Header>
+      <VisibleIndex>41</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <FieldName>Cost</FieldName>
+      <Header>Cost Price</Header>
+      <VisibleIndex>42</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <FieldName>ItemWeight</FieldName>
+      <Header>Item Weight</Header>
+      <VisibleIndex>43</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <FieldName />
+      <Header>Item Height</Header>
+      <VisibleIndex>44</VisibleIndex>
+      <Export>true</Export>
+      <CustomValue />
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <FieldName />
+      <Header>Item Width</Header>
+      <VisibleIndex>45</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Item Length</Header>
+      <VisibleIndex>46</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <FieldName>ShippingWeight</FieldName>
+      <Header>Shipping Weight</Header>
+      <VisibleIndex>47</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <FieldName />
+      <Header>Shipping Height</Header>
+      <VisibleIndex>48</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <FieldName />
+      <Header>Shipping Width</Header>
+      <VisibleIndex>49</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Shipping Length</Header>
+      <VisibleIndex>50</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Primary Option Title</Header>
+      <VisibleIndex>51</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Primary Choice</Header>
+      <VisibleIndex>52</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Second Option Title</Header>
+      <VisibleIndex>53</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Second Option Choice</Header>
+      <VisibleIndex>54</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Second Option Part Number Ext</Header>
+      <VisibleIndex>55</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Third Option Title</Header>
+      <VisibleIndex>56</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Third Option Choice</Header>
+      <VisibleIndex>57</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Third Option Part Number Ext</Header>
+      <VisibleIndex>58</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Vehicle Make</Header>
+      <VisibleIndex>59</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Vehicle Model</Header>
+      <VisibleIndex>60</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Vehicle Sub Model</Header>
+      <VisibleIndex>61</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Start Year</Header>
+      <VisibleIndex>62</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>End Year</Header>
+      <VisibleIndex>63</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Engine</Header>
+      <VisibleIndex>64</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Aspiration</Header>
+      <VisibleIndex>65</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Cylinder Type</Header>
+      <VisibleIndex>66</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Drive Type</Header>
+      <VisibleIndex>67</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Brakes</Header>
+      <VisibleIndex>68</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>ABS</Header>
+      <VisibleIndex>69</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Transmission</Header>
+      <VisibleIndex>70</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Doors</Header>
+      <VisibleIndex>71</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Body Type</Header>
+      <VisibleIndex>72</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Bed Type</Header>
+      <VisibleIndex>73</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Navigation</Header>
+      <VisibleIndex>74</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Climate Control</Header>
+      <VisibleIndex>75</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Radio</Header>
+      <VisibleIndex>76</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Heated Seats</Header>
+      <VisibleIndex>77</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Sunroof</Header>
+      <VisibleIndex>78</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Vehicle Engine Options</Header>
+      <VisibleIndex>79</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Vehicle Interior Options</Header>
+      <VisibleIndex>80</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Vehicle Exterior Options</Header>
+      <VisibleIndex>81</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Vehicle Warning Note</Header>
+      <VisibleIndex>82</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>VehicleOptions</Header>
+      <VisibleIndex>83</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Wheel Diameter</Header>
+      <VisibleIndex>84</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Wheel Width</Header>
+      <VisibleIndex>85</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Wheel Finish</Header>
+      <VisibleIndex>86</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Wheel Offset</Header>
+      <VisibleIndex>87</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Wheel HubBore</Header>
+      <VisibleIndex>88</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Wheel BoltPattern</Header>
+      <VisibleIndex>89</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Section Width</Header>
+      <VisibleIndex>90</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Aspect Ratio</Header>
+      <VisibleIndex>91</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Diameter</Header>
+      <VisibleIndex>92</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Speed Rating</Header>
+      <VisibleIndex>93</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Load Index</Header>
+      <VisibleIndex>94</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Tire Type</Header>
+      <VisibleIndex>95</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Load Range</Header>
+      <VisibleIndex>96</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+    <FieldInfo>
+      <Header>Side Wall</Header>
+      <VisibleIndex>97</VisibleIndex>
+      <Export>true</Export>
+      <IsImageColumn>false</IsImageColumn>
+    </FieldInfo>
+  </Fields>
+  <SaveLocally>true</SaveLocally>
+  <Googlebot>true</Googlebot>
+  <Url />
+  <MaxRecords>3</MaxRecords>
+  <LocalSaveByBrand>false</LocalSaveByBrand>
+  <FtpSaveByBrand>false</FtpSaveByBrand>
+  <LimitRecords>false</LimitRecords>
+  <UseLogin>False</UseLogin>
+  <ProcessAssembly>TestModule1.dll</ProcessAssembly>
+  <ConvertImages>false</ConvertImages>
+  <DownloadImages>false</DownloadImages>
+  <UploadImagesToFtp>false</UploadImagesToFtp>
+</ScraperSettings>
