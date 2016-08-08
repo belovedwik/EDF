@@ -1,0 +1,341 @@
+2016-08-08 14:43:50,758 [6] INFO   [(null)] - Checking for updates
+2016-08-08 14:44:16,893 [6] INFO   [(null)] - Update complete. Release = 67
+2016-08-08 14:44:30,249 [1] INFO   [(null)] - . Starting scheduler in 10 seconds 
+2016-08-08 14:44:31,148 [1] ERROR  [(null)] - System.InvalidOperationException: В документе XML (676, 29) присутствует ошибка. ---> System.FormatException: Строка "False" не является допустимым значением Boolean.
+   в System.Xml.XmlConvert.ToBoolean(String s)
+   в Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderScraperSettings.Read27_ScraperSettings(Boolean isNullable, Boolean checkType)
+   в Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderScraperSettings.Read28_ScraperSettings()
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   в System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader)
+   в WheelsScraper.ScraperSettings.ReadConfig(String configFile, Type[] additionalTypes) в c:\Projects\EDF\WheelsScraper 2\Scraper.Shared\ScraperSettings.cs:строка 240
+   в WheelsScraper.Form1.DoLoadProcessorConfig(String edfFileName, String libFileName, String edfUrl) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 609
+   в WheelsScraper.Form1.LoadLocalDatafeeds() в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 2126
+2016-08-08 14:44:31,178 [1] ERROR  [(null)] - . В документе XML (676, 29) присутствует ошибка. 
+2016-08-08 14:44:31,608 [1] INFO   [(null)] - Checking forced version for UniversalMapper
+2016-08-08 14:44:31,956 [1] INFO   [(null)] - You are using latest version of UniversalMapper
+2016-08-08 14:44:33,886 [1] INFO   [(null)] - . Data feed UniversalMapper loaded 
+2016-08-08 14:44:34,286 [1] INFO   [(null)] - Checking forced version for Zeiglers
+2016-08-08 14:44:38,536 [1] INFO   [(null)] - . Data feed Zeiglers loaded 
+2016-08-08 14:45:20,389 [1] INFO   [(null)] - . Starting Zeiglers 
+2016-08-08 14:45:20,399 [1] INFO   [(null)] - Checking forced version for Zeiglers
+2016-08-08 14:45:25,513 [10] INFO   [(null)] - Zeiglers. Starting new loop 
+2016-08-08 14:45:25,622 [10] INFO   [(null)] - Zeiglers. Starting 2 threads 
+2016-08-08 14:45:27,064 [9] INFO   [(null)] - Zeiglers. Get Categories List 
+2016-08-08 14:45:27,644 [9] INFO   [(null)] - Zeiglers. Categories List .. ok 
+2016-08-08 14:45:27,654 [10] INFO   [(null)] - Zeiglers. Starting 5 threads 
+2016-08-08 14:45:28,562 [6] INFO   [(null)] - Zeiglers. Empty SubCategory ..  
+2016-08-08 14:45:28,582 [9] INFO   [(null)] - Zeiglers. Get Product List ..  
+2016-08-08 14:45:28,582 [10] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:45:28,612 [9] INFO   [(null)] - Zeiglers. Product List end ..  
+2016-08-08 14:45:28,672 [10] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:45:28,682 [8] INFO   [(null)] - Zeiglers. Empty SubCategory ..  
+2016-08-08 14:45:28,744 [10] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:45:28,992 [9] INFO   [(null)] - Zeiglers. Get product info:FREE 2016 First Communion Catalog 
+2016-08-08 14:45:29,442 [6] INFO   [(null)] - Zeiglers. Get Product List ..  
+2016-08-08 14:45:29,486 [6] INFO   [(null)] - Zeiglers. Product List end ..  
+2016-08-08 14:45:29,516 [11] INFO   [(null)] - Zeiglers. Get Product List ..  
+2016-08-08 14:45:29,576 [8] INFO   [(null)] - Zeiglers. Empty SubCategory ..  
+2016-08-08 14:45:29,576 [10] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:45:29,692 [6] INFO   [(null)] - Zeiglers. Get product info:First Communion Candle | Body of Christ Amen |  WB70223 
+2016-08-08 14:45:29,692 [10] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:45:29,752 [8] INFO   [(null)] - Zeiglers. Get product info:First Communion Candle | Chalice and Grape Design | Style DV1200C 
+2016-08-08 14:45:29,752 [11] INFO   [(null)] - Zeiglers. Product List end ..  
+2016-08-08 14:45:29,859 [10] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:45:29,941 [9] ERROR  [(null)] - System.ArgumentOutOfRangeException: Длина не может быть меньше нуля.
+Имя параметра: length
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 233
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 14:45:29,951 [11] INFO   [(null)] - Zeiglers. Get product info:First Communion Candle | Chalice Design | Style RI47013 
+2016-08-08 14:45:29,951 [9] ERROR  [(null)] - Zeiglers. Длина не может быть меньше нуля.
+Имя параметра: length 
+2016-08-08 14:45:30,041 [10] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:45:30,101 [9] INFO   [(null)] - Zeiglers. Get product info:FREE 2016 First Communion Catalog 
+2016-08-08 14:45:30,251 [12] INFO   [(null)] - Zeiglers. Empty SubCategory ..  
+2016-08-08 14:45:30,281 [10] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:45:30,331 [12] INFO   [(null)] - Zeiglers. Get product info:First Communion Candle | Chi Rho and Eucharist Design | Style RO95646 
+2016-08-08 14:45:30,571 [6] ERROR  [(null)] - System.ArgumentOutOfRangeException: Длина не может быть меньше нуля.
+Имя параметра: length
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 233
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 14:45:30,571 [6] ERROR  [(null)] - Zeiglers. Длина не может быть меньше нуля.
+Имя параметра: length 
+2016-08-08 14:45:30,611 [10] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:45:30,661 [8] ERROR  [(null)] - System.ArgumentOutOfRangeException: Длина не может быть меньше нуля.
+Имя параметра: length
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 233
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 14:45:30,661 [8] ERROR  [(null)] - Zeiglers. Длина не может быть меньше нуля.
+Имя параметра: length 
+2016-08-08 14:45:30,701 [6] INFO   [(null)] - Zeiglers. Get product info:First Communion Candle | Body of Christ Amen |  WB70223 
+2016-08-08 14:45:30,744 [10] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:45:30,804 [8] INFO   [(null)] - Zeiglers. Get product info:First Communion Candle | Chalice and Grape Design | Style DV1200C 
+2016-08-08 14:45:30,834 [11] ERROR  [(null)] - System.ArgumentOutOfRangeException: Длина не может быть меньше нуля.
+Имя параметра: length
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 233
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 14:45:30,834 [11] ERROR  [(null)] - Zeiglers. Длина не может быть меньше нуля.
+Имя параметра: length 
+2016-08-08 14:45:30,904 [10] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:45:30,969 [11] INFO   [(null)] - Zeiglers. Get product info:First Communion Candle | Chalice Design | Style RI47013 
+2016-08-08 14:45:31,179 [9] ERROR  [(null)] - System.ArgumentOutOfRangeException: Длина не может быть меньше нуля.
+Имя параметра: length
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 233
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 14:45:31,179 [9] ERROR  [(null)] - Zeiglers. Длина не может быть меньше нуля.
+Имя параметра: length 
+2016-08-08 14:45:31,230 [10] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:45:31,240 [12] ERROR  [(null)] - System.ArgumentOutOfRangeException: Длина не может быть меньше нуля.
+Имя параметра: length
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 233
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 14:45:31,240 [12] ERROR  [(null)] - Zeiglers. Длина не может быть меньше нуля.
+Имя параметра: length 
+2016-08-08 14:45:31,301 [9] INFO   [(null)] - Zeiglers. Get product info:FREE 2016 First Communion Catalog 
+2016-08-08 14:45:31,321 [10] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:45:31,381 [12] INFO   [(null)] - Zeiglers. Get product info:First Communion Candle | Chi Rho and Eucharist Design | Style RO95646 
+2016-08-08 14:45:31,617 [6] ERROR  [(null)] - System.ArgumentOutOfRangeException: Длина не может быть меньше нуля.
+Имя параметра: length
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 233
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 14:45:31,617 [6] ERROR  [(null)] - Zeiglers. Длина не может быть меньше нуля.
+Имя параметра: length 
+2016-08-08 14:45:31,649 [10] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:45:31,711 [8] ERROR  [(null)] - System.ArgumentOutOfRangeException: Длина не может быть меньше нуля.
+Имя параметра: length
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 233
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 14:45:31,711 [8] ERROR  [(null)] - Zeiglers. Длина не может быть меньше нуля.
+Имя параметра: length 
+2016-08-08 14:45:31,731 [6] INFO   [(null)] - Zeiglers. Get product info:First Communion Candle | Body of Christ Amen |  WB70223 
+2016-08-08 14:45:31,761 [10] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:45:31,823 [8] INFO   [(null)] - Zeiglers. Get product info:First Communion Candle | Chalice and Grape Design | Style DV1200C 
+2016-08-08 14:45:31,915 [11] ERROR  [(null)] - System.ArgumentOutOfRangeException: Длина не может быть меньше нуля.
+Имя параметра: length
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 233
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 14:45:31,915 [11] ERROR  [(null)] - Zeiglers. Длина не может быть меньше нуля.
+Имя параметра: length 
+2016-08-08 14:45:31,955 [10] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:45:32,015 [11] INFO   [(null)] - Zeiglers. Get product info:First Communion Candle | Chalice Design | Style RI47013 
+2016-08-08 14:45:32,260 [9] ERROR  [(null)] - System.ArgumentOutOfRangeException: Длина не может быть меньше нуля.
+Имя параметра: length
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 233
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 14:45:32,260 [9] ERROR  [(null)] - Zeiglers. Длина не может быть меньше нуля.
+Имя параметра: length 
+2016-08-08 14:45:32,340 [12] ERROR  [(null)] - System.ArgumentOutOfRangeException: Длина не может быть меньше нуля.
+Имя параметра: length
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 233
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 14:45:32,340 [12] ERROR  [(null)] - Zeiglers. Длина не может быть меньше нуля.
+Имя параметра: length 
+2016-08-08 14:45:32,341 [10] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:45:32,402 [14] INFO   [(null)] - Zeiglers. Get product info:First Communion Candle | Gold Leaf Symbols | Style CC84201001 
+2016-08-08 14:45:32,402 [10] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:45:32,482 [9] INFO   [(null)] - Zeiglers. Get product info:First Communion Candle | Chi Rho and Eucharist Design | Style RO95646 
+2016-08-08 14:45:32,694 [8] ERROR  [(null)] - System.ArgumentOutOfRangeException: Длина не может быть меньше нуля.
+Имя параметра: length
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 233
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 14:45:32,694 [8] ERROR  [(null)] - Zeiglers. Длина не может быть меньше нуля.
+Имя параметра: length 
+2016-08-08 14:45:32,744 [10] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:45:32,794 [6] ERROR  [(null)] - System.ArgumentOutOfRangeException: Длина не может быть меньше нуля.
+Имя параметра: length
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 233
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 14:45:32,794 [6] ERROR  [(null)] - Zeiglers. Длина не может быть меньше нуля.
+Имя параметра: length 
+2016-08-08 14:45:32,885 [8] INFO   [(null)] - Zeiglers. Get product info:First Communion Candle | Precious Moments | Style RO62989 
+2016-08-08 14:45:32,903 [10] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:45:32,966 [11] ERROR  [(null)] - System.ArgumentOutOfRangeException: Длина не может быть меньше нуля.
+Имя параметра: length
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 233
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 14:45:32,966 [11] ERROR  [(null)] - Zeiglers. Длина не может быть меньше нуля.
+Имя параметра: length 
+2016-08-08 14:45:32,996 [6] INFO   [(null)] - Zeiglers. Get product info:First Communion | Candle | Precious Moments | Style RO62988 
+2016-08-08 14:45:33,046 [10] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:45:33,096 [12] INFO   [(null)] - Zeiglers. Get product info:SOLD OUT First Communion Candle | Body of Christ | Chalice | Style CC84200701 
+2016-08-08 14:45:33,268 [14] ERROR  [(null)] - System.ArgumentOutOfRangeException: Длина не может быть меньше нуля.
+Имя параметра: length
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 233
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 14:45:33,268 [14] ERROR  [(null)] - Zeiglers. Длина не может быть меньше нуля.
+Имя параметра: length 
+2016-08-08 14:45:33,329 [10] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:45:33,387 [14] INFO   [(null)] - Zeiglers. Get product info:First Communion Candle | Gold Leaf Symbols | Style CC84201001 
+2016-08-08 14:45:33,500 [9] ERROR  [(null)] - System.ArgumentOutOfRangeException: Длина не может быть меньше нуля.
+Имя параметра: length
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 233
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 14:45:33,500 [9] ERROR  [(null)] - Zeiglers. Длина не может быть меньше нуля.
+Имя параметра: length 
+2016-08-08 14:45:33,570 [10] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:45:33,640 [9] INFO   [(null)] - Zeiglers. Get product info:Bread of Life | Brother Francis HERBF02CB 
+2016-08-08 14:45:33,811 [8] ERROR  [(null)] - System.ArgumentOutOfRangeException: Длина не может быть меньше нуля.
+Имя параметра: length
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 233
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 14:45:33,814 [8] ERROR  [(null)] - Zeiglers. Длина не может быть меньше нуля.
+Имя параметра: length 
+2016-08-08 14:45:33,862 [10] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:45:33,924 [6] ERROR  [(null)] - System.ArgumentOutOfRangeException: Длина не может быть меньше нуля.
+Имя параметра: length
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 233
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 14:45:33,924 [6] ERROR  [(null)] - Zeiglers. Длина не может быть меньше нуля.
+Имя параметра: length 
+2016-08-08 14:45:33,954 [8] INFO   [(null)] - Zeiglers. Get product info:First Communion Candle | Precious Moments | Style RO62989 
+2016-08-08 14:45:34,004 [12] ERROR  [(null)] - System.ArgumentOutOfRangeException: Длина не может быть меньше нуля.
+Имя параметра: length
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 233
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 14:45:34,004 [12] ERROR  [(null)] - Zeiglers. Длина не может быть меньше нуля.
+Имя параметра: length 
+2016-08-08 14:45:34,014 [10] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:45:34,114 [12] INFO   [(null)] - Zeiglers. Get product info:First Communion | Candle | Precious Moments | Style RO62988 
+2016-08-08 14:45:34,114 [10] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:45:34,194 [6] INFO   [(null)] - Zeiglers. Get product info:SOLD OUT First Communion Candle | Body of Christ | Chalice | Style CC84200701 
+2016-08-08 14:45:34,254 [14] ERROR  [(null)] - System.ArgumentOutOfRangeException: Длина не может быть меньше нуля.
+Имя параметра: length
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 233
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 14:45:34,254 [14] ERROR  [(null)] - Zeiglers. Длина не может быть меньше нуля.
+Имя параметра: length 
+2016-08-08 14:45:34,344 [10] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:45:34,406 [14] INFO   [(null)] - Zeiglers. Get product info:First Communion Candle | Gold Leaf Symbols | Style CC84201001 
+2016-08-08 14:45:34,516 [9] ERROR  [(null)] - System.ArgumentOutOfRangeException: Длина не может быть меньше нуля.
+Имя параметра: length
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 233
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 14:45:34,526 [9] ERROR  [(null)] - Zeiglers. Длина не может быть меньше нуля.
+Имя параметра: length 
+2016-08-08 14:45:34,566 [10] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:45:34,626 [11] INFO   [(null)] - Zeiglers. Get product info:Bread of Life | Brother Francis HERBF02CB 
+2016-08-08 14:45:34,857 [8] ERROR  [(null)] - System.ArgumentOutOfRangeException: Длина не может быть меньше нуля.
+Имя параметра: length
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 233
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 14:45:34,857 [8] ERROR  [(null)] - Zeiglers. Длина не может быть меньше нуля.
+Имя параметра: length 
+2016-08-08 14:45:34,908 [10] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:45:34,989 [12] ERROR  [(null)] - System.ArgumentOutOfRangeException: Длина не может быть меньше нуля.
+Имя параметра: length
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 233
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 14:45:34,989 [12] ERROR  [(null)] - Zeiglers. Длина не может быть меньше нуля.
+Имя параметра: length 
+2016-08-08 14:45:34,989 [8] INFO   [(null)] - Zeiglers. Get product info:First Communion Candle | Precious Moments | Style RO62989 
+2016-08-08 14:45:35,039 [10] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:45:35,079 [12] INFO   [(null)] - Zeiglers. Get product info:First Communion | Candle | Precious Moments | Style RO62988 
+2016-08-08 14:45:35,231 [6] ERROR  [(null)] - System.ArgumentOutOfRangeException: Длина не может быть меньше нуля.
+Имя параметра: length
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 233
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 14:45:35,241 [6] ERROR  [(null)] - Zeiglers. Длина не может быть меньше нуля.
+Имя параметра: length 
+2016-08-08 14:45:35,301 [14] ERROR  [(null)] - System.ArgumentOutOfRangeException: Длина не может быть меньше нуля.
+Имя параметра: length
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 233
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 14:45:35,301 [14] ERROR  [(null)] - Zeiglers. Длина не может быть меньше нуля.
+Имя параметра: length 
+2016-08-08 14:45:35,321 [10] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:45:35,381 [9] INFO   [(null)] - Zeiglers. Get product info:SOLD OUT First Communion Candle | Body of Christ | Chalice | Style CC84200701 
+2016-08-08 14:45:35,381 [10] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:45:35,431 [6] INFO   [(null)] - Zeiglers. Get product info:My First Holy Communion | Book 
+2016-08-08 14:45:35,621 [11] ERROR  [(null)] - System.ArgumentOutOfRangeException: Длина не может быть меньше нуля.
+Имя параметра: length
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 233
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 14:45:35,621 [11] ERROR  [(null)] - Zeiglers. Длина не может быть меньше нуля.
+Имя параметра: length 
+2016-08-08 14:45:35,671 [10] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:45:35,701 [11] INFO   [(null)] - Zeiglers. Get product info:Bread of Life | Brother Francis HERBF02CB 
+2016-08-08 14:45:35,853 [8] ERROR  [(null)] - System.ArgumentOutOfRangeException: Длина не может быть меньше нуля.
+Имя параметра: length
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 233
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 14:45:35,853 [8] ERROR  [(null)] - Zeiglers. Длина не может быть меньше нуля.
+Имя параметра: length 
+2016-08-08 14:45:35,913 [10] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:45:35,943 [12] ERROR  [(null)] - System.ArgumentOutOfRangeException: Длина не может быть меньше нуля.
+Имя параметра: length
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 233
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 14:45:35,943 [12] ERROR  [(null)] - Zeiglers. Длина не может быть меньше нуля.
+Имя параметра: length 
+2016-08-08 14:45:35,963 [14] INFO   [(null)] - Zeiglers. Get product info:Child of God "Cathedral" Book | for Girl | Style HI2470 
+2016-08-08 14:45:36,003 [10] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:45:36,043 [12] INFO   [(null)] - Zeiglers. Get product info:First Communion | Bible | for Boy | Style MH1400130 
+2016-08-08 14:45:36,200 [9] ERROR  [(null)] - System.ArgumentOutOfRangeException: Длина не может быть меньше нуля.
+Имя параметра: length
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 233
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 14:45:36,201 [9] ERROR  [(null)] - Zeiglers. Длина не может быть меньше нуля.
+Имя параметра: length 
+2016-08-08 14:45:36,297 [6] ERROR  [(null)] - System.ArgumentOutOfRangeException: Длина не может быть меньше нуля.
+Имя параметра: length
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 233
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 14:45:36,297 [6] ERROR  [(null)] - Zeiglers. Длина не может быть меньше нуля.
+Имя параметра: length 
+2016-08-08 14:45:36,745 [11] ERROR  [(null)] - System.ArgumentOutOfRangeException: Длина не может быть меньше нуля.
+Имя параметра: length
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 233
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 14:45:36,745 [11] ERROR  [(null)] - Zeiglers. Длина не может быть меньше нуля.
+Имя параметра: length 
+2016-08-08 14:45:36,841 [14] ERROR  [(null)] - System.ArgumentOutOfRangeException: Длина не может быть меньше нуля.
+Имя параметра: length
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 233
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 14:45:36,841 [14] ERROR  [(null)] - Zeiglers. Длина не может быть меньше нуля.
+Имя параметра: length 
+2016-08-08 14:45:37,311 [12] ERROR  [(null)] - System.ArgumentOutOfRangeException: Длина не может быть меньше нуля.
+Имя параметра: length
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 233
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 14:45:37,311 [12] ERROR  [(null)] - Zeiglers. Длина не может быть меньше нуля.
+Имя параметра: length 
+2016-08-08 14:46:46,591 [10] INFO   [(null)] - Zeiglers. Starting 5 threads 
+2016-08-08 14:46:46,611 [6] INFO   [(null)] - Zeiglers. Get product info:My First Holy Communion | Book 
+2016-08-08 14:46:46,611 [12] INFO   [(null)] - Zeiglers. Get product info:Child of God "Cathedral" Book | for Girl | Style HI2470 
+2016-08-08 14:46:46,611 [11] INFO   [(null)] - Zeiglers. Get product info:Jesus Speaks to Me | On My First Holy Communion | Hardcover 
+2016-08-08 14:46:46,621 [14] INFO   [(null)] - Zeiglers. Get product info:St. Joseph's | First Communion Catechism 
+2016-08-08 14:46:46,611 [8] INFO   [(null)] - Zeiglers. Get product info:First Communion | Bible | for Boy | Style MH1400130 

@@ -1,0 +1,324 @@
+2016-08-08 15:41:25,681 [6] INFO   [(null)] - Checking for updates
+2016-08-08 15:41:27,595 [6] INFO   [(null)] - Update complete. Release = 67
+2016-08-08 15:41:39,825 [1] INFO   [(null)] - . Starting scheduler in 10 seconds 
+2016-08-08 15:41:40,600 [1] ERROR  [(null)] - System.InvalidOperationException: В документе XML (676, 29) присутствует ошибка. ---> System.FormatException: Строка "False" не является допустимым значением Boolean.
+   в System.Xml.XmlConvert.ToBoolean(String s)
+   в Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderScraperSettings.Read27_ScraperSettings(Boolean isNullable, Boolean checkType)
+   в Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderScraperSettings.Read28_ScraperSettings()
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   в System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader)
+   в WheelsScraper.ScraperSettings.ReadConfig(String configFile, Type[] additionalTypes) в c:\Projects\EDF\WheelsScraper 2\Scraper.Shared\ScraperSettings.cs:строка 240
+   в WheelsScraper.Form1.DoLoadProcessorConfig(String edfFileName, String libFileName, String edfUrl) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 609
+   в WheelsScraper.Form1.LoadLocalDatafeeds() в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 2126
+2016-08-08 15:41:40,611 [1] ERROR  [(null)] - . В документе XML (676, 29) присутствует ошибка. 
+2016-08-08 15:41:40,984 [1] INFO   [(null)] - Checking forced version for UniversalMapper
+2016-08-08 15:41:41,323 [1] INFO   [(null)] - You are using latest version of UniversalMapper
+2016-08-08 15:41:42,980 [1] INFO   [(null)] - . Data feed UniversalMapper loaded 
+2016-08-08 15:41:43,346 [1] INFO   [(null)] - Checking forced version for Zeiglers
+2016-08-08 15:41:44,579 [1] INFO   [(null)] - . Data feed Zeiglers loaded 
+2016-08-08 15:42:20,135 [1] INFO   [(null)] - . Starting Zeiglers 
+2016-08-08 15:42:20,138 [1] INFO   [(null)] - Checking forced version for Zeiglers
+2016-08-08 15:42:24,071 [9] INFO   [(null)] - Zeiglers. Starting new loop 
+2016-08-08 15:42:24,400 [1] INFO   [(null)] - Zeiglers. Cancel 
+2016-08-08 15:42:27,357 [1] INFO   [(null)] - Zeiglers. Cancel 
+2016-08-08 15:42:27,371 [1] INFO   [(null)] - Zeiglers. Cancel 
+2016-08-08 15:42:27,385 [1] INFO   [(null)] - Zeiglers. Cancel 
+2016-08-08 15:42:27,400 [1] INFO   [(null)] - Zeiglers. Cancel 
+2016-08-08 15:42:27,414 [1] INFO   [(null)] - Zeiglers. Cancel 
+2016-08-08 15:42:27,431 [1] INFO   [(null)] - Zeiglers. Cancel 
+2016-08-08 15:42:27,449 [1] INFO   [(null)] - Zeiglers. Cancel 
+2016-08-08 15:42:27,946 [1] INFO   [(null)] - Zeiglers. Cancel 
+2016-08-08 15:42:28,037 [1] INFO   [(null)] - Zeiglers. Cancel 
+2016-08-08 15:42:28,363 [1] INFO   [(null)] - Zeiglers. Cancel 
+2016-08-08 15:42:28,435 [1] INFO   [(null)] - Zeiglers. Cancel 
+2016-08-08 15:42:28,746 [1] INFO   [(null)] - Zeiglers. Cancel 
+2016-08-08 15:42:28,843 [1] INFO   [(null)] - Zeiglers. Cancel 
+2016-08-08 15:42:29,139 [1] INFO   [(null)] - Zeiglers. Cancel 
+2016-08-08 15:42:29,218 [1] INFO   [(null)] - Zeiglers. Cancel 
+2016-08-08 15:42:29,388 [6] INFO   [(null)] - Zeiglers. Complete 
+2016-08-08 15:42:37,249 [1] INFO   [(null)] - . Starting Zeiglers 
+2016-08-08 15:42:37,279 [1] INFO   [(null)] - Checking forced version for Zeiglers
+2016-08-08 15:42:40,375 [5] INFO   [(null)] - Zeiglers. Starting new loop 
+2016-08-08 15:42:40,423 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:42:41,631 [11] INFO   [(null)] - Zeiglers. Get Categories List 
+2016-08-08 15:42:41,726 [11] INFO   [(null)] - Zeiglers. Categories List .. ok 
+2016-08-08 15:42:42,061 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:42:42,894 [11] INFO   [(null)] - Zeiglers. Empty SubCategory ..  
+2016-08-08 15:42:42,926 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:42:43,826 [10] INFO   [(null)] - Zeiglers. Empty SubCategory ..  
+2016-08-08 15:42:43,859 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:42:44,711 [6] INFO   [(null)] - Zeiglers. Empty SubCategory ..  
+2016-08-08 15:42:44,765 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:42:45,569 [11] INFO   [(null)] - Zeiglers. Empty SubCategory ..  
+2016-08-08 15:42:45,603 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:42:46,423 [10] INFO   [(null)] - Zeiglers. Empty SubCategory ..  
+2016-08-08 15:42:46,456 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:42:47,257 [11] INFO   [(null)] - Zeiglers. Empty SubCategory ..  
+2016-08-08 15:42:47,289 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:42:47,921 [10] INFO   [(null)] - Zeiglers. Get Product List ..  
+2016-08-08 15:42:47,964 [10] INFO   [(null)] - Zeiglers. Product List end ..  
+2016-08-08 15:42:47,998 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:42:48,061 [6] INFO   [(null)] - Zeiglers. Get product info:FREE 2016 First Communion Catalog 
+2016-08-08 15:43:04,479 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:05,536 [10] INFO   [(null)] - Zeiglers. Get Product List ..  
+2016-08-08 15:43:05,572 [10] INFO   [(null)] - Zeiglers. Product List end ..  
+2016-08-08 15:43:05,604 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:05,639 [11] INFO   [(null)] - Zeiglers. Get product info:Bread of Life | Brother Francis HERBF02CB 
+2016-08-08 15:43:06,506 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:06,540 [6] INFO   [(null)] - Zeiglers. Get product info:My First Holy Communion | Book 
+2016-08-08 15:43:07,391 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:07,423 [10] INFO   [(null)] - Zeiglers. Get product info:Child of God "Cathedral" Book | for Girl | Style HI2470 
+2016-08-08 15:43:08,562 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:08,595 [6] INFO   [(null)] - Zeiglers. Get product info:First Communion | Bible | for Boy | Style MH1400130 
+2016-08-08 15:43:09,420 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:09,452 [3] INFO   [(null)] - Zeiglers. Get product info:St. Joseph's | First Communion Catechism 
+2016-08-08 15:43:10,308 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:10,340 [11] INFO   [(null)] - Zeiglers. Get product info:Jesus Speaks to Me | On My First Holy Communion | Hardcover 
+2016-08-08 15:43:11,173 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:11,209 [3] INFO   [(null)] - Zeiglers. Get product info:First Communion Bookmark Style 7084 
+2016-08-08 15:43:12,076 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:12,108 [11] INFO   [(null)] - Zeiglers. Get product info:My First Communion Bookmark - Style DIBKM7092B 
+2016-08-08 15:43:13,005 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:13,037 [10] INFO   [(null)] - Zeiglers. Get product info:First Communion Prayer Book Style 2467 
+2016-08-08 15:43:13,896 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:13,929 [11] INFO   [(null)] - Zeiglers. Get product info:First Communion Bible | St. Joseph Edition | Girl 
+2016-08-08 15:43:14,809 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:14,900 [10] INFO   [(null)] - Zeiglers. Get product info:First Communion | Bible | St. Joseph Edition | for Boy 
+2016-08-08 15:43:15,817 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:15,850 [6] INFO   [(null)] - Zeiglers. Get product info:A Catholic Child's First Communion Bible | Style 1400294 
+2016-08-08 15:43:16,818 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:16,851 [11] INFO   [(null)] - Zeiglers. Get product info:A Catholic Child's | First Communion Bible | Style 1400155 
+2016-08-08 15:43:17,891 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:17,924 [10] INFO   [(null)] - Zeiglers. Get product info:A Keepsake | Your First Holy Communion | Boy 
+2016-08-08 15:43:18,789 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:18,822 [6] INFO   [(null)] - Zeiglers. Get product info:A Keepsake | Your First Holy Communion | Girl 
+2016-08-08 15:43:19,653 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:19,685 [10] INFO   [(null)] - Zeiglers. Get product info:Bible Stories | For Children | Style HI2597 
+2016-08-08 15:43:20,511 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:20,543 [6] INFO   [(null)] - Zeiglers. Get product info:Bible Stories | For Children | Style HI2697 
+2016-08-08 15:43:21,402 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:21,433 [10] INFO   [(null)] - Zeiglers. Get product info:Biblia De Mi Primera Comunion Marfil - Hardcover 
+2016-08-08 15:43:22,272 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:22,303 [6] INFO   [(null)] - Zeiglers. Get product info:Biblia De Mi Primera Comunion Marron | Hardcover 
+2016-08-08 15:43:23,111 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:23,142 [11] INFO   [(null)] - Zeiglers. Get product info:Blessed Trinity Missal | Black | Style HI2611 
+2016-08-08 15:43:23,968 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:23,999 [6] INFO   [(null)] - Zeiglers. Get product info:Blessed Trinity Missal | for Girl Style HI2620 
+2016-08-08 15:43:24,904 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:25,005 [10] INFO   [(null)] - Zeiglers. Get product info:Blessed Trinity Missal | for Girl Style HI2638 
+2016-08-08 15:43:25,884 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:25,916 [3] INFO   [(null)] - Zeiglers. Get product info:Blessed Trinity Missal | White 
+2016-08-08 15:43:26,735 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:26,766 [11] INFO   [(null)] - Zeiglers. Get product info:Bookmark First Communion Girl in Spanish 
+2016-08-08 15:43:27,633 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:28,494 [6] INFO   [(null)] - Zeiglers. Get Product List ..  
+2016-08-08 15:43:28,528 [6] INFO   [(null)] - Zeiglers. Product List end ..  
+2016-08-08 15:43:28,563 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:28,598 [3] INFO   [(null)] - Zeiglers. Get product info:First Communion Candle | Body of Christ Amen |  WB70223 
+2016-08-08 15:43:29,423 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:29,455 [11] INFO   [(null)] - Zeiglers. Get product info:First Communion Candle | Chalice and Grape Design | Style DV1200C 
+2016-08-08 15:43:30,284 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:30,315 [3] INFO   [(null)] - Zeiglers. Get product info:First Communion Candle | Chalice Design | Style RI47013 
+2016-08-08 15:43:31,158 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:31,189 [11] INFO   [(null)] - Zeiglers. Get product info:First Communion Candle | Chi Rho and Eucharist Design | Style RO95646 
+2016-08-08 15:43:32,016 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:32,047 [3] INFO   [(null)] - Zeiglers. Get product info:First Communion Candle | Gold Leaf Symbols | Style CC84201001 
+2016-08-08 15:43:32,912 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:32,944 [6] INFO   [(null)] - Zeiglers. Get product info:First Communion Candle | Precious Moments | Style RO62989 
+2016-08-08 15:43:33,793 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:33,827 [3] INFO   [(null)] - Zeiglers. Get product info:First Communion | Candle | Precious Moments | Style RO62988 
+2016-08-08 15:43:34,662 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:34,695 [6] INFO   [(null)] - Zeiglers. Get product info:SOLD OUT First Communion Candle | Body of Christ | Chalice | Style CC84200701 
+2016-08-08 15:43:35,526 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:36,489 [3] INFO   [(null)] - Zeiglers. Get Product List ..  
+2016-08-08 15:43:36,523 [3] INFO   [(null)] - Zeiglers. Product List end ..  
+2016-08-08 15:43:36,555 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:36,588 [6] INFO   [(null)] - Zeiglers. Get product info:First Communion Daughter Greeting Card - Style OP80881 
+2016-08-08 15:43:37,443 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:37,475 [10] INFO   [(null)] - Zeiglers. Get product info:First Communion Greeting Card - Boy Style RI113100 
+2016-08-08 15:43:38,332 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:38,364 [11] INFO   [(null)] - Zeiglers. Get product info:First Communion Greeting Card - Girl Style RI113099 
+2016-08-08 15:43:39,209 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:39,240 [10] INFO   [(null)] - Zeiglers. Get product info:First Communion Greeting Card - Style 111008 
+2016-08-08 15:43:40,064 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:40,097 [11] INFO   [(null)] - Zeiglers. Get product info:First Communion Greeting Card - Style 111037 
+2016-08-08 15:43:40,911 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:40,943 [6] INFO   [(null)] - Zeiglers. Get product info:First Communion Greeting Card - Style 111060 
+2016-08-08 15:43:41,744 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:41,775 [10] INFO   [(null)] - Zeiglers. Get product info:First Communion Greeting Card - Style 111063 
+2016-08-08 15:43:42,586 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:42,621 [3] INFO   [(null)] - Zeiglers. Get product info:First Communion Greeting Card - Style 113113 
+2016-08-08 15:43:43,448 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:43,483 [6] INFO   [(null)] - Zeiglers. Get product info:First Communion Greeting Card - Style 119022 
+2016-08-08 15:43:44,300 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:44,331 [3] INFO   [(null)] - Zeiglers. Get product info:First Communion Greeting Card - Style 119026 
+2016-08-08 15:43:45,203 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:45,234 [11] INFO   [(null)] - Zeiglers. Get product info:First Communion Greeting Card - Style 119027 
+2016-08-08 15:43:46,089 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:46,187 [6] INFO   [(null)] - Zeiglers. Get product info:First Communion Greeting Card - Style OP39652 
+2016-08-08 15:43:47,071 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:47,104 [10] INFO   [(null)] - Zeiglers. Get product info:First Communion Greeting Card - Style RI111003 
+2016-08-08 15:43:47,891 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:47,925 [3] INFO   [(null)] - Zeiglers. Get product info:First Communion Greeting Card - Style RI113098 
+2016-08-08 15:43:48,750 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:48,784 [6] INFO   [(null)] - Zeiglers. Get product info:First Communion Greeting Card - Style RI113107 
+2016-08-08 15:43:49,613 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:49,648 [10] INFO   [(null)] - Zeiglers. Get product info:First Communion Greeting Card - Style RI113213 
+2016-08-08 15:43:50,528 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:50,563 [6] INFO   [(null)] - Zeiglers. Get product info:First Communion Greeting Card for Boy - Style RI113211 
+2016-08-08 15:43:51,389 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:51,425 [3] INFO   [(null)] - Zeiglers. Get product info:First Communion Greeting Card for Girl - Style RI113212 
+2016-08-08 15:43:52,308 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:52,340 [10] INFO   [(null)] - Zeiglers. Get product info:First Communion Son Greeting Card - Style OP80882 
+2016-08-08 15:43:53,253 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:53,284 [6] INFO   [(null)] - Zeiglers. Get product info:First Communion | Greeting Card | Style MH87379 
+2016-08-08 15:43:54,129 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:55,043 [3] INFO   [(null)] - Zeiglers. Get Product List ..  
+2016-08-08 15:43:55,077 [3] INFO   [(null)] - Zeiglers. Product List end ..  
+2016-08-08 15:43:55,109 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:55,140 [10] INFO   [(null)] - Zeiglers. Get product info:Sold Out - First Communion | Figurine | Boy | Style PT10065 
+2016-08-08 15:43:55,940 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:55,979 [3] INFO   [(null)] - Zeiglers. Get product info:First Communion Figurine - Girl Style PT10157 
+2016-08-08 15:43:57,052 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:57,148 [10] INFO   [(null)] - Zeiglers. Get product info:First Communion | Figurine | Boy | Style RO47745 
+2016-08-08 15:43:58,026 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:58,058 [3] INFO   [(null)] - Zeiglers. Get product info:First Communion | Figurine | Boy | Style EN4021240 
+2016-08-08 15:43:58,889 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:58,923 [6] INFO   [(null)] - Zeiglers. Get product info:First Communion | Figurine | Boy | Style RO41968 
+2016-08-08 15:43:59,772 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:43:59,805 [3] INFO   [(null)] - Zeiglers. Get product info:First Communion - Angel Figurine | Style EN4014302 
+2016-08-08 15:44:00,645 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:00,676 [6] INFO   [(null)] - Zeiglers. Get product info:First Communion Figurine - Girl Style PT10066 
+2016-08-08 15:44:01,540 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:01,571 [10] INFO   [(null)] - Zeiglers. Get product info:First Communion Figurine - Girl Style PT10165 
+2016-08-08 15:44:02,406 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:02,441 [3] INFO   [(null)] - Zeiglers. Get product info:First Communion Figurine - Girl Style RO41969 
+2016-08-08 15:44:03,278 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:03,311 [6] INFO   [(null)] - Zeiglers. Get product info:First Communion Figurine - Girl Style RO47729 
+2016-08-08 15:44:04,238 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:04,269 [10] INFO   [(null)] - Zeiglers. Get product info:First Communion Figurine - Girl Style RO47744 
+2016-08-08 15:44:05,142 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:05,175 [3] INFO   [(null)] - Zeiglers. Get product info:First Communion Figurine - Girl Style RO47746 
+2016-08-08 15:44:06,039 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:06,072 [11] INFO   [(null)] - Zeiglers. Get product info:First Communion Figurine - Girl Style RO61765 
+2016-08-08 15:44:06,938 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:06,989 [6] INFO   [(null)] - Zeiglers. Get product info:First Communion | Angel Figurine | Style 63088 
+2016-08-08 15:44:08,023 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:08,118 [11] INFO   [(null)] - Zeiglers. Get product info:First Communion | Angel Figurine | Style RO66965 
+2016-08-08 15:44:09,122 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:09,157 [3] INFO   [(null)] - Zeiglers. Get product info:First Communion | Figurine | Boy | Style PT10156 
+2016-08-08 15:44:10,139 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:10,170 [11] INFO   [(null)] - Zeiglers. Get product info:First Communion | Figurine | Boy | Style PT10164 
+2016-08-08 15:44:11,185 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:11,216 [3] INFO   [(null)] - Zeiglers. Get product info:First Communion | Figurine | Boy | Style RO40058 
+2016-08-08 15:44:12,269 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:12,301 [11] INFO   [(null)] - Zeiglers. Get product info:First Communion | Figurine | Boy | Style RO47743 
+2016-08-08 15:44:13,245 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:13,279 [6] INFO   [(null)] - Zeiglers. Get product info:First Communion | Figurine | Boy | Style RO47747 
+2016-08-08 15:44:14,203 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:14,235 [11] INFO   [(null)] - Zeiglers. Get product info:First Communion | Figurine | Boy | Style RO61062 
+2016-08-08 15:44:15,182 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:15,218 [6] INFO   [(null)] - Zeiglers. Get product info:Praying First Communion Girl | Figurine | Porcelain 
+2016-08-08 15:44:16,262 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:17,166 [3] INFO   [(null)] - Zeiglers. Get Product List ..  
+2016-08-08 15:44:17,200 [3] INFO   [(null)] - Zeiglers. Product List end ..  
+2016-08-08 15:44:17,243 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:17,279 [3] INFO   [(null)] - Zeiglers. Get product info:First Communion Holy Bear 
+2016-08-08 15:44:18,253 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:18,337 [6] INFO   [(null)] - Zeiglers. Get product info:First Communion Holy Bear - HLBRECONC 
+2016-08-08 15:44:19,340 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:19,371 [3] INFO   [(null)] - Zeiglers. Get product info:Banner Kit | Boy | First Communion | Style 53 
+2016-08-08 15:44:20,350 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:20,383 [11] INFO   [(null)] - Zeiglers. Get product info:First Communion Pocket Token in Pewter 
+2016-08-08 15:44:21,368 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:21,402 [3] INFO   [(null)] - Zeiglers. Get product info:First Communion | Bible | for Boy | Style MH1400130 
+2016-08-08 15:44:22,377 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:22,411 [11] INFO   [(null)] - Zeiglers. Get product info:Banner Kit | Girl | First Communion | Style 54 
+2016-08-08 15:44:23,391 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:23,423 [10] INFO   [(null)] - Zeiglers. Get product info:Holy Water Font | Divine Mercy | Style 2943G01 
+2016-08-08 15:44:24,404 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:24,435 [6] INFO   [(null)] - Zeiglers. Get product info:First Communion Doll Brunette 
+2016-08-08 15:44:25,436 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:25,481 [10] INFO   [(null)] - Zeiglers. Get product info:First Holy Communion Pocket Token 
+2016-08-08 15:44:26,472 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:26,504 [3] INFO   [(null)] - Zeiglers. Get product info:First Communion Doll Blonde 
+2016-08-08 15:44:27,786 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:27,818 [6] INFO   [(null)] - Zeiglers. Get product info:Magnet of First Communion Girl - Style FAR15K29 
+2016-08-08 15:44:28,827 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:28,919 [3] INFO   [(null)] - Zeiglers. Get product info:First Communion | Magnet | Boy | Style FAR15K28 
+2016-08-08 15:44:29,999 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:30,034 [6] INFO   [(null)] - Zeiglers. Get product info:First Communion Cross Pocket Token in Pewter 
+2016-08-08 15:44:31,046 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:31,078 [10] INFO   [(null)] - Zeiglers. Get product info:First Communion Bookmark Style 7084 
+2016-08-08 15:44:32,070 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:32,103 [6] INFO   [(null)] - Zeiglers. Get product info:First Communion - Sacrament Keepsake Box Style AB32559KF 
+2016-08-08 15:44:33,109 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:33,141 [10] INFO   [(null)] - Zeiglers. Get product info:Cake Topper | Chalice-Grapes-Host | First Communion 
+2016-08-08 15:44:34,158 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:34,189 [6] INFO   [(null)] - Zeiglers. Get product info:Chalice | First Communion | Style 13620 
+2016-08-08 15:44:35,192 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:35,223 [3] INFO   [(null)] - Zeiglers. Get product info:Communion Wax Seal Token 40084 
+2016-08-08 15:44:36,192 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:36,223 [6] INFO   [(null)] - Zeiglers. Get product info:My First Communion Bookmark - Style DIBKM7092B 
+2016-08-08 15:44:37,226 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:37,258 [3] INFO   [(null)] - Zeiglers. Get product info:Holy Water Font with Immaculate Heart of Mary - Style FAR2943C52 
+2016-08-08 15:44:38,244 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:38,276 [6] INFO   [(null)] - Zeiglers. Get product info:Holy Water Font with Madonna of the Streets - Style FAR2943M10 
+2016-08-08 15:44:39,148 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:39,234 [3] INFO   [(null)] - Zeiglers. Get product info:Holy Water Font with Mary and Angels - Style FAR2943M257 
+2016-08-08 15:44:40,268 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:40,300 [10] INFO   [(null)] - Zeiglers. Get product info:Holy Water Font with Our Lady of Miraculous Medal - Style FAR2943M04 
+2016-08-08 15:44:41,352 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:41,385 [11] INFO   [(null)] - Zeiglers. Get product info:Holy Water Font with St Anthony - Style FAR2943S17 
+2016-08-08 15:44:42,249 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:43,063 [10] INFO   [(null)] - Zeiglers. Get Product List ..  
+2016-08-08 15:44:43,100 [10] INFO   [(null)] - Zeiglers. Product List end ..  
+2016-08-08 15:44:43,132 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:43,166 [11] INFO   [(null)] - Zeiglers. Get product info:First Communion | Missal Set | Boy | Style DV650105 
+2016-08-08 15:44:43,991 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:44,025 [3] INFO   [(null)] - Zeiglers. Get product info:Sold Out - First Communion | Figurine | Boy | Style PT10065 
+2016-08-08 15:44:44,885 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:44,918 [6] INFO   [(null)] - Zeiglers. Get product info:Bracelet | Wooden Beads and Cross | Black 
+2016-08-08 15:44:45,775 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:45,810 [3] INFO   [(null)] - Zeiglers. Get product info:First Communion | Figurine | Boy | Style RO47745 
+2016-08-08 15:44:46,694 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:46,730 [6] INFO   [(null)] - Zeiglers. Get product info:Banner Kit | Boy | First Communion | Style 53 
+2016-08-08 15:44:47,601 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:47,636 [3] INFO   [(null)] - Zeiglers. Get product info:First Communion | Bible | for Boy | Style MH1400130 
+2016-08-08 15:44:48,479 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:48,511 [6] INFO   [(null)] - Zeiglers. Get product info:First Communion | Figurine | Boy | Style EN4021240 
+2016-08-08 15:44:49,354 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:49,439 [11] INFO   [(null)] - Zeiglers. Get product info:First Communion | Figurine | Boy | Style RO41968 
+2016-08-08 15:44:50,305 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:50,340 [10] INFO   [(null)] - Zeiglers. Get product info:First Communion | Magnet | Boy | Style FAR15K28 
+2016-08-08 15:44:51,182 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:51,213 [11] INFO   [(null)] - Zeiglers. Get product info:First Communion | Bible | St. Joseph Edition | for Boy 
+2016-08-08 15:44:52,086 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:52,118 [10] INFO   [(null)] - Zeiglers. Get product info:First Communion | Rosary | Black Beads | Sacred Heart Center 
+2016-08-08 15:44:53,020 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:53,055 [3] INFO   [(null)] - Zeiglers. Get product info:First Communion | Rosary | Boy | Style 74DB 
+2016-08-08 15:44:53,888 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:53,919 [10] INFO   [(null)] - Zeiglers. Get product info:A Keepsake | Your First Holy Communion | Boy 
+2016-08-08 15:44:55,098 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:55,131 [6] INFO   [(null)] - Zeiglers. Get product info:Album de Fotos para Nino de la Primera Comunion 
+2016-08-08 15:44:55,986 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:56,021 [11] INFO   [(null)] - Zeiglers. Get product info:Bracelet | Wooden Beads and Cross | Brown 
+2016-08-08 15:44:56,970 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:57,002 [3] INFO   [(null)] - Zeiglers. Get product info:Brother Francis | First Communion Gift Set 
+2016-08-08 15:44:57,884 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:57,916 [11] INFO   [(null)] - Zeiglers. Get product info:Faith Bracelet | Mi Primera | Spanish 
+2016-08-08 15:44:58,812 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:44:58,851 [3] INFO   [(null)] - Zeiglers. Get product info:Faith Crucifix | First Communion | Corded | Available in 5 colors 
+2016-08-08 15:50:23,817 [3] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 290
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:50:23,828 [3] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:50:23,907 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:50:23,982 [14] INFO   [(null)] - Zeiglers. Get product info:Faith Crucifix | First Communion | Corded | Available in 5 colors 
+2016-08-08 15:50:42,312 [14] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 290
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:50:42,313 [14] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:50:42,652 [5] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:50:42,686 [14] INFO   [(null)] - Zeiglers. Get product info:Faith Crucifix | First Communion | Corded | Available in 5 colors 

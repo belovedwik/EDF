@@ -1,0 +1,354 @@
+2016-08-08 17:28:31,963 [5] INFO   [(null)] - Checking for updates
+2016-08-08 17:28:33,846 [5] INFO   [(null)] - Update complete. Release = 67
+2016-08-08 17:28:44,937 [1] INFO   [(null)] - . Starting scheduler in 10 seconds 
+2016-08-08 17:28:45,699 [1] ERROR  [(null)] - System.InvalidOperationException: В документе XML (676, 29) присутствует ошибка. ---> System.FormatException: Строка "False" не является допустимым значением Boolean.
+   в System.Xml.XmlConvert.ToBoolean(String s)
+   в Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderScraperSettings.Read27_ScraperSettings(Boolean isNullable, Boolean checkType)
+   в Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderScraperSettings.Read28_ScraperSettings()
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   в System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader)
+   в WheelsScraper.ScraperSettings.ReadConfig(String configFile, Type[] additionalTypes) в c:\Projects\EDF\WheelsScraper 2\Scraper.Shared\ScraperSettings.cs:строка 240
+   в WheelsScraper.Form1.DoLoadProcessorConfig(String edfFileName, String libFileName, String edfUrl) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 609
+   в WheelsScraper.Form1.LoadLocalDatafeeds() в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 2126
+2016-08-08 17:28:45,710 [1] ERROR  [(null)] - . В документе XML (676, 29) присутствует ошибка. 
+2016-08-08 17:28:46,078 [1] INFO   [(null)] - Checking forced version for UniversalMapper
+2016-08-08 17:28:46,433 [1] INFO   [(null)] - You are using latest version of UniversalMapper
+2016-08-08 17:28:48,095 [1] INFO   [(null)] - . Data feed UniversalMapper loaded 
+2016-08-08 17:28:48,458 [1] INFO   [(null)] - Checking forced version for Zeiglers
+2016-08-08 17:28:49,743 [1] INFO   [(null)] - . Data feed Zeiglers loaded 
+2016-08-08 17:28:55,085 [1] INFO   [(null)] - . Starting Zeiglers 
+2016-08-08 17:28:55,089 [1] INFO   [(null)] - Checking forced version for Zeiglers
+2016-08-08 17:28:59,327 [4] INFO   [(null)] - Zeiglers. Starting new loop 
+2016-08-08 17:28:59,389 [4] INFO   [(null)] - Zeiglers. Starting 2 threads 
+2016-08-08 17:29:00,790 [10] INFO   [(null)] - Zeiglers. Get Categories List 
+2016-08-08 17:29:00,856 [10] INFO   [(null)] - Zeiglers. Categories List .. ok 
+2016-08-08 17:29:00,865 [4] INFO   [(null)] - Zeiglers. Starting 5 threads 
+2016-08-08 17:29:01,790 [11] INFO   [(null)] - Zeiglers. Empty SubCategory ..  
+2016-08-08 17:29:01,800 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 17:29:01,882 [10] INFO   [(null)] - Zeiglers. Get Product List ..  
+2016-08-08 17:29:01,920 [10] INFO   [(null)] - Zeiglers. Product List end ..  
+2016-08-08 17:29:02,022 [6] INFO   [(null)] - Zeiglers. Empty SubCategory ..  
+2016-08-08 17:29:02,024 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 17:29:02,045 [8] INFO   [(null)] - Zeiglers. Get Product List ..  
+2016-08-08 17:29:02,079 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 17:29:02,119 [10] INFO   [(null)] - Zeiglers. Get product info:FREE 2016 First Communion Catalog 
+2016-08-08 17:29:02,139 [8] INFO   [(null)] - Zeiglers. Product List end ..  
+2016-08-08 17:29:02,199 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 17:29:02,230 [8] INFO   [(null)] - Zeiglers. Get product info:Bread of Life | Brother Francis HERBF02CB 
+2016-08-08 17:29:02,527 [12] INFO   [(null)] - Zeiglers. Get Product List ..  
+2016-08-08 17:29:02,561 [12] INFO   [(null)] - Zeiglers. Product List end ..  
+2016-08-08 17:29:02,623 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 17:29:02,697 [11] INFO   [(null)] - Zeiglers. Empty SubCategory ..  
+2016-08-08 17:29:02,708 [12] INFO   [(null)] - Zeiglers. Get product info:My First Holy Communion | Book 
+2016-08-08 17:29:02,741 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 17:29:02,824 [11] INFO   [(null)] - Zeiglers. Get product info:Child of God "Cathedral" Book | for Girl | Style HI2470 
+2016-08-08 17:29:02,992 [6] INFO   [(null)] - Zeiglers. Empty SubCategory ..  
+2016-08-08 17:29:03,042 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 17:29:03,125 [10] ERROR  [(null)] - System.ArgumentOutOfRangeException: Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в System.String.Substring(Int32 startIndex)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 206
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 17:29:03,137 [10] ERROR  [(null)] - Zeiglers. Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex 
+2016-08-08 17:29:03,157 [6] INFO   [(null)] - Zeiglers. Get product info:First Communion | Bible | for Boy | Style MH1400130 
+2016-08-08 17:29:03,207 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 17:29:03,270 [8] ERROR  [(null)] - System.ArgumentOutOfRangeException: Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в System.String.Substring(Int32 startIndex)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 206
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 17:29:03,271 [8] ERROR  [(null)] - Zeiglers. Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex 
+2016-08-08 17:29:03,297 [10] INFO   [(null)] - Zeiglers. Get product info:FREE 2016 First Communion Catalog 
+2016-08-08 17:29:03,324 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 17:29:03,380 [8] INFO   [(null)] - Zeiglers. Get product info:Bread of Life | Brother Francis HERBF02CB 
+2016-08-08 17:29:03,635 [12] ERROR  [(null)] - System.ArgumentOutOfRangeException: Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в System.String.Substring(Int32 startIndex)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 206
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 17:29:03,636 [12] ERROR  [(null)] - Zeiglers. Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex 
+2016-08-08 17:29:03,667 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 17:29:03,730 [12] INFO   [(null)] - Zeiglers. Get product info:My First Holy Communion | Book 
+2016-08-08 17:29:03,811 [11] ERROR  [(null)] - System.ArgumentOutOfRangeException: Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в System.String.Substring(Int32 startIndex)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 206
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 17:29:03,811 [11] ERROR  [(null)] - Zeiglers. Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex 
+2016-08-08 17:29:03,858 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 17:29:03,916 [11] INFO   [(null)] - Zeiglers. Get product info:Child of God "Cathedral" Book | for Girl | Style HI2470 
+2016-08-08 17:29:04,091 [6] ERROR  [(null)] - System.ArgumentOutOfRangeException: Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в System.String.Substring(Int32 startIndex)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 206
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 17:29:04,092 [6] ERROR  [(null)] - Zeiglers. Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex 
+2016-08-08 17:29:04,131 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 17:29:04,208 [6] INFO   [(null)] - Zeiglers. Get product info:First Communion | Bible | for Boy | Style MH1400130 
+2016-08-08 17:29:04,275 [10] ERROR  [(null)] - System.ArgumentOutOfRangeException: Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в System.String.Substring(Int32 startIndex)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 206
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 17:29:04,276 [10] ERROR  [(null)] - Zeiglers. Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex 
+2016-08-08 17:29:04,350 [8] ERROR  [(null)] - System.ArgumentOutOfRangeException: Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в System.String.Substring(Int32 startIndex)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 206
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 17:29:04,350 [8] ERROR  [(null)] - Zeiglers. Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex 
+2016-08-08 17:29:04,377 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 17:29:04,434 [10] INFO   [(null)] - Zeiglers. Get product info:FREE 2016 First Communion Catalog 
+2016-08-08 17:29:04,435 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 17:29:04,519 [8] INFO   [(null)] - Zeiglers. Get product info:Bread of Life | Brother Francis HERBF02CB 
+2016-08-08 17:29:04,679 [12] ERROR  [(null)] - System.ArgumentOutOfRangeException: Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в System.String.Substring(Int32 startIndex)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 206
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 17:29:04,680 [12] ERROR  [(null)] - Zeiglers. Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex 
+2016-08-08 17:29:04,727 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 17:29:04,814 [12] INFO   [(null)] - Zeiglers. Get product info:My First Holy Communion | Book 
+2016-08-08 17:29:04,887 [11] ERROR  [(null)] - System.ArgumentOutOfRangeException: Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в System.String.Substring(Int32 startIndex)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 206
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 17:29:04,887 [11] ERROR  [(null)] - Zeiglers. Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex 
+2016-08-08 17:29:04,951 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 17:29:05,018 [11] INFO   [(null)] - Zeiglers. Get product info:Child of God "Cathedral" Book | for Girl | Style HI2470 
+2016-08-08 17:29:05,227 [6] ERROR  [(null)] - System.ArgumentOutOfRangeException: Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в System.String.Substring(Int32 startIndex)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 206
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 17:29:05,228 [6] ERROR  [(null)] - Zeiglers. Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex 
+2016-08-08 17:29:05,263 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 17:29:05,366 [10] ERROR  [(null)] - System.ArgumentOutOfRangeException: Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в System.String.Substring(Int32 startIndex)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 206
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 17:29:05,367 [10] ERROR  [(null)] - Zeiglers. Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex 
+2016-08-08 17:29:05,372 [6] INFO   [(null)] - Zeiglers. Get product info:First Communion | Bible | for Boy | Style MH1400130 
+2016-08-08 17:29:05,409 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 17:29:05,504 [10] INFO   [(null)] - Zeiglers. Get product info:St. Joseph's | First Communion Catechism 
+2016-08-08 17:29:05,530 [8] ERROR  [(null)] - System.ArgumentOutOfRangeException: Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в System.String.Substring(Int32 startIndex)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 206
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 17:29:05,530 [8] ERROR  [(null)] - Zeiglers. Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex 
+2016-08-08 17:29:05,619 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 17:29:05,699 [12] ERROR  [(null)] - System.ArgumentOutOfRangeException: Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в System.String.Substring(Int32 startIndex)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 206
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 17:29:05,699 [12] ERROR  [(null)] - Zeiglers. Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex 
+2016-08-08 17:29:05,717 [8] INFO   [(null)] - Zeiglers. Get product info:Jesus Speaks to Me | On My First Holy Communion | Hardcover 
+2016-08-08 17:29:05,766 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 17:29:05,818 [12] INFO   [(null)] - Zeiglers. Get product info:First Communion Bookmark Style 7084 
+2016-08-08 17:29:05,941 [11] ERROR  [(null)] - System.ArgumentOutOfRangeException: Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в System.String.Substring(Int32 startIndex)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 206
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 17:29:05,941 [11] ERROR  [(null)] - Zeiglers. Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex 
+2016-08-08 17:29:05,990 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 17:29:06,042 [11] INFO   [(null)] - Zeiglers. Get product info:My First Communion Bookmark - Style DIBKM7092B 
+2016-08-08 17:29:06,274 [6] ERROR  [(null)] - System.ArgumentOutOfRangeException: Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в System.String.Substring(Int32 startIndex)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 206
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 17:29:06,276 [6] ERROR  [(null)] - Zeiglers. Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex 
+2016-08-08 17:29:06,324 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 17:29:06,385 [6] INFO   [(null)] - Zeiglers. Get product info:First Communion Prayer Book Style 2467 
+2016-08-08 17:29:06,495 [10] ERROR  [(null)] - System.ArgumentOutOfRangeException: Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в System.String.Substring(Int32 startIndex)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 206
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 17:29:06,496 [10] ERROR  [(null)] - Zeiglers. Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex 
+2016-08-08 17:29:06,585 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 17:29:06,637 [10] INFO   [(null)] - Zeiglers. Get product info:St. Joseph's | First Communion Catechism 
+2016-08-08 17:29:06,752 [8] ERROR  [(null)] - System.ArgumentOutOfRangeException: Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в System.String.Substring(Int32 startIndex)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 206
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 17:29:06,752 [8] ERROR  [(null)] - Zeiglers. Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex 
+2016-08-08 17:29:06,791 [12] ERROR  [(null)] - System.ArgumentOutOfRangeException: Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в System.String.Substring(Int32 startIndex)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 206
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 17:29:06,792 [12] ERROR  [(null)] - Zeiglers. Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex 
+2016-08-08 17:29:06,836 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 17:29:06,912 [8] INFO   [(null)] - Zeiglers. Get product info:Jesus Speaks to Me | On My First Holy Communion | Hardcover 
+2016-08-08 17:29:06,921 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 17:29:07,004 [12] INFO   [(null)] - Zeiglers. Get product info:First Communion Bookmark Style 7084 
+2016-08-08 17:29:07,035 [11] ERROR  [(null)] - System.ArgumentOutOfRangeException: Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в System.String.Substring(Int32 startIndex)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 206
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 17:29:07,036 [11] ERROR  [(null)] - Zeiglers. Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex 
+2016-08-08 17:29:07,146 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 17:29:07,175 [11] INFO   [(null)] - Zeiglers. Get product info:My First Communion Bookmark - Style DIBKM7092B 
+2016-08-08 17:29:07,307 [6] ERROR  [(null)] - System.ArgumentOutOfRangeException: Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в System.String.Substring(Int32 startIndex)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 206
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 17:29:07,307 [6] ERROR  [(null)] - Zeiglers. Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex 
+2016-08-08 17:29:07,373 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 17:29:07,436 [6] INFO   [(null)] - Zeiglers. Get product info:First Communion Prayer Book Style 2467 
+2016-08-08 17:29:07,555 [10] ERROR  [(null)] - System.ArgumentOutOfRangeException: Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в System.String.Substring(Int32 startIndex)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 206
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 17:29:07,555 [10] ERROR  [(null)] - Zeiglers. Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex 
+2016-08-08 17:29:07,620 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 17:29:07,675 [10] INFO   [(null)] - Zeiglers. Get product info:St. Joseph's | First Communion Catechism 
+2016-08-08 17:29:07,877 [8] ERROR  [(null)] - System.ArgumentOutOfRangeException: Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в System.String.Substring(Int32 startIndex)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 206
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 17:29:07,877 [8] ERROR  [(null)] - Zeiglers. Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex 
+2016-08-08 17:29:07,952 [12] ERROR  [(null)] - System.ArgumentOutOfRangeException: Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в System.String.Substring(Int32 startIndex)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 206
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 17:29:07,952 [12] ERROR  [(null)] - Zeiglers. Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex 
+2016-08-08 17:29:07,969 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 17:29:08,055 [8] INFO   [(null)] - Zeiglers. Get product info:Jesus Speaks to Me | On My First Holy Communion | Hardcover 
+2016-08-08 17:29:08,067 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 17:29:08,123 [11] ERROR  [(null)] - System.ArgumentOutOfRangeException: Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в System.String.Substring(Int32 startIndex)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 206
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 17:29:08,123 [11] ERROR  [(null)] - Zeiglers. Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex 
+2016-08-08 17:29:08,125 [12] INFO   [(null)] - Zeiglers. Get product info:First Communion Bookmark Style 7084 
+2016-08-08 17:29:08,171 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 17:29:08,337 [6] ERROR  [(null)] - System.ArgumentOutOfRangeException: Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в System.String.Substring(Int32 startIndex)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 206
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 17:29:08,338 [6] ERROR  [(null)] - Zeiglers. Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex 
+2016-08-08 17:29:08,394 [6] INFO   [(null)] - Zeiglers. Get product info:My First Communion Bookmark - Style DIBKM7092B 
+2016-08-08 17:29:08,395 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 17:29:08,633 [10] ERROR  [(null)] - System.ArgumentOutOfRangeException: Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в System.String.Substring(Int32 startIndex)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 206
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 17:29:08,633 [10] ERROR  [(null)] - Zeiglers. Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex 
+2016-08-08 17:29:08,675 [10] INFO   [(null)] - Zeiglers. Get product info:First Communion Prayer Book Style 2467 
+2016-08-08 17:29:08,676 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 17:29:08,906 [8] ERROR  [(null)] - System.ArgumentOutOfRangeException: Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в System.String.Substring(Int32 startIndex)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 206
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 17:29:08,906 [8] ERROR  [(null)] - Zeiglers. Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex 
+2016-08-08 17:29:09,035 [12] ERROR  [(null)] - System.ArgumentOutOfRangeException: Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в System.String.Substring(Int32 startIndex)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 206
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 17:29:09,035 [12] ERROR  [(null)] - Zeiglers. Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex 
+2016-08-08 17:29:09,225 [12] INFO   [(null)] - Zeiglers. Get product info:First Communion Bible | St. Joseph Edition | Girl 
+2016-08-08 17:29:09,333 [6] ERROR  [(null)] - System.ArgumentOutOfRangeException: Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в System.String.Substring(Int32 startIndex)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 206
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 17:29:09,334 [6] ERROR  [(null)] - Zeiglers. Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex 
+2016-08-08 17:29:09,554 [10] ERROR  [(null)] - System.ArgumentOutOfRangeException: Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в System.String.Substring(Int32 startIndex)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 206
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 17:29:09,554 [10] ERROR  [(null)] - Zeiglers. Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex 
+2016-08-08 17:29:10,163 [12] ERROR  [(null)] - System.ArgumentOutOfRangeException: Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в System.String.Substring(Int32 startIndex)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 206
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 17:29:10,163 [12] ERROR  [(null)] - Zeiglers. Значение StartIndex не может быть меньше нуля.
+Имя параметра: startIndex 
+2016-08-08 17:29:24,177 [4] INFO   [(null)] - Zeiglers. Starting 5 threads 
+2016-08-08 17:29:24,216 [6] INFO   [(null)] - Zeiglers. Get product info:First Communion | Bible | St. Joseph Edition | for Boy 
+2016-08-08 17:29:24,216 [12] INFO   [(null)] - Zeiglers. Get product info:A Catholic Child's | First Communion Bible | Style 1400155 
+2016-08-08 17:29:24,216 [8] INFO   [(null)] - Zeiglers. Get product info:First Communion Bible | St. Joseph Edition | Girl 
+2016-08-08 17:29:24,216 [10] INFO   [(null)] - Zeiglers. Get product info:A Catholic Child's First Communion Bible | Style 1400294 
+2016-08-08 17:29:25,085 [11] INFO   [(null)] - Zeiglers. Get product info:A Keepsake | Your First Holy Communion | Boy 

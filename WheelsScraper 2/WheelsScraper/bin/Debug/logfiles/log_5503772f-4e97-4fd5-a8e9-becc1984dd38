@@ -1,0 +1,557 @@
+2016-08-08 15:00:08,213 [6] INFO   [(null)] - Checking for updates
+2016-08-08 15:00:10,047 [6] INFO   [(null)] - Update complete. Release = 67
+2016-08-08 15:00:21,077 [1] INFO   [(null)] - . Starting scheduler in 10 seconds 
+2016-08-08 15:00:21,867 [1] ERROR  [(null)] - System.InvalidOperationException: В документе XML (676, 29) присутствует ошибка. ---> System.FormatException: Строка "False" не является допустимым значением Boolean.
+   в System.Xml.XmlConvert.ToBoolean(String s)
+   в Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderScraperSettings.Read27_ScraperSettings(Boolean isNullable, Boolean checkType)
+   в Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderScraperSettings.Read28_ScraperSettings()
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   в System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader)
+   в WheelsScraper.ScraperSettings.ReadConfig(String configFile, Type[] additionalTypes) в c:\Projects\EDF\WheelsScraper 2\Scraper.Shared\ScraperSettings.cs:строка 240
+   в WheelsScraper.Form1.DoLoadProcessorConfig(String edfFileName, String libFileName, String edfUrl) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 609
+   в WheelsScraper.Form1.LoadLocalDatafeeds() в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 2126
+2016-08-08 15:00:21,877 [1] ERROR  [(null)] - . В документе XML (676, 29) присутствует ошибка. 
+2016-08-08 15:00:22,247 [1] INFO   [(null)] - Checking forced version for UniversalMapper
+2016-08-08 15:00:22,629 [1] INFO   [(null)] - You are using latest version of UniversalMapper
+2016-08-08 15:00:24,311 [1] INFO   [(null)] - . Data feed UniversalMapper loaded 
+2016-08-08 15:00:24,685 [1] INFO   [(null)] - Checking forced version for Zeiglers
+2016-08-08 15:00:26,026 [1] INFO   [(null)] - . Data feed Zeiglers loaded 
+2016-08-08 15:00:30,316 [1] INFO   [(null)] - . Starting Zeiglers 
+2016-08-08 15:00:30,316 [1] INFO   [(null)] - Checking forced version for Zeiglers
+2016-08-08 15:00:34,576 [4] INFO   [(null)] - Zeiglers. Starting new loop 
+2016-08-08 15:00:34,636 [4] INFO   [(null)] - Zeiglers. Starting 2 threads 
+2016-08-08 15:00:36,028 [5] INFO   [(null)] - Zeiglers. Get Categories List 
+2016-08-08 15:00:36,108 [5] INFO   [(null)] - Zeiglers. Categories List .. ok 
+2016-08-08 15:00:36,108 [4] INFO   [(null)] - Zeiglers. Starting 5 threads 
+2016-08-08 15:00:36,968 [5] INFO   [(null)] - Zeiglers. Get Product List ..  
+2016-08-08 15:00:36,988 [5] INFO   [(null)] - Zeiglers. Product List end ..  
+2016-08-08 15:00:37,130 [11] INFO   [(null)] - Zeiglers. Empty SubCategory ..  
+2016-08-08 15:00:37,140 [6] INFO   [(null)] - Zeiglers. Empty SubCategory ..  
+2016-08-08 15:00:37,190 [12] INFO   [(null)] - Zeiglers. Get Product List ..  
+2016-08-08 15:00:37,210 [12] INFO   [(null)] - Zeiglers. Product List end ..  
+2016-08-08 15:00:37,370 [4] INFO   [(null)] - Zeiglers. Starting 4 threads 
+2016-08-08 15:00:37,440 [5] INFO   [(null)] - Zeiglers. Get product info:FREE 2016 First Communion Catalog 
+2016-08-08 15:00:37,440 [12] INFO   [(null)] - Zeiglers. Get product info:Child of God "Cathedral" Book | for Girl | Style HI2470 
+2016-08-08 15:00:37,440 [6] INFO   [(null)] - Zeiglers. Get product info:Bread of Life | Brother Francis HERBF02CB 
+2016-08-08 15:00:37,440 [11] INFO   [(null)] - Zeiglers. Get product info:My First Holy Communion | Book 
+2016-08-08 15:00:37,790 [13] INFO   [(null)] - Zeiglers. Get Product List ..  
+2016-08-08 15:00:37,820 [13] INFO   [(null)] - Zeiglers. Product List end ..  
+2016-08-08 15:00:37,880 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:00:37,940 [13] INFO   [(null)] - Zeiglers. Get product info:First Communion | Bible | for Boy | Style MH1400130 
+2016-08-08 15:01:01,131 [11] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:01:01,151 [6] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:01:01,151 [13] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:01:01,151 [12] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:01:01,161 [11] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:01:01,161 [6] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:01:01,161 [12] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:01:01,161 [13] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:01:01,161 [5] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:01:01,161 [5] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:01:01,201 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:01:01,361 [11] INFO   [(null)] - Zeiglers. Get product info:My First Holy Communion | Book 
+2016-08-08 15:01:01,371 [4] INFO   [(null)] - Zeiglers. Starting 4 threads 
+2016-08-08 15:01:01,441 [12] INFO   [(null)] - Zeiglers. Get product info:FREE 2016 First Communion Catalog 
+2016-08-08 15:01:01,441 [6] INFO   [(null)] - Zeiglers. Get product info:Child of God "Cathedral" Book | for Girl | Style HI2470 
+2016-08-08 15:01:01,441 [14] INFO   [(null)] - Zeiglers. Get product info:First Communion | Bible | for Boy | Style MH1400130 
+2016-08-08 15:01:01,441 [9] INFO   [(null)] - Zeiglers. Get product info:Bread of Life | Brother Francis HERBF02CB 
+2016-08-08 15:01:02,492 [11] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:01:02,492 [11] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:01:02,563 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:01:02,594 [12] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:01:02,595 [12] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:01:02,609 [14] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:01:02,610 [14] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:01:02,705 [9] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:01:02,705 [9] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:01:02,715 [13] INFO   [(null)] - Zeiglers. Get product info:My First Holy Communion | Book 
+2016-08-08 15:01:02,765 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:01:02,865 [6] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:01:02,865 [6] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:01:02,925 [11] INFO   [(null)] - Zeiglers. Get product info:FREE 2016 First Communion Catalog 
+2016-08-08 15:01:02,925 [4] INFO   [(null)] - Zeiglers. Starting 2 threads 
+2016-08-08 15:01:03,035 [6] INFO   [(null)] - Zeiglers. Get product info:First Communion | Bible | for Boy | Style MH1400130 
+2016-08-08 15:01:03,035 [14] INFO   [(null)] - Zeiglers. Get product info:Bread of Life | Brother Francis HERBF02CB 
+2016-08-08 15:01:03,035 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:01:03,145 [12] INFO   [(null)] - Zeiglers. Get product info:Child of God "Cathedral" Book | for Girl | Style HI2470 
+2016-08-08 15:01:03,755 [13] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:01:03,755 [13] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:01:03,865 [11] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:01:03,865 [11] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:01:03,867 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:01:03,977 [6] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:01:03,977 [6] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:01:03,997 [11] INFO   [(null)] - Zeiglers. Get product info:St. Joseph's | First Communion Catechism 
+2016-08-08 15:01:03,997 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:01:04,087 [12] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:01:04,097 [14] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:01:04,097 [14] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:01:04,097 [12] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:01:04,177 [13] INFO   [(null)] - Zeiglers. Get product info:Jesus Speaks to Me | On My First Holy Communion | Hardcover 
+2016-08-08 15:01:04,177 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:01:04,347 [6] INFO   [(null)] - Zeiglers. Get product info:First Communion Bookmark Style 7084 
+2016-08-08 15:01:04,357 [4] INFO   [(null)] - Zeiglers. Starting 2 threads 
+2016-08-08 15:01:04,437 [12] INFO   [(null)] - Zeiglers. Get product info:My First Communion Bookmark - Style DIBKM7092B 
+2016-08-08 15:01:04,437 [9] INFO   [(null)] - Zeiglers. Get product info:First Communion Prayer Book Style 2467 
+2016-08-08 15:01:04,977 [11] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:01:04,977 [11] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:01:05,137 [13] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:01:05,137 [13] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:01:05,229 [6] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:01:05,229 [6] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:01:05,349 [9] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:01:05,349 [9] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:01:05,539 [12] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:01:05,539 [12] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:01:20,043 [4] INFO   [(null)] - Zeiglers. Starting 5 threads 
+2016-08-08 15:01:20,073 [9] INFO   [(null)] - Zeiglers. Get product info:St. Joseph's | First Communion Catechism 
+2016-08-08 15:01:20,073 [5] INFO   [(null)] - Zeiglers. Get product info:My First Communion Bookmark - Style DIBKM7092B 
+2016-08-08 15:01:20,073 [12] INFO   [(null)] - Zeiglers. Get product info:Jesus Speaks to Me | On My First Holy Communion | Hardcover 
+2016-08-08 15:01:20,073 [13] INFO   [(null)] - Zeiglers. Get product info:First Communion Bookmark Style 7084 
+2016-08-08 15:01:20,073 [11] INFO   [(null)] - Zeiglers. Get product info:First Communion Prayer Book Style 2467 
+2016-08-08 15:01:36,498 [12] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:01:36,508 [12] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:01:37,288 [11] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:01:37,288 [11] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:01:37,288 [13] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:01:37,288 [13] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:01:37,298 [9] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:01:37,298 [9] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:01:38,248 [5] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:01:38,248 [5] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:01:38,298 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:01:38,488 [14] INFO   [(null)] - Zeiglers. Get product info:Jesus Speaks to Me | On My First Holy Communion | Hardcover 
+2016-08-08 15:01:38,488 [4] INFO   [(null)] - Zeiglers. Starting 3 threads 
+2016-08-08 15:01:38,608 [9] INFO   [(null)] - Zeiglers. Get product info:St. Joseph's | First Communion Catechism 
+2016-08-08 15:01:38,608 [5] INFO   [(null)] - Zeiglers. Get product info:First Communion Bookmark Style 7084 
+2016-08-08 15:01:38,608 [11] INFO   [(null)] - Zeiglers. Get product info:First Communion Prayer Book Style 2467 
+2016-08-08 15:01:38,608 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:01:38,738 [12] INFO   [(null)] - Zeiglers. Get product info:My First Communion Bookmark - Style DIBKM7092B 
+2016-08-08 15:01:44,899 [14] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:01:44,899 [14] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:04,799 [12] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:04,820 [12] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:04,820 [5] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:04,820 [11] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:04,820 [11] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:04,820 [5] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:04,820 [9] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:04,820 [9] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:04,890 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:02:05,150 [14] INFO   [(null)] - Zeiglers. Get product info:First Communion Bible | St. Joseph Edition | Girl 
+2016-08-08 15:02:05,150 [4] INFO   [(null)] - Zeiglers. Starting 4 threads 
+2016-08-08 15:02:05,230 [12] INFO   [(null)] - Zeiglers. Get product info:First Communion | Bible | St. Joseph Edition | for Boy 
+2016-08-08 15:02:05,230 [11] INFO   [(null)] - Zeiglers. Get product info:A Catholic Child's | First Communion Bible | Style 1400155 
+2016-08-08 15:02:05,230 [9] INFO   [(null)] - Zeiglers. Get product info:A Keepsake | Your First Holy Communion | Boy 
+2016-08-08 15:02:05,230 [5] INFO   [(null)] - Zeiglers. Get product info:A Catholic Child's First Communion Bible | Style 1400294 
+2016-08-08 15:02:06,296 [14] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:06,296 [14] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:06,306 [12] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:06,306 [12] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:06,396 [11] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:06,396 [11] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:06,426 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:02:06,446 [5] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:06,446 [5] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:06,486 [9] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:06,496 [9] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:06,626 [12] INFO   [(null)] - Zeiglers. Get product info:First Communion Bible | St. Joseph Edition | Girl 
+2016-08-08 15:02:06,626 [4] INFO   [(null)] - Zeiglers. Starting 2 threads 
+2016-08-08 15:02:06,796 [6] INFO   [(null)] - Zeiglers. Get product info:First Communion | Bible | St. Joseph Edition | for Boy 
+2016-08-08 15:02:06,796 [14] INFO   [(null)] - Zeiglers. Get product info:A Catholic Child's | First Communion Bible | Style 1400155 
+2016-08-08 15:02:06,796 [4] INFO   [(null)] - Zeiglers. Starting 2 threads 
+2016-08-08 15:02:06,886 [5] INFO   [(null)] - Zeiglers. Get product info:A Catholic Child's First Communion Bible | Style 1400294 
+2016-08-08 15:02:06,886 [9] INFO   [(null)] - Zeiglers. Get product info:A Keepsake | Your First Holy Communion | Boy 
+2016-08-08 15:02:07,690 [12] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:07,691 [12] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:07,908 [14] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:07,908 [14] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:07,908 [6] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:07,908 [6] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:07,928 [5] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:07,928 [5] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:07,938 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:02:07,978 [9] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:07,988 [9] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:08,168 [11] INFO   [(null)] - Zeiglers. Get product info:First Communion Bible | St. Joseph Edition | Girl 
+2016-08-08 15:02:08,168 [4] INFO   [(null)] - Zeiglers. Starting 3 threads 
+2016-08-08 15:02:08,278 [12] INFO   [(null)] - Zeiglers. Get product info:First Communion | Bible | St. Joseph Edition | for Boy 
+2016-08-08 15:02:08,278 [9] INFO   [(null)] - Zeiglers. Get product info:A Catholic Child's | First Communion Bible | Style 1400155 
+2016-08-08 15:02:08,278 [14] INFO   [(null)] - Zeiglers. Get product info:A Catholic Child's First Communion Bible | Style 1400294 
+2016-08-08 15:02:08,278 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:02:08,408 [6] INFO   [(null)] - Zeiglers. Get product info:A Keepsake | Your First Holy Communion | Boy 
+2016-08-08 15:02:09,152 [11] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:09,153 [11] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:09,200 [9] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:09,200 [9] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:09,283 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:02:09,302 [14] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:09,302 [14] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:09,332 [12] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:09,332 [12] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:09,412 [6] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:09,412 [6] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:09,432 [9] INFO   [(null)] - Zeiglers. Get product info:A Keepsake | Your First Holy Communion | Girl 
+2016-08-08 15:02:09,432 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:02:09,662 [5] INFO   [(null)] - Zeiglers. Get product info:Bible Stories | For Children | Style HI2597 
+2016-08-08 15:02:09,662 [4] INFO   [(null)] - Zeiglers. Starting 3 threads 
+2016-08-08 15:02:09,722 [6] INFO   [(null)] - Zeiglers. Get product info:Bible Stories | For Children | Style HI2697 
+2016-08-08 15:02:09,722 [14] INFO   [(null)] - Zeiglers. Get product info:Biblia De Mi Primera Comunion Marfil - Hardcover 
+2016-08-08 15:02:09,722 [11] INFO   [(null)] - Zeiglers. Get product info:Biblia De Mi Primera Comunion Marron | Hardcover 
+2016-08-08 15:02:10,573 [5] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:10,574 [5] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:10,654 [9] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:10,654 [9] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:10,674 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:02:10,704 [14] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:10,704 [14] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:10,754 [11] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:10,754 [11] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:10,824 [6] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:10,824 [6] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:10,884 [12] INFO   [(null)] - Zeiglers. Get product info:Bible Stories | For Children | Style HI2597 
+2016-08-08 15:02:10,884 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:02:11,104 [5] INFO   [(null)] - Zeiglers. Get product info:A Keepsake | Your First Holy Communion | Girl 
+2016-08-08 15:02:11,104 [4] INFO   [(null)] - Zeiglers. Starting 3 threads 
+2016-08-08 15:02:11,164 [11] INFO   [(null)] - Zeiglers. Get product info:Bible Stories | For Children | Style HI2697 
+2016-08-08 15:02:11,164 [9] INFO   [(null)] - Zeiglers. Get product info:Biblia De Mi Primera Comunion Marron | Hardcover 
+2016-08-08 15:02:11,164 [6] INFO   [(null)] - Zeiglers. Get product info:Biblia De Mi Primera Comunion Marfil - Hardcover 
+2016-08-08 15:02:12,036 [12] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:12,036 [12] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:12,116 [5] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:12,116 [5] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:12,196 [9] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:12,196 [9] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:12,216 [6] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:12,216 [6] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:12,316 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:02:12,466 [11] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:12,466 [11] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:12,566 [16] INFO   [(null)] - Zeiglers. Get product info:Bible Stories | For Children | Style HI2597 
+2016-08-08 15:02:12,566 [4] INFO   [(null)] - Zeiglers. Starting 3 threads 
+2016-08-08 15:02:12,686 [6] INFO   [(null)] - Zeiglers. Get product info:A Keepsake | Your First Holy Communion | Girl 
+2016-08-08 15:02:12,686 [9] INFO   [(null)] - Zeiglers. Get product info:Biblia De Mi Primera Comunion Marfil - Hardcover 
+2016-08-08 15:02:12,686 [12] INFO   [(null)] - Zeiglers. Get product info:Biblia De Mi Primera Comunion Marron | Hardcover 
+2016-08-08 15:02:12,686 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:02:12,806 [5] INFO   [(null)] - Zeiglers. Get product info:Bible Stories | For Children | Style HI2697 
+2016-08-08 15:02:13,539 [16] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:13,539 [16] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:13,594 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:02:13,620 [12] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:13,623 [12] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:13,663 [16] INFO   [(null)] - Zeiglers. Get product info:Blessed Trinity Missal | Black | Style HI2611 
+2016-08-08 15:02:13,683 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:02:13,713 [9] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:13,713 [9] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:13,723 [11] INFO   [(null)] - Zeiglers. Get product info:Blessed Trinity Missal | for Girl Style HI2620 
+2016-08-08 15:02:13,773 [6] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:13,773 [6] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:13,793 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:02:13,863 [14] INFO   [(null)] - Zeiglers. Get product info:Blessed Trinity Missal | for Girl Style HI2638 
+2016-08-08 15:02:13,863 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:02:13,913 [9] INFO   [(null)] - Zeiglers. Get product info:Blessed Trinity Missal | White 
+2016-08-08 15:02:13,973 [5] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:13,973 [5] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:14,013 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:02:14,043 [12] INFO   [(null)] - Zeiglers. Get product info:Bookmark First Communion Girl in Spanish 
+2016-08-08 15:02:14,683 [16] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:14,683 [16] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:14,723 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:02:14,775 [11] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:14,775 [11] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:14,795 [6] INFO   [(null)] - Zeiglers. Get product info:Blessed Trinity Missal | Black | Style HI2611 
+2016-08-08 15:02:14,825 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:02:14,855 [9] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:14,855 [9] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:14,885 [5] INFO   [(null)] - Zeiglers. Get product info:Blessed Trinity Missal | for Girl Style HI2620 
+2016-08-08 15:02:14,918 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:02:14,977 [14] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:14,977 [14] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:14,997 [11] INFO   [(null)] - Zeiglers. Get product info:Blessed Trinity Missal | White 
+2016-08-08 15:02:15,047 [12] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:15,047 [12] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:15,047 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:02:15,107 [14] INFO   [(null)] - Zeiglers. Get product info:Blessed Trinity Missal | for Girl Style HI2638 
+2016-08-08 15:02:15,107 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:02:15,157 [16] INFO   [(null)] - Zeiglers. Get product info:Bookmark First Communion Girl in Spanish 
+2016-08-08 15:02:15,747 [6] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:15,747 [6] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:15,787 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:02:15,827 [12] INFO   [(null)] - Zeiglers. Get product info:Blessed Trinity Missal | Black | Style HI2611 
+2016-08-08 15:02:15,959 [5] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:15,959 [5] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:16,029 [14] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:16,029 [14] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:16,029 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:02:16,109 [11] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:16,109 [11] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:16,119 [9] INFO   [(null)] - Zeiglers. Get product info:Blessed Trinity Missal | for Girl Style HI2620 
+2016-08-08 15:02:16,119 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:02:16,169 [6] INFO   [(null)] - Zeiglers. Get product info:Blessed Trinity Missal | for Girl Style HI2638 
+2016-08-08 15:02:16,169 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:02:16,239 [16] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:16,239 [16] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:16,239 [14] INFO   [(null)] - Zeiglers. Get product info:Blessed Trinity Missal | White 
+2016-08-08 15:02:16,269 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:02:16,299 [5] INFO   [(null)] - Zeiglers. Get product info:Bookmark First Communion Girl in Spanish 
+2016-08-08 15:02:16,734 [12] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:16,734 [12] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:16,764 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:02:16,794 [11] INFO   [(null)] - Zeiglers. Get product info:First Communion Candle | Body of Christ Amen |  WB70223 
+2016-08-08 15:02:17,258 [9] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:17,258 [9] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:17,268 [6] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:17,268 [6] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:17,298 [14] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:17,298 [14] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:17,328 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:02:17,368 [5] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:17,368 [5] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:17,418 [12] INFO   [(null)] - Zeiglers. Get product info:First Communion Candle | Chalice and Grape Design | Style DV1200C 
+2016-08-08 15:02:17,418 [4] INFO   [(null)] - Zeiglers. Starting 2 threads 
+2016-08-08 15:02:17,488 [14] INFO   [(null)] - Zeiglers. Get product info:First Communion Candle | Chalice Design | Style RI47013 
+2016-08-08 15:02:17,488 [16] INFO   [(null)] - Zeiglers. Get product info:First Communion Candle | Chi Rho and Eucharist Design | Style RO95646 
+2016-08-08 15:02:17,488 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:02:17,528 [9] INFO   [(null)] - Zeiglers. Get product info:First Communion Candle | Gold Leaf Symbols | Style CC84201001 
+2016-08-08 15:02:17,648 [11] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:17,658 [11] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:17,758 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:02:17,788 [11] INFO   [(null)] - Zeiglers. Get product info:First Communion Candle | Body of Christ Amen |  WB70223 
+2016-08-08 15:02:18,460 [16] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:18,460 [16] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:18,560 [12] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:18,560 [12] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:18,600 [14] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:18,600 [14] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:18,630 [9] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:18,630 [9] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:18,640 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:02:18,880 [16] INFO   [(null)] - Zeiglers. Get product info:First Communion Candle | Chi Rho and Eucharist Design | Style RO95646 
+2016-08-08 15:02:18,880 [4] INFO   [(null)] - Zeiglers. Starting 3 threads 
+2016-08-08 15:02:18,910 [11] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:18,910 [11] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:18,950 [9] INFO   [(null)] - Zeiglers. Get product info:First Communion Candle | Chalice and Grape Design | Style DV1200C 
+2016-08-08 15:02:18,950 [14] INFO   [(null)] - Zeiglers. Get product info:First Communion Candle | Gold Leaf Symbols | Style CC84201001 
+2016-08-08 15:02:18,950 [12] INFO   [(null)] - Zeiglers. Get product info:First Communion Candle | Chalice Design | Style RI47013 
+2016-08-08 15:02:19,020 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:02:19,146 [11] INFO   [(null)] - Zeiglers. Get product info:First Communion Candle | Body of Christ Amen |  WB70223 
+2016-08-08 15:02:19,814 [16] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:19,814 [16] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:19,934 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:02:19,986 [12] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:19,986 [12] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:20,030 [6] INFO   [(null)] - Zeiglers. Get product info:First Communion Candle | Chi Rho and Eucharist Design | Style RO95646 
+2016-08-08 15:02:20,098 [9] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:20,098 [9] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:20,128 [14] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:20,128 [14] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:20,208 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:02:20,208 [11] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:20,218 [11] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:20,388 [12] INFO   [(null)] - Zeiglers. Get product info:First Communion Candle | Chalice Design | Style RI47013 
+2016-08-08 15:02:20,388 [4] INFO   [(null)] - Zeiglers. Starting 2 threads 
+2016-08-08 15:02:20,478 [11] INFO   [(null)] - Zeiglers. Get product info:First Communion Candle | Chalice and Grape Design | Style DV1200C 
+2016-08-08 15:02:20,478 [14] INFO   [(null)] - Zeiglers. Get product info:First Communion Candle | Gold Leaf Symbols | Style CC84201001 
+2016-08-08 15:02:20,478 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:02:20,608 [9] INFO   [(null)] - Zeiglers. Get product info:First Communion Candle | Precious Moments | Style RO62989 
+2016-08-08 15:02:21,068 [6] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:21,068 [6] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:21,428 [14] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:21,428 [14] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:21,548 [12] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:21,548 [12] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:21,598 [11] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:21,598 [11] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:21,948 [9] ERROR  [(null)] - System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 265
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 15:02:21,958 [9] ERROR  [(null)] - Zeiglers. Ссылка на объект не указывает на экземпляр объекта. 
+2016-08-08 15:02:41,159 [4] INFO   [(null)] - Zeiglers. Starting 5 threads 
+2016-08-08 15:02:41,249 [6] INFO   [(null)] - Zeiglers. Get product info:First Communion Candle | Precious Moments | Style RO62989 
+2016-08-08 15:02:41,249 [14] INFO   [(null)] - Zeiglers. Get product info:First Communion | Candle | Precious Moments | Style RO62988 
+2016-08-08 15:02:41,249 [13] INFO   [(null)] - Zeiglers. Get product info:SOLD OUT First Communion Candle | Body of Christ | Chalice | Style CC84200701 
+2016-08-08 15:02:42,258 [11] INFO   [(null)] - Zeiglers. Empty SubCategory ..  
+2016-08-08 15:02:42,271 [12] INFO   [(null)] - Zeiglers. Empty SubCategory ..  
+2016-08-08 15:02:42,302 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 15:02:42,401 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 

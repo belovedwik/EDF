@@ -1,0 +1,74 @@
+2016-08-08 14:47:29,656 [6] INFO   [(null)] - Checking for updates
+2016-08-08 14:47:31,466 [6] INFO   [(null)] - Update complete. Release = 67
+2016-08-08 14:47:42,521 [1] INFO   [(null)] - . Starting scheduler in 10 seconds 
+2016-08-08 14:47:43,323 [1] ERROR  [(null)] - System.InvalidOperationException: В документе XML (676, 29) присутствует ошибка. ---> System.FormatException: Строка "False" не является допустимым значением Boolean.
+   в System.Xml.XmlConvert.ToBoolean(String s)
+   в Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderScraperSettings.Read27_ScraperSettings(Boolean isNullable, Boolean checkType)
+   в Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderScraperSettings.Read28_ScraperSettings()
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   в System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader)
+   в WheelsScraper.ScraperSettings.ReadConfig(String configFile, Type[] additionalTypes) в c:\Projects\EDF\WheelsScraper 2\Scraper.Shared\ScraperSettings.cs:строка 240
+   в WheelsScraper.Form1.DoLoadProcessorConfig(String edfFileName, String libFileName, String edfUrl) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 609
+   в WheelsScraper.Form1.LoadLocalDatafeeds() в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 2126
+2016-08-08 14:47:43,333 [1] ERROR  [(null)] - . В документе XML (676, 29) присутствует ошибка. 
+2016-08-08 14:47:43,693 [1] INFO   [(null)] - Checking forced version for UniversalMapper
+2016-08-08 14:47:44,023 [1] INFO   [(null)] - You are using latest version of UniversalMapper
+2016-08-08 14:47:45,684 [1] INFO   [(null)] - . Data feed UniversalMapper loaded 
+2016-08-08 14:47:46,056 [1] INFO   [(null)] - Checking forced version for Zeiglers
+2016-08-08 14:47:47,343 [1] INFO   [(null)] - . Data feed Zeiglers loaded 
+2016-08-08 14:48:01,272 [1] INFO   [(null)] - . Starting Zeiglers 
+2016-08-08 14:48:01,282 [1] INFO   [(null)] - Checking forced version for Zeiglers
+2016-08-08 14:48:05,356 [8] INFO   [(null)] - Zeiglers. Starting new loop 
+2016-08-08 14:48:05,416 [8] INFO   [(null)] - Zeiglers. Starting 2 threads 
+2016-08-08 14:48:06,511 [5] INFO   [(null)] - Zeiglers. Get Categories List 
+2016-08-08 14:48:06,581 [5] INFO   [(null)] - Zeiglers. Categories List .. ok 
+2016-08-08 14:48:06,591 [8] INFO   [(null)] - Zeiglers. Starting 5 threads 
+2016-08-08 14:48:07,434 [6] INFO   [(null)] - Zeiglers. Empty SubCategory ..  
+2016-08-08 14:48:07,631 [5] INFO   [(null)] - Zeiglers. Get Product List ..  
+2016-08-08 14:48:07,646 [5] INFO   [(null)] - Zeiglers. Product List end ..  
+2016-08-08 14:48:07,666 [11] INFO   [(null)] - Zeiglers. Empty SubCategory ..  
+2016-08-08 14:48:07,727 [12] INFO   [(null)] - Zeiglers. Get Product List ..  
+2016-08-08 14:48:07,767 [12] INFO   [(null)] - Zeiglers. Product List end ..  
+2016-08-08 14:48:08,541 [6] INFO   [(null)] - Zeiglers. Get Product List ..  
+2016-08-08 14:48:08,551 [6] INFO   [(null)] - Zeiglers. Product List end ..  
+2016-08-08 14:48:11,571 [1] INFO   [(null)] - Zeiglers. Cancel 
+2016-08-08 14:48:12,533 [10] INFO   [(null)] - Zeiglers. Complete 
+2016-08-08 14:48:29,201 [1] INFO   [(null)] - . Starting Zeiglers 
+2016-08-08 14:48:29,251 [1] INFO   [(null)] - Checking forced version for Zeiglers
+2016-08-08 14:48:32,714 [3] INFO   [(null)] - Zeiglers. Starting new loop 
+2016-08-08 14:48:56,652 [1] INFO   [(null)] - Zeiglers. Cancel 
+2016-08-08 14:48:57,354 [1] INFO   [(null)] - Zeiglers. Cancel 
+2016-08-08 14:48:57,763 [6] INFO   [(null)] - Zeiglers. Complete 
+2016-08-08 14:49:01,552 [1] INFO   [(null)] - . Starting Zeiglers 
+2016-08-08 14:49:01,602 [1] INFO   [(null)] - Checking forced version for Zeiglers
+2016-08-08 14:49:04,163 [13] INFO   [(null)] - Zeiglers. Starting new loop 
+2016-08-08 14:49:04,183 [13] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:49:05,375 [10] INFO   [(null)] - Zeiglers. Get Categories List 
+2016-08-08 14:49:05,415 [10] INFO   [(null)] - Zeiglers. Categories List .. ok 
+2016-08-08 14:49:05,435 [13] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:49:06,304 [6] INFO   [(null)] - Zeiglers. Empty SubCategory ..  
+2016-08-08 14:49:06,314 [13] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:49:07,189 [5] INFO   [(null)] - Zeiglers. Empty SubCategory ..  
+2016-08-08 14:49:07,209 [13] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:49:08,088 [12] INFO   [(null)] - Zeiglers. Empty SubCategory ..  
+2016-08-08 14:49:08,108 [13] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:49:09,008 [5] INFO   [(null)] - Zeiglers. Empty SubCategory ..  
+2016-08-08 14:49:09,028 [13] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:49:09,980 [6] INFO   [(null)] - Zeiglers. Empty SubCategory ..  
+2016-08-08 14:49:09,990 [13] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:49:10,895 [10] INFO   [(null)] - Zeiglers. Empty SubCategory ..  
+2016-08-08 14:49:10,915 [13] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:49:11,744 [6] INFO   [(null)] - Zeiglers. Get Product List ..  
+2016-08-08 14:49:11,766 [6] INFO   [(null)] - Zeiglers. Product List end ..  
+2016-08-08 14:49:11,796 [13] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:49:11,870 [12] INFO   [(null)] - Zeiglers. Get product info:FREE 2016 First Communion Catalog 
+2016-08-08 14:49:17,247 [12] ERROR  [(null)] - System.ArgumentOutOfRangeException: Длина не может быть меньше нуля.
+Имя параметра: length
+   в System.String.Substring(Int32 startIndex, Int32 length)
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 233
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-08 14:49:17,257 [12] ERROR  [(null)] - Zeiglers. Длина не может быть меньше нуля.
+Имя параметра: length 
+2016-08-08 14:49:17,287 [13] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-08 14:49:17,299 [5] INFO   [(null)] - Zeiglers. Get product info:FREE 2016 First Communion Catalog 

@@ -1,0 +1,4 @@
+2016-08-07 01:42:31,430 [6] INFO   [(null)] - Checking for updates
+2016-08-07 01:42:32,944 [6] INFO   [(null)] - File EasyDataFeed.exe.config should be updated. Version on server: 
+2016-08-07 01:42:33,343 [6] INFO   [(null)] - Received file EasyDataFeed.exe.config. Size: 2864
+2016-08-07 01:42:33,362 [6] INFO   [(null)] - Update complete. Release = 67
