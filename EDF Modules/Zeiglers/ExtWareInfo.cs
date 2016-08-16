@@ -6,7 +6,7 @@ using WheelsScraper;
 
 namespace Zeiglers
 {
-    public class ExtWareInfo : WareInfo
+    public class ExtWareInfo : WareInfo, ICloneable
     {
         public string Action { get; set; }
         public int ProductType { get; set; }
@@ -35,5 +35,9 @@ namespace Zeiglers
         public string ScondaryOptionChoice { get; set; }
         public string ProdID { get; set; }
         public string ImagesList { get; set; }
+        public object Clone()
+        {
+            return MemberwiseClone();
+        }
     }
 }

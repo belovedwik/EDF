@@ -22,7 +22,7 @@ namespace WheelsScraper
         public Zeiglers()
         {
             Name = "Zeiglers";
-            Url = "http://www.zieglers.com";
+            Url = "http://www.zieglers.com/";
             PageRetriever.Referer = Url;
             WareInfoList = new List<ExtWareInfo>();
             Wares.Clear();
@@ -197,14 +197,15 @@ namespace WheelsScraper
                 return;
 
             var wi = (ExtWareInfo)pqi.Item;
-            MessagePrinter.PrintMessage("Get product info:" + wi.Name);
+            MessagePrinter.PrintMessage("Get product info:" + pqi.Name);
             var html = PageRetriever.ReadFromServer(pqi.URL);
 
             var doc = CreateDoc(html);
 
 
             wi.ProdID = doc.DocumentNode.SelectSingleNode("//input[@name='product_id']").AttributeOrNull("value");
-            
+            wi.URL = pqi.URL;
+
             var prodDetail = doc.DocumentNode.SelectSingleNode("//div[@id='ProductDetails']");
 			
             wi.Action = "ADD";
@@ -306,11 +307,11 @@ namespace WheelsScraper
                     // select
                     foreach (var option in primaryOptionVal_options)
                     {
-                        wi.PrimaryOptionChoice = option.InnerTextOrNull();
-                        if (wi.PrimaryOptionChoice != null) // first option is null
+                        wi.PrimaryOptionChoice = option.NextSibling.InnerTextOrNull();
+                        if (!String.IsNullOrEmpty( option.AttributeOrNull("value") )) // first option is null
                         {
                             SendAdditionalRequest(selectName + "=" + option.AttributeOrNull("value"), ref wi);
-                            AddWareInfo(wi);
+                            AddWareInfoExt(wi);
                         } 
                     }
                 }
@@ -337,10 +338,9 @@ namespace WheelsScraper
             }
 
             pqi.Processed = true;
-
-			OnItemLoaded(wi);
-
+            
             StartOrPushPropertiesThread();
+           // 
         }
 
         private void AddWareInfoExt(ExtWareInfo wi)
@@ -348,7 +348,14 @@ namespace WheelsScraper
             if (wi.ProductTitle.Contains(wi.PartNumber)) {
                 wi.ProductTitle = wi.ProductTitle.Replace(wi.PartNumber, "").Trim();
             }
-            AddWareInfo(wi); 
+            wi.ImageUrl = wi.ImageUrl.Substring(0, wi.ImageUrl.LastIndexOf('?'));
+            wi.Name = wi.Name;
+            wi.Processed = true;
+
+            ExtWareInfo wi2 = (ExtWareInfo)wi.Clone();
+
+            AddWareInfo( wi2 );
+            OnItemLoaded( wi2 );
         }
 
         public void SendAdditionalRequest(string attribute, ref ExtWareInfo wi) {
@@ -356,12 +363,12 @@ namespace WheelsScraper
             if (cancel)
                 return;
 
-            Uri baseUri = new Uri(Url);
-                baseUri = new Uri(baseUri, "remote.php");
+            Uri baseUri = new Uri("http://www.zieglers.com/remote.php");
+           //baseUri = new Uri(baseUri, "http://www.zieglers.com/remote.php");
 
             string postData = "action=add&product_id=" + wi.ProdID + "&" + attribute + "&qty[]=1&w=getProductAttributeDetails";
 
-            var request = (HttpWebRequest)WebRequest.Create(baseUri.AbsoluteUri);
+            var request =  (HttpWebRequest)WebRequest.Create(baseUri.AbsoluteUri);
             var data = Encoding.ASCII.GetBytes(postData);
 
             request.Method = "POST";
@@ -379,7 +386,10 @@ namespace WheelsScraper
 
             if (!string.IsNullOrEmpty(responseString)) { 
                 dynamic jsonVal = JsonConvert.DeserializeObject(responseString);
-                wi.PartNumber = wi.Jobber = (string)jsonVal.details.sku;
+               
+                wi.PartNumber = wi.Jobber =  (string)jsonVal.details.sku;
+                wi.MSRP = wi.WebPrice = wi.Cost = Double.Parse((string)jsonVal.details.unformattedPrice, new CultureInfo("en"));
+                wi.ImageUrl = (string)jsonVal.details.baseImage;
             }
                
          
