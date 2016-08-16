@@ -1,0 +1,11 @@
+D:\С#\test\EDF\Eswimelite\obj\Debug\Eswimelite.csprojResolveAssemblyReference.cache
+D:\С#\test\EDF\Eswimelite\obj\Debug\Databox.Libs.Eswimelite.ucExtSettings.resources
+D:\С#\test\EDF\Eswimelite\obj\Debug\Eswimelite.csproj.GenerateResource.Cache
+D:\С#\test\EDF\Eswimelite\obj\Debug\Eswimelite.dll.licenses
+D:\С#\test\EDF\WheelsScraper 2\WheelsScraper\bin\Debug\Eswimelite.dll
+D:\С#\test\EDF\WheelsScraper 2\WheelsScraper\bin\Debug\Eswimelite.pdb
+D:\С#\test\EDF\EDF Modules\Eswimelite\obj\Debug\Databox.Libs.Eswimelite.ucExtSettings.resources
+D:\С#\test\EDF\EDF Modules\Eswimelite\obj\Debug\Eswimelite.csproj.GenerateResource.Cache
+D:\С#\test\EDF\EDF Modules\Eswimelite\obj\Debug\Eswimelite.dll
+D:\С#\test\EDF\EDF Modules\Eswimelite\obj\Debug\Eswimelite.pdb
+D:\С#\test\EDF\EDF Modules\Eswimelite\obj\Debug\Eswimelite.csprojResolveAssemblyReference.cache
