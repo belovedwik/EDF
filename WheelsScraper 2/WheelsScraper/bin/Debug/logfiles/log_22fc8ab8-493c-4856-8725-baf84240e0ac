@@ -1,0 +1,292 @@
+2016-08-12 02:35:31,762 [6] INFO   [(null)] - Checking for updates
+2016-08-12 02:35:33,590 [6] INFO   [(null)] - Update complete. Release = 67
+2016-08-12 02:35:45,630 [1] INFO   [(null)] - . Starting scheduler in 10 seconds 
+2016-08-12 02:35:46,479 [1] INFO   [(null)] - Checking forced version for Eswimelite
+2016-08-12 02:35:48,792 [1] INFO   [(null)] - . Data feed Eswimelite loaded 
+2016-08-12 02:35:49,403 [1] ERROR  [(null)] - System.InvalidOperationException: В документе XML (676, 29) присутствует ошибка. ---> System.FormatException: Строка "False" не является допустимым значением Boolean.
+   в System.Xml.XmlConvert.ToBoolean(String s)
+   в Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderScraperSettings.Read27_ScraperSettings(Boolean isNullable, Boolean checkType)
+   в Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderScraperSettings.Read28_ScraperSettings()
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   в System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader)
+   в WheelsScraper.ScraperSettings.ReadConfig(String configFile, Type[] additionalTypes) в c:\Projects\EDF\WheelsScraper 2\Scraper.Shared\ScraperSettings.cs:строка 240
+   в WheelsScraper.Form1.DoLoadProcessorConfig(String edfFileName, String libFileName, String edfUrl) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 609
+   в WheelsScraper.Form1.LoadLocalDatafeeds() в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 2126
+2016-08-12 02:35:49,414 [1] ERROR  [(null)] - . В документе XML (676, 29) присутствует ошибка. 
+2016-08-12 02:35:49,812 [1] INFO   [(null)] - Checking forced version for UniversalMapper
+2016-08-12 02:35:50,134 [1] INFO   [(null)] - You are using latest version of UniversalMapper
+2016-08-12 02:35:50,850 [1] INFO   [(null)] - . Data feed UniversalMapper loaded 
+2016-08-12 02:35:51,208 [1] INFO   [(null)] - Checking forced version for Zeiglers
+2016-08-12 02:35:52,421 [1] INFO   [(null)] - . Data feed Zeiglers loaded 
+2016-08-12 02:36:12,703 [1] INFO   [(null)] - . Starting Eswimelite 
+2016-08-12 02:36:12,707 [1] INFO   [(null)] - Checking forced version for Eswimelite
+2016-08-12 02:36:16,518 [8] INFO   [(null)] - Eswimelite. Starting new loop 
+2016-08-12 02:36:16,578 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:16,607 [10] INFO   [(null)] - Eswimelite. Get Categories List ..  
+2016-08-12 02:36:17,248 [10] INFO   [(null)] - Eswimelite. CategoriesList list processed .. ok 
+2016-08-12 02:36:17,557 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:17,966 [11] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-12 02:36:18,004 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:18,428 [5] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-12 02:36:18,442 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:18,897 [11] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-12 02:36:18,910 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:19,407 [5] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-12 02:36:19,439 [5] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-12 02:36:19,496 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:19,976 [11] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-12 02:36:20,004 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:20,447 [10] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-12 02:36:20,480 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:20,938 [5] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-12 02:36:20,968 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:21,440 [10] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-12 02:36:21,474 [10] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-12 02:36:21,526 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:21,974 [11] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-12 02:36:22,010 [11] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-12 02:36:22,067 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:22,532 [11] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-12 02:36:22,579 [11] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-12 02:36:22,639 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:23,118 [10] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-12 02:36:23,154 [10] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-12 02:36:23,208 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:23,675 [5] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-12 02:36:23,711 [5] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-12 02:36:23,767 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:24,218 [10] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-12 02:36:24,252 [10] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-12 02:36:24,316 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:24,816 [10] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-12 02:36:24,861 [10] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-12 02:36:24,915 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:25,386 [5] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-12 02:36:25,419 [5] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-12 02:36:25,478 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:25,954 [5] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-12 02:36:25,993 [5] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-12 02:36:26,055 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:26,537 [11] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-12 02:36:26,572 [11] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-12 02:36:26,626 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:27,061 [11] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-12 02:36:27,096 [11] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-12 02:36:27,150 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:27,636 [10] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-12 02:36:27,685 [10] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-12 02:36:27,740 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:28,220 [11] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-12 02:36:28,256 [11] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-12 02:36:28,311 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:28,781 [5] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-12 02:36:28,819 [5] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-12 02:36:28,884 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:29,335 [5] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-12 02:36:29,388 [5] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-12 02:36:29,447 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:29,891 [10] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-12 02:36:29,938 [10] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-12 02:36:29,995 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:30,443 [10] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-12 02:36:30,483 [10] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-12 02:36:30,542 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:31,010 [10] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-12 02:36:31,050 [10] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-12 02:36:31,108 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:31,544 [3] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-12 02:36:31,581 [3] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-12 02:36:31,644 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:32,080 [11] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-12 02:36:32,117 [11] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-12 02:36:32,179 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:32,606 [5] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-12 02:36:32,643 [5] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-12 02:36:32,705 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:33,125 [5] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-12 02:36:33,159 [5] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-12 02:36:33,231 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:33,875 [3] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-12 02:36:33,907 [3] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-12 02:36:33,967 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:34,414 [5] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-12 02:36:34,455 [5] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-12 02:36:34,521 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:34,966 [11] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-12 02:36:35,001 [11] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-12 02:36:35,057 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:35,563 [5] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-12 02:36:35,600 [5] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-12 02:36:35,657 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:36,132 [10] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-12 02:36:36,167 [10] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-12 02:36:36,223 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:36,722 [11] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-12 02:36:36,758 [11] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-12 02:36:36,821 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:37,937 [3] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-12 02:36:37,979 [3] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-12 02:36:38,037 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:38,531 [11] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-12 02:36:38,566 [11] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-12 02:36:38,623 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:39,090 [11] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-12 02:36:39,125 [11] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-12 02:36:39,185 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:39,694 [10] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-12 02:36:39,733 [10] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-12 02:36:39,790 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:40,964 [3] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-12 02:36:40,999 [3] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-12 02:36:41,068 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:41,532 [10] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-12 02:36:41,565 [10] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-12 02:36:41,626 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:42,062 [10] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-12 02:36:42,096 [10] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-12 02:36:42,156 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:42,596 [11] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-12 02:36:42,634 [11] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-12 02:36:42,694 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:43,113 [3] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-12 02:36:43,158 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:43,799 [11] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-12 02:36:43,839 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:44,280 [11] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-12 02:36:44,328 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:44,786 [3] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-12 02:36:44,827 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:45,226 [10] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-12 02:36:45,262 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:45,702 [5] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-12 02:36:45,748 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:48,359 [10] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-12 02:36:48,399 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:48,764 [11] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-12 02:36:48,800 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:49,201 [5] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-12 02:36:49,236 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:49,673 [3] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-12 02:36:49,706 [3] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-12 02:36:49,776 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:50,204 [10] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-12 02:36:50,236 [10] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-12 02:36:50,299 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:50,778 [3] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-12 02:36:50,819 [3] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-12 02:36:50,888 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:51,345 [11] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-12 02:36:51,392 [11] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-12 02:36:51,454 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:52,182 [10] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-12 02:36:52,217 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:52,685 [3] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-12 02:36:52,721 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:53,189 [11] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-12 02:36:53,226 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:53,667 [3] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-12 02:36:53,702 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:54,124 [5] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-12 02:36:54,171 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:54,608 [3] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-12 02:36:54,666 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:55,084 [10] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-12 02:36:55,124 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:55,552 [11] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-12 02:36:55,593 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:56,020 [10] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-12 02:36:56,060 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:56,505 [5] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-12 02:36:56,550 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:56,989 [11] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-12 02:36:57,041 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:57,499 [5] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-12 02:36:57,537 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:58,385 [3] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-12 02:36:58,459 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:58,884 [5] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-12 02:36:58,919 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:59,364 [3] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-12 02:36:59,404 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:36:59,838 [5] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-12 02:36:59,876 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:37:00,349 [3] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-12 02:37:00,386 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:37:00,823 [11] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-12 02:37:00,873 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:37:01,371 [5] INFO   [(null)] - Eswimelite. Empty SubCategory .. Q Swimwear Online Shop
+      The Majestic Male Drag Suit 
+2016-08-12 02:37:01,416 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:37:02,429 [11] INFO   [(null)] - Eswimelite. Empty SubCategory .. Q Swimwear Online Shop
+      The Majestic Male Drag Suit 
+2016-08-12 02:37:02,464 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:37:02,939 [3] INFO   [(null)] - Eswimelite. Empty SubCategory .. Q Swimwear Online Shop
+      The Majestic Male Drag Suit 
+2016-08-12 02:37:02,972 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:37:03,882 [10] INFO   [(null)] - Eswimelite. Empty SubCategory .. Q Swimwear Online Shop
+      The Majestic Classic Brief 
+2016-08-12 02:37:03,916 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:37:04,414 [11] INFO   [(null)] - Eswimelite. Empty SubCategory .. Q Swimwear Online Shop
+      The Majestic Classic Brief 
+2016-08-12 02:37:04,446 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:37:04,931 [3] INFO   [(null)] - Eswimelite. Empty SubCategory .. Q Swimwear Online Shop
+      The Majestic Classic Brief 
+2016-08-12 02:37:04,968 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:37:05,925 [11] INFO   [(null)] - Eswimelite. Empty SubCategory .. Q Swimwear Online Shop
+      Giraffe Womens Waterpolo 
+2016-08-12 02:37:05,957 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:37:06,423 [10] INFO   [(null)] - Eswimelite. Empty SubCategory .. Q Swimwear Online Shop
+      Giraffe Womens Waterpolo 
+2016-08-12 02:37:06,455 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:37:06,900 [11] INFO   [(null)] - Eswimelite. Empty SubCategory .. Q Swimwear Online Shop
+      Giraffe Womens Waterpolo 
+2016-08-12 02:37:06,933 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:37:07,390 [3] INFO   [(null)] - Eswimelite. Empty SubCategory .. Q Swimwear Online Shop
+      Purple Gariffe Jammer 
+2016-08-12 02:37:07,423 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:37:07,898 [11] INFO   [(null)] - Eswimelite. Empty SubCategory .. Q Swimwear Online Shop
+      Purple Gariffe Jammer 
+2016-08-12 02:37:07,930 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:37:08,419 [10] INFO   [(null)] - Eswimelite. Empty SubCategory .. Q Swimwear Online Shop
+      Purple Gariffe Jammer 
+2016-08-12 02:37:08,451 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:37:09,371 [3] INFO   [(null)] - Eswimelite. Empty SubCategory .. Q Swimwear Online Shop
+      Green Giraffe Jammer 
+2016-08-12 02:37:09,403 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:37:09,861 [11] INFO   [(null)] - Eswimelite. Empty SubCategory .. Q Swimwear Online Shop
+      Green Giraffe Jammer 
+2016-08-12 02:37:09,893 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:37:10,427 [10] INFO   [(null)] - Eswimelite. Empty SubCategory .. Q Swimwear Online Shop
+      Green Giraffe Jammer 
+2016-08-12 02:37:10,459 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:37:11,411 [3] INFO   [(null)] - Eswimelite. Empty SubCategory .. Q Swimwear Online Shop
+      Blue Giraffe Jammer 
+2016-08-12 02:37:11,442 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:37:11,912 [10] INFO   [(null)] - Eswimelite. Empty SubCategory .. Q Swimwear Online Shop
+      Blue Giraffe Jammer 
+2016-08-12 02:37:11,943 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:37:12,409 [11] INFO   [(null)] - Eswimelite. Empty SubCategory .. Q Swimwear Online Shop
+      Blue Giraffe Jammer 
+2016-08-12 02:37:12,440 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:37:12,889 [10] INFO   [(null)] - Eswimelite. Empty SubCategory .. Q Swimwear Online Shop
+      Strawberry Classic Brief 
+2016-08-12 02:37:12,920 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:37:13,380 [3] INFO   [(null)] - Eswimelite. Empty SubCategory .. Q Swimwear Online Shop
+      Strawberry Classic Brief 
+2016-08-12 02:37:13,411 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:37:13,864 [10] INFO   [(null)] - Eswimelite. Empty SubCategory .. Q Swimwear Online Shop
+      Strawberry Classic Brief 
+2016-08-12 02:37:13,897 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:37:14,357 [11] INFO   [(null)] - Eswimelite. Empty SubCategory .. Q Swimwear Online Shop
+      Strawberry Waterpolo Brief 
+2016-08-12 02:37:14,390 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:37:14,841 [3] INFO   [(null)] - Eswimelite. Empty SubCategory .. Q Swimwear Online Shop
+      Strawberry Waterpolo Brief 
+2016-08-12 02:37:14,879 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:37:15,336 [11] INFO   [(null)] - Eswimelite. Empty SubCategory .. Q Swimwear Online Shop
+      Strawberry Waterpolo Brief 
+2016-08-12 02:37:15,369 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:37:15,826 [3] INFO   [(null)] - Eswimelite. Empty SubCategory .. Q Swimwear Online Shop
+      Blue Giraffe Skinny Strap 
+2016-08-12 02:37:15,873 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 

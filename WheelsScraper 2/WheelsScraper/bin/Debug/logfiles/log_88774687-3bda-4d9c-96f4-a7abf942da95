@@ -1,0 +1,77 @@
+2016-08-16 02:48:19,012 [6] INFO   [(null)] - Checking for updates
+2016-08-16 02:48:20,936 [6] INFO   [(null)] - Update complete. Release = 67
+2016-08-16 02:48:31,972 [1] INFO   [(null)] - . Starting scheduler in 10 seconds 
+2016-08-16 02:48:32,613 [1] INFO   [(null)] - Checking forced version for Eswimelite
+2016-08-16 02:48:34,520 [1] INFO   [(null)] - . Data feed Eswimelite loaded 
+2016-08-16 02:48:34,989 [1] ERROR  [(null)] - System.InvalidOperationException: В документе XML (676, 29) присутствует ошибка. ---> System.FormatException: Строка "False" не является допустимым значением Boolean.
+   в System.Xml.XmlConvert.ToBoolean(String s)
+   в Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderScraperSettings.Read27_ScraperSettings(Boolean isNullable, Boolean checkType)
+   в Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderScraperSettings.Read28_ScraperSettings()
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   в System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader)
+   в WheelsScraper.ScraperSettings.ReadConfig(String configFile, Type[] additionalTypes) в c:\Projects\EDF\WheelsScraper 2\Scraper.Shared\ScraperSettings.cs:строка 240
+   в WheelsScraper.Form1.DoLoadProcessorConfig(String edfFileName, String libFileName, String edfUrl) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 609
+   в WheelsScraper.Form1.LoadLocalDatafeeds() в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 2126
+2016-08-16 02:48:34,999 [1] ERROR  [(null)] - . В документе XML (676, 29) присутствует ошибка. 
+2016-08-16 02:48:35,343 [1] INFO   [(null)] - Checking forced version for UniversalMapper
+2016-08-16 02:48:35,705 [1] INFO   [(null)] - You are using latest version of UniversalMapper
+2016-08-16 02:48:36,407 [1] INFO   [(null)] - . Data feed UniversalMapper loaded 
+2016-08-16 02:48:36,795 [1] INFO   [(null)] - Checking forced version for Zeiglers
+2016-08-16 02:48:38,063 [1] INFO   [(null)] - . Data feed Zeiglers loaded 
+2016-08-16 02:48:52,963 [1] INFO   [(null)] - . Starting Zeiglers 
+2016-08-16 02:48:52,967 [1] INFO   [(null)] - Checking forced version for Zeiglers
+2016-08-16 02:48:56,776 [8] INFO   [(null)] - Zeiglers. Starting new loop 
+2016-08-16 02:48:56,833 [8] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-16 02:48:56,891 [11] INFO   [(null)] - Zeiglers. Get product info: 
+2016-08-16 02:50:14,770 [8] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-16 02:50:14,806 [6] INFO   [(null)] - Zeiglers. Complete 
+2016-08-16 02:50:15,086 [6] ERROR  [(null)] - System.IO.DirectoryNotFoundException: Не удалось найти часть пути "C:\Projects\edf\trunk\Zeiglers.csv.zip".
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   в System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   в WheelsScraper.Form1.CopyFiles(ISimpleScraper scraper, Dictionary`2 dicFiles, String fileName, Boolean overwriteFile, String path, Boolean ftpSave, Boolean localSave, Boolean zip, Boolean uploadToSCE) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 1376
+2016-08-16 02:50:15,088 [6] ERROR  [(null)] - . Не удалось найти часть пути "C:\Projects\edf\trunk\Zeiglers.csv.zip". 
+2016-08-16 02:50:15,150 [6] ERROR  [(null)] - System.IO.DirectoryNotFoundException: Не удалось найти часть пути "C:\Projects\edf\trunk\Zeiglers.csv.zip".
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   в System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   в WheelsScraper.Form1.CopyFiles(ISimpleScraper scraper, Dictionary`2 dicFiles, String fileName, Boolean overwriteFile, String path, Boolean ftpSave, Boolean localSave, Boolean zip, Boolean uploadToSCE) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 1376
+2016-08-16 02:50:15,150 [6] ERROR  [(null)] - . Не удалось найти часть пути "C:\Projects\edf\trunk\Zeiglers.csv.zip". 
+2016-08-16 02:50:16,068 [13] ERROR  [(null)] - System.IO.DirectoryNotFoundException: Не удалось найти часть пути "C:\Projects\edf\trunk\6477dc07-c5b2-4f55-8a89-d0c8aa00e3de.csv".
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   в System.IO.FileStream..ctor(String path, FileMode mode)
+   в WheelsScraper.ScrapResultCsvExporter.GetOutStream(String path, Boolean zip) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\ScrapResultCsvExporter.cs:строка 20
+   в WheelsScraper.ScrapResultCsvExporter.Export(List`1 wares, List`1 fields, String path, Boolean zip, List`1& badWares, Boolean outputToError, Boolean onlyBad, ExportProfile profile) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\ScrapResultCsvExporter.cs:строка 136
+   в WheelsScraper.EDFManager.GenerateDataReportFile(Int32 count) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\EDFManager.cs:строка 391
+2016-08-16 02:50:16,070 [13] ERROR  [(null)] - . Failed to save file. Не удалось найти часть пути "C:\Projects\edf\trunk\6477dc07-c5b2-4f55-8a89-d0c8aa00e3de.csv". 
+2016-08-16 02:50:24,975 [1] INFO   [(null)] - . Starting Zeiglers 
+2016-08-16 02:50:24,998 [1] INFO   [(null)] - Checking forced version for Zeiglers
+2016-08-16 02:50:27,603 [10] INFO   [(null)] - Zeiglers. Starting new loop 
+2016-08-16 02:50:27,624 [10] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-16 02:50:27,656 [11] INFO   [(null)] - Zeiglers. Get product info: 
+2016-08-16 03:03:15,681 [10] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-16 03:03:15,731 [13] INFO   [(null)] - Zeiglers. Complete 
+2016-08-16 03:03:15,819 [13] ERROR  [(null)] - System.IO.DirectoryNotFoundException: Не удалось найти часть пути "C:\Projects\edf\trunk\Zeiglers.csv.zip".
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   в System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   в WheelsScraper.Form1.CopyFiles(ISimpleScraper scraper, Dictionary`2 dicFiles, String fileName, Boolean overwriteFile, String path, Boolean ftpSave, Boolean localSave, Boolean zip, Boolean uploadToSCE) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 1376
+2016-08-16 03:03:15,819 [13] ERROR  [(null)] - . Не удалось найти часть пути "C:\Projects\edf\trunk\Zeiglers.csv.zip". 
+2016-08-16 03:03:15,895 [13] ERROR  [(null)] - System.IO.DirectoryNotFoundException: Не удалось найти часть пути "C:\Projects\edf\trunk\Zeiglers.csv.zip".
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   в System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   в WheelsScraper.Form1.CopyFiles(ISimpleScraper scraper, Dictionary`2 dicFiles, String fileName, Boolean overwriteFile, String path, Boolean ftpSave, Boolean localSave, Boolean zip, Boolean uploadToSCE) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 1376
+2016-08-16 03:03:15,895 [13] ERROR  [(null)] - . Не удалось найти часть пути "C:\Projects\edf\trunk\Zeiglers.csv.zip". 
+2016-08-16 03:03:16,793 [14] ERROR  [(null)] - System.IO.DirectoryNotFoundException: Не удалось найти часть пути "C:\Projects\edf\trunk\62278f08-6abc-499f-b20b-ae897fb20493.csv".
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   в System.IO.FileStream..ctor(String path, FileMode mode)
+   в WheelsScraper.ScrapResultCsvExporter.GetOutStream(String path, Boolean zip) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\ScrapResultCsvExporter.cs:строка 20
+   в WheelsScraper.ScrapResultCsvExporter.Export(List`1 wares, List`1 fields, String path, Boolean zip, List`1& badWares, Boolean outputToError, Boolean onlyBad, ExportProfile profile) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\ScrapResultCsvExporter.cs:строка 136
+   в WheelsScraper.EDFManager.GenerateDataReportFile(Int32 count) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\EDFManager.cs:строка 391
+2016-08-16 03:03:16,793 [14] ERROR  [(null)] - . Failed to save file. Не удалось найти часть пути "C:\Projects\edf\trunk\62278f08-6abc-499f-b20b-ae897fb20493.csv". 

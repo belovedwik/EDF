@@ -1,0 +1,83 @@
+2016-08-15 21:48:21,603 [6] INFO   [(null)] - Checking for updates
+2016-08-15 21:48:23,555 [6] INFO   [(null)] - Update complete. Release = 67
+2016-08-15 21:48:34,458 [1] INFO   [(null)] - . Starting scheduler in 10 seconds 
+2016-08-15 21:48:35,099 [1] INFO   [(null)] - Checking forced version for Eswimelite
+2016-08-15 21:48:37,002 [1] INFO   [(null)] - . Data feed Eswimelite loaded 
+2016-08-15 21:48:37,462 [1] ERROR  [(null)] - System.InvalidOperationException: В документе XML (676, 29) присутствует ошибка. ---> System.FormatException: Строка "False" не является допустимым значением Boolean.
+   в System.Xml.XmlConvert.ToBoolean(String s)
+   в Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderScraperSettings.Read27_ScraperSettings(Boolean isNullable, Boolean checkType)
+   в Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderScraperSettings.Read28_ScraperSettings()
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   в System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader)
+   в WheelsScraper.ScraperSettings.ReadConfig(String configFile, Type[] additionalTypes) в c:\Projects\EDF\WheelsScraper 2\Scraper.Shared\ScraperSettings.cs:строка 240
+   в WheelsScraper.Form1.DoLoadProcessorConfig(String edfFileName, String libFileName, String edfUrl) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 609
+   в WheelsScraper.Form1.LoadLocalDatafeeds() в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 2126
+2016-08-15 21:48:37,471 [1] ERROR  [(null)] - . В документе XML (676, 29) присутствует ошибка. 
+2016-08-15 21:48:37,822 [1] INFO   [(null)] - Checking forced version for UniversalMapper
+2016-08-15 21:48:38,143 [1] INFO   [(null)] - You are using latest version of UniversalMapper
+2016-08-15 21:48:38,829 [1] INFO   [(null)] - . Data feed UniversalMapper loaded 
+2016-08-15 21:48:39,176 [1] INFO   [(null)] - Checking forced version for Zeiglers
+2016-08-15 21:48:40,511 [1] INFO   [(null)] - . Data feed Zeiglers loaded 
+2016-08-15 21:48:45,443 [1] INFO   [(null)] - . Starting Zeiglers 
+2016-08-15 21:48:45,448 [1] INFO   [(null)] - Checking forced version for Zeiglers
+2016-08-15 21:48:48,825 [4] INFO   [(null)] - Zeiglers. Starting new loop 
+2016-08-15 21:48:48,885 [4] INFO   [(null)] - Zeiglers. Starting 2 threads 
+2016-08-15 21:48:48,950 [10] INFO   [(null)] - Zeiglers. Get product info: 
+2016-08-15 21:49:07,077 [10] ERROR  [(null)] - System.Net.WebException: Удаленный сервер возвратил ошибку: (404) Не найден.
+   в System.Net.HttpWebRequest.GetResponse()
+   в WheelsScraper.Zeiglers.SendAdditionalRequest(String attribute, ExtWareInfo& wi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 376
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 312
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-15 21:49:07,089 [10] ERROR  [(null)] - Zeiglers. Удаленный сервер возвратил ошибку: (404) Не найден. 
+2016-08-15 21:49:07,105 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-15 21:49:07,126 [6] INFO   [(null)] - Zeiglers. Get product info: 
+2016-08-15 21:49:16,922 [6] ERROR  [(null)] - System.Net.WebException: Удаленный сервер возвратил ошибку: (404) Не найден.
+   в System.Net.HttpWebRequest.GetResponse()
+   в WheelsScraper.Zeiglers.SendAdditionalRequest(String attribute, ExtWareInfo& wi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 376
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 312
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-15 21:49:16,923 [6] ERROR  [(null)] - Zeiglers. Удаленный сервер возвратил ошибку: (404) Не найден. 
+2016-08-15 21:49:16,939 [4] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-15 21:49:16,952 [9] INFO   [(null)] - Zeiglers. Get product info: 
+2016-08-15 21:49:18,335 [9] ERROR  [(null)] - System.Net.WebException: Удаленный сервер возвратил ошибку: (404) Не найден.
+   в System.Net.HttpWebRequest.GetResponse()
+   в WheelsScraper.Zeiglers.SendAdditionalRequest(String attribute, ExtWareInfo& wi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 376
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 312
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-15 21:49:18,335 [9] ERROR  [(null)] - Zeiglers. Удаленный сервер возвратил ошибку: (404) Не найден. 
+2016-08-15 21:49:18,353 [5] INFO   [(null)] - Zeiglers. Complete 
+2016-08-15 21:49:35,765 [1] INFO   [(null)] - . Starting Zeiglers 
+2016-08-15 21:49:35,800 [1] INFO   [(null)] - Checking forced version for Zeiglers
+2016-08-15 21:49:38,518 [13] INFO   [(null)] - Zeiglers. Starting new loop 
+2016-08-15 21:49:38,547 [13] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-15 21:49:38,643 [11] INFO   [(null)] - Zeiglers. Get product info: 
+2016-08-15 21:49:40,326 [11] ERROR  [(null)] - System.Net.WebException: Удаленный сервер возвратил ошибку: (404) Не найден.
+   в System.Net.HttpWebRequest.GetResponse()
+   в WheelsScraper.Zeiglers.SendAdditionalRequest(String attribute, ExtWareInfo& wi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 376
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 312
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-15 21:49:40,327 [11] ERROR  [(null)] - Zeiglers. Удаленный сервер возвратил ошибку: (404) Не найден. 
+2016-08-15 21:49:40,365 [13] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-15 21:49:40,423 [6] INFO   [(null)] - Zeiglers. Get product info: 
+2016-08-15 21:49:41,858 [6] ERROR  [(null)] - System.Net.WebException: Удаленный сервер возвратил ошибку: (404) Не найден.
+   в System.Net.HttpWebRequest.GetResponse()
+   в WheelsScraper.Zeiglers.SendAdditionalRequest(String attribute, ExtWareInfo& wi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 376
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 312
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-15 21:49:41,859 [6] ERROR  [(null)] - Zeiglers. Удаленный сервер возвратил ошибку: (404) Не найден. 
+2016-08-15 21:49:41,915 [13] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-15 21:49:41,972 [5] INFO   [(null)] - Zeiglers. Get product info: 
+2016-08-15 21:49:43,293 [5] ERROR  [(null)] - System.Net.WebException: Удаленный сервер возвратил ошибку: (404) Не найден.
+   в System.Net.HttpWebRequest.GetResponse()
+   в WheelsScraper.Zeiglers.SendAdditionalRequest(String attribute, ExtWareInfo& wi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 376
+   в WheelsScraper.Zeiglers.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Zeiglers\Zeiglers.cs:строка 312
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-15 21:49:43,294 [5] ERROR  [(null)] - Zeiglers. Удаленный сервер возвратил ошибку: (404) Не найден. 
+2016-08-15 21:49:43,327 [13] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-15 21:49:43,396 [9] INFO   [(null)] - Zeiglers. Complete 
+2016-08-15 21:50:00,768 [1] INFO   [(null)] - . Starting Zeiglers 
+2016-08-15 21:50:00,826 [1] INFO   [(null)] - Checking forced version for Zeiglers
+2016-08-15 21:50:03,243 [12] INFO   [(null)] - Zeiglers. Starting new loop 
+2016-08-15 21:50:03,276 [12] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-15 21:50:03,317 [11] INFO   [(null)] - Zeiglers. Get product info: 

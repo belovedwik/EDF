@@ -1,0 +1,39 @@
+2016-08-15 21:37:21,304 [6] INFO   [(null)] - Checking for updates
+2016-08-15 21:37:23,142 [6] INFO   [(null)] - Update complete. Release = 67
+2016-08-15 21:37:34,370 [1] INFO   [(null)] - . Starting scheduler in 10 seconds 
+2016-08-15 21:37:35,034 [1] INFO   [(null)] - Checking forced version for Eswimelite
+2016-08-15 21:37:36,991 [1] INFO   [(null)] - . Data feed Eswimelite loaded 
+2016-08-15 21:37:37,477 [1] ERROR  [(null)] - System.InvalidOperationException: В документе XML (676, 29) присутствует ошибка. ---> System.FormatException: Строка "False" не является допустимым значением Boolean.
+   в System.Xml.XmlConvert.ToBoolean(String s)
+   в Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderScraperSettings.Read27_ScraperSettings(Boolean isNullable, Boolean checkType)
+   в Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderScraperSettings.Read28_ScraperSettings()
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   в System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader)
+   в WheelsScraper.ScraperSettings.ReadConfig(String configFile, Type[] additionalTypes) в c:\Projects\EDF\WheelsScraper 2\Scraper.Shared\ScraperSettings.cs:строка 240
+   в WheelsScraper.Form1.DoLoadProcessorConfig(String edfFileName, String libFileName, String edfUrl) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 609
+   в WheelsScraper.Form1.LoadLocalDatafeeds() в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 2126
+2016-08-15 21:37:37,487 [1] ERROR  [(null)] - . В документе XML (676, 29) присутствует ошибка. 
+2016-08-15 21:37:37,839 [1] INFO   [(null)] - Checking forced version for UniversalMapper
+2016-08-15 21:37:38,170 [1] INFO   [(null)] - You are using latest version of UniversalMapper
+2016-08-15 21:37:38,860 [1] INFO   [(null)] - . Data feed UniversalMapper loaded 
+2016-08-15 21:37:39,222 [1] INFO   [(null)] - Checking forced version for Zeiglers
+2016-08-15 21:37:40,471 [1] INFO   [(null)] - . Data feed Zeiglers loaded 
+2016-08-15 21:37:55,882 [1] INFO   [(null)] - . Starting Zeiglers 
+2016-08-15 21:37:55,885 [1] INFO   [(null)] - Checking forced version for Zeiglers
+2016-08-15 21:37:59,343 [8] INFO   [(null)] - Zeiglers. Starting new loop 
+2016-08-15 21:37:59,369 [8] INFO   [(null)] - Zeiglers. Starting 2 threads 
+2016-08-15 21:37:59,472 [10] INFO   [(null)] - Zeiglers. Get product info: 
+2016-08-15 21:38:04,475 [5] INFO   [(null)] - Zeiglers. Complete 
+2016-08-15 21:38:36,057 [1] INFO   [(null)] - . Starting Zeiglers 
+2016-08-15 21:38:36,068 [1] INFO   [(null)] - Checking forced version for Zeiglers
+2016-08-15 21:38:38,697 [6] INFO   [(null)] - Zeiglers. Starting new loop 
+2016-08-15 21:38:38,719 [6] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-15 21:38:38,770 [10] INFO   [(null)] - Zeiglers. Get product info: 
+2016-08-15 21:38:39,647 [6] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-15 21:38:39,663 [11] INFO   [(null)] - Zeiglers. Complete 
+2016-08-15 21:38:52,828 [1] INFO   [(null)] - . Starting Zeiglers 
+2016-08-15 21:38:52,842 [1] INFO   [(null)] - Checking forced version for Zeiglers
+2016-08-15 21:38:55,126 [13] INFO   [(null)] - Zeiglers. Starting new loop 
+2016-08-15 21:38:55,151 [13] INFO   [(null)] - Zeiglers. Starting 1 threads 
+2016-08-15 21:38:55,214 [10] INFO   [(null)] - Zeiglers. Get product info: 

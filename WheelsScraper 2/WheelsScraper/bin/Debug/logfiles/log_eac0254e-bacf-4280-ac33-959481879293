@@ -1,0 +1,1155 @@
+2016-08-12 02:38:50,640 [5] INFO   [(null)] - Checking for updates
+2016-08-12 02:38:52,506 [5] INFO   [(null)] - Update complete. Release = 67
+2016-08-12 02:39:03,850 [1] INFO   [(null)] - . Starting scheduler in 10 seconds 
+2016-08-12 02:39:04,499 [1] INFO   [(null)] - Checking forced version for Eswimelite
+2016-08-12 02:39:06,610 [1] INFO   [(null)] - . Data feed Eswimelite loaded 
+2016-08-12 02:39:07,090 [1] ERROR  [(null)] - System.InvalidOperationException: В документе XML (676, 29) присутствует ошибка. ---> System.FormatException: Строка "False" не является допустимым значением Boolean.
+   в System.Xml.XmlConvert.ToBoolean(String s)
+   в Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderScraperSettings.Read27_ScraperSettings(Boolean isNullable, Boolean checkType)
+   в Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderScraperSettings.Read28_ScraperSettings()
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   в System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader)
+   в WheelsScraper.ScraperSettings.ReadConfig(String configFile, Type[] additionalTypes) в c:\Projects\EDF\WheelsScraper 2\Scraper.Shared\ScraperSettings.cs:строка 240
+   в WheelsScraper.Form1.DoLoadProcessorConfig(String edfFileName, String libFileName, String edfUrl) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 609
+   в WheelsScraper.Form1.LoadLocalDatafeeds() в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 2126
+2016-08-12 02:39:07,100 [1] ERROR  [(null)] - . В документе XML (676, 29) присутствует ошибка. 
+2016-08-12 02:39:07,468 [1] INFO   [(null)] - Checking forced version for UniversalMapper
+2016-08-12 02:39:07,787 [1] INFO   [(null)] - You are using latest version of UniversalMapper
+2016-08-12 02:39:08,488 [1] INFO   [(null)] - . Data feed UniversalMapper loaded 
+2016-08-12 02:39:08,882 [1] INFO   [(null)] - Checking forced version for Zeiglers
+2016-08-12 02:39:09,959 [1] INFO   [(null)] - . Data feed Zeiglers loaded 
+2016-08-12 02:39:13,906 [1] INFO   [(null)] - . Starting Eswimelite 
+2016-08-12 02:39:13,909 [1] INFO   [(null)] - Checking forced version for Eswimelite
+2016-08-12 02:39:17,544 [4] INFO   [(null)] - Eswimelite. Starting new loop 
+2016-08-12 02:39:17,600 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:17,632 [10] INFO   [(null)] - Eswimelite. Get Categories List ..  
+2016-08-12 02:39:18,266 [10] INFO   [(null)] - Eswimelite. CategoriesList list processed .. ok 
+2016-08-12 02:39:18,575 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:18,979 [5] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-12 02:39:19,019 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:19,436 [5] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-12 02:39:19,448 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:19,889 [6] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-12 02:39:19,903 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:20,360 [10] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-12 02:39:20,382 [10] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-12 02:39:20,438 [4] INFO   [(null)] - Eswimelite. Starting 5 threads 
+2016-08-12 02:39:20,538 [6] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:20,538 [10] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:20,539 [5] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:20,541 [8] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:20,779 [5] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:20,779 [10] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:20,789 [6] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:20,851 [8] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:20,855 [6] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:20,855 [8] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:20,855 [5] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:20,855 [10] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:20,915 [6] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:20,915 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:21,073 [6] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:21,073 [6] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:21,104 [8] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:21,105 [4] INFO   [(null)] - Eswimelite. Starting 3 threads 
+2016-08-12 02:39:21,208 [8] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:21,208 [8] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:21,244 [5] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:21,244 [6] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:21,244 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:21,251 [10] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:21,353 [5] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:21,354 [5] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:21,409 [6] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:21,409 [6] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:21,443 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:21,495 [10] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:21,497 [10] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:21,597 [5] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:21,597 [6] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:21,598 [4] INFO   [(null)] - Eswimelite. Starting 2 threads 
+2016-08-12 02:39:21,697 [8] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:21,698 [10] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:21,698 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:21,775 [5] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:21,775 [5] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:21,854 [6] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:21,855 [6] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:21,933 [8] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:21,934 [8] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:21,995 [10] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:21,996 [10] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:22,067 [5] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:22,067 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:22,239 [5] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:22,239 [5] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:22,279 [10] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:22,279 [4] INFO   [(null)] - Eswimelite. Starting 3 threads 
+2016-08-12 02:39:22,400 [10] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:22,402 [10] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:22,442 [8] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:22,442 [6] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:22,442 [5] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:22,442 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:22,546 [8] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:22,547 [8] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:22,628 [6] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:22,629 [6] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:22,715 [5] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:22,716 [5] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:22,770 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:22,959 [10] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:22,960 [6] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:22,960 [4] INFO   [(null)] - Eswimelite. Starting 3 threads 
+2016-08-12 02:39:23,038 [10] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:23,039 [10] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:23,113 [6] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:23,114 [6] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:23,162 [5] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:23,162 [8] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:23,229 [10] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:23,229 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:23,363 [5] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:23,363 [5] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:23,434 [8] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:23,434 [8] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:23,489 [10] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:23,490 [10] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:23,518 [6] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:23,518 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:23,754 [6] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:23,757 [6] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:23,786 [10] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:23,786 [4] INFO   [(null)] - Eswimelite. Starting 3 threads 
+2016-08-12 02:39:23,903 [10] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:23,904 [10] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:23,936 [5] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:23,936 [8] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:23,936 [6] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:23,937 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:24,048 [5] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:24,049 [5] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:24,105 [8] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:24,106 [8] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:24,161 [6] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:24,162 [6] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:24,189 [10] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:24,189 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:24,433 [10] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:24,434 [10] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:24,462 [5] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:24,463 [4] INFO   [(null)] - Eswimelite. Starting 3 threads 
+2016-08-12 02:39:24,574 [5] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:24,574 [5] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:24,602 [6] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:24,603 [10] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:24,603 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:24,730 [6] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:24,731 [6] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:24,778 [10] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:24,779 [10] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:24,806 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:24,806 [5] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:24,949 [6] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:24,949 [10] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:24,949 [4] INFO   [(null)] - Eswimelite. Starting 2 threads 
+2016-08-12 02:39:25,001 [5] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:25,002 [5] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:25,050 [6] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:25,050 [6] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:25,119 [10] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:25,119 [10] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:25,201 [5] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:25,201 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:25,385 [5] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:25,385 [5] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:25,412 [6] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:25,412 [10] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:25,412 [4] INFO   [(null)] - Eswimelite. Starting 2 threads 
+2016-08-12 02:39:25,536 [6] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:25,536 [6] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:25,607 [10] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:25,608 [10] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:25,635 [5] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:25,635 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:25,799 [5] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:25,799 [5] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:25,827 [6] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:25,828 [4] INFO   [(null)] - Eswimelite. Starting 2 threads 
+2016-08-12 02:39:25,931 [6] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:25,933 [6] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:25,959 [10] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:25,959 [5] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:25,960 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:26,087 [10] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:26,088 [10] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:26,136 [5] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:26,136 [5] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:26,165 [6] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:26,165 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:26,329 [6] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:26,330 [6] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:26,356 [5] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:26,356 [10] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:26,357 [4] INFO   [(null)] - Eswimelite. Starting 2 threads 
+2016-08-12 02:39:26,470 [5] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:26,471 [5] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:26,519 [10] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:26,520 [10] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:26,547 [6] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:26,547 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:26,734 [6] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:26,735 [6] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:26,764 [5] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:26,764 [10] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:26,764 [4] INFO   [(null)] - Eswimelite. Starting 2 threads 
+2016-08-12 02:39:26,874 [5] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:26,875 [5] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:26,926 [10] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:26,927 [10] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:26,954 [6] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:26,954 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:27,137 [6] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:27,138 [6] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:27,166 [5] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:27,166 [10] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:27,166 [4] INFO   [(null)] - Eswimelite. Starting 2 threads 
+2016-08-12 02:39:27,273 [5] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:27,274 [5] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:27,324 [10] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:27,325 [10] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:27,351 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:27,489 [5] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:27,489 [6] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:27,489 [10] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:27,489 [4] INFO   [(null)] - Eswimelite. Starting 2 threads 
+2016-08-12 02:39:27,540 [5] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:27,541 [5] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:27,595 [6] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:27,596 [6] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:27,666 [10] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:27,667 [10] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:27,750 [5] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:27,750 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:27,931 [5] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:27,932 [5] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:27,959 [8] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:27,959 [6] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:27,959 [4] INFO   [(null)] - Eswimelite. Starting 2 threads 
+2016-08-12 02:39:28,069 [8] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:28,069 [8] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:28,122 [6] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:28,123 [6] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:28,152 [10] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:28,153 [5] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:28,153 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:28,339 [10] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:28,339 [10] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:28,410 [5] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:28,411 [5] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:28,441 [6] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:28,441 [4] INFO   [(null)] - Eswimelite. Starting 2 threads 
+2016-08-12 02:39:28,624 [6] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:28,625 [6] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:28,654 [10] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:28,659 [5] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:28,659 [4] INFO   [(null)] - Eswimelite. Starting 2 threads 
+2016-08-12 02:39:28,783 [10] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:28,783 [10] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:28,809 [8] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:28,810 [6] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:28,810 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:28,861 [5] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:28,862 [5] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:28,977 [8] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:28,978 [8] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:29,040 [6] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:29,041 [6] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:29,067 [10] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:29,067 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:29,327 [10] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:29,328 [10] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:29,355 [5] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:29,356 [4] INFO   [(null)] - Eswimelite. Starting 3 threads 
+2016-08-12 02:39:29,478 [5] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:29,479 [5] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:29,505 [6] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:29,506 [10] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:29,505 [8] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:29,506 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:29,618 [6] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:29,619 [6] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:29,677 [10] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:29,678 [10] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:29,728 [8] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:29,729 [8] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:29,760 [5] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:29,760 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:29,999 [5] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:29,999 [5] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:30,028 [8] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:30,028 [4] INFO   [(null)] - Eswimelite. Starting 3 threads 
+2016-08-12 02:39:30,158 [8] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:30,159 [8] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:30,188 [6] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:30,188 [10] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:30,196 [5] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:30,196 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:30,276 [10] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:30,277 [10] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:30,325 [6] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:30,326 [6] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:30,453 [5] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:30,454 [5] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:30,479 [8] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:30,480 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:30,721 [8] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:30,722 [8] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:30,751 [10] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:30,751 [4] INFO   [(null)] - Eswimelite. Starting 3 threads 
+2016-08-12 02:39:30,878 [10] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:30,879 [10] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:30,905 [6] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:30,905 [5] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:30,905 [8] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:30,906 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:31,037 [6] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:31,038 [6] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:31,112 [5] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:31,113 [5] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:31,163 [8] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:31,164 [8] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:31,191 [10] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:31,191 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:31,409 [10] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:31,410 [10] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:31,437 [5] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:31,437 [4] INFO   [(null)] - Eswimelite. Starting 3 threads 
+2016-08-12 02:39:31,539 [5] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:31,540 [5] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:31,567 [6] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:31,567 [10] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:31,567 [8] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:31,568 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:31,709 [6] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:31,710 [6] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:31,780 [10] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:31,780 [10] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:31,848 [8] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:31,848 [8] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:31,875 [5] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:31,875 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:32,089 [5] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:32,090 [5] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:32,116 [6] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:32,117 [4] INFO   [(null)] - Eswimelite. Starting 3 threads 
+2016-08-12 02:39:32,249 [6] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:32,250 [6] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:32,278 [10] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:32,278 [5] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:32,297 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:32,427 [10] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:32,428 [10] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:32,476 [5] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:32,477 [5] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:32,504 [6] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:32,504 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:32,663 [6] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:32,664 [6] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:32,691 [10] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:32,691 [4] INFO   [(null)] - Eswimelite. Starting 2 threads 
+2016-08-12 02:39:32,812 [10] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:32,813 [10] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:32,840 [6] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:32,840 [5] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:32,841 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:32,950 [6] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:32,951 [6] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:33,017 [5] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:33,017 [5] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:33,045 [10] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:33,045 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:33,225 [10] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:33,225 [10] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:33,253 [6] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:33,253 [5] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:33,254 [4] INFO   [(null)] - Eswimelite. Starting 2 threads 
+2016-08-12 02:39:33,376 [6] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:33,377 [6] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:33,425 [5] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:33,426 [5] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:33,455 [10] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:33,456 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:33,619 [10] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:33,620 [10] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:33,648 [5] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:33,648 [6] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:33,648 [4] INFO   [(null)] - Eswimelite. Starting 2 threads 
+2016-08-12 02:39:33,757 [5] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:33,757 [5] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:33,806 [6] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:33,807 [6] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:33,835 [10] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:33,835 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:34,008 [10] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:34,009 [10] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:34,038 [5] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:34,040 [6] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:34,040 [4] INFO   [(null)] - Eswimelite. Starting 2 threads 
+2016-08-12 02:39:34,149 [5] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:34,149 [5] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:34,222 [6] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:34,223 [6] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:34,252 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:34,390 [10] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:34,390 [5] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:34,391 [6] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:34,391 [4] INFO   [(null)] - Eswimelite. Starting 2 threads 
+2016-08-12 02:39:34,465 [5] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:34,466 [5] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:34,517 [10] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:34,518 [10] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:34,589 [6] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:39:34,590 [6] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 
+2016-08-12 02:39:34,712 [4] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-12 02:39:39,615 [5] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:39:39,762 [4] INFO   [(null)] - Eswimelite. Starting 2 threads 
+2016-08-12 02:39:42,968 [10] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-12 02:40:01,303 [5] ERROR  [(null)] - System.UriFormatException: Недопустимый URI: Невозможно определить формат URI.
+   в System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   в System.Uri..ctor(String uriString)
+   в System.Net.WebRequest.Create(String requestUriString)
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie, Boolean ignoreErrors) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 243
+   в WheelsScraper.BasePageRetriever.ReadFromServer(String url, Boolean useCookie) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BasePageRetriever.cs:строка 233
+   в WheelsScraper.Eswimelite.ProcessProductPage(ProcessQueueItem pqi) в d:\С#\test\EDF\EDF Modules\Eswimelite\Eswimelite.cs:строка 177
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-08-12 02:40:01,304 [5] ERROR  [(null)] - Eswimelite. Недопустимый URI: Невозможно определить формат URI. 

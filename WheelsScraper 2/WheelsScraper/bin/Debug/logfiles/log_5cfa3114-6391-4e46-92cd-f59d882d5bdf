@@ -1,0 +1,87 @@
+2016-08-11 23:05:02,953 [6] INFO   [(null)] - Checking for updates
+2016-08-11 23:05:04,821 [6] INFO   [(null)] - Update complete. Release = 67
+2016-08-11 23:05:16,092 [1] INFO   [(null)] - . Starting scheduler in 10 seconds 
+2016-08-11 23:05:16,740 [1] INFO   [(null)] - Checking forced version for Eswimelite
+2016-08-11 23:05:28,629 [1] INFO   [(null)] - . Data feed Eswimelite loaded 
+2016-08-11 23:05:29,113 [1] ERROR  [(null)] - System.InvalidOperationException: В документе XML (676, 29) присутствует ошибка. ---> System.FormatException: Строка "False" не является допустимым значением Boolean.
+   в System.Xml.XmlConvert.ToBoolean(String s)
+   в Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderScraperSettings.Read27_ScraperSettings(Boolean isNullable, Boolean checkType)
+   в Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderScraperSettings.Read28_ScraperSettings()
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   в System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader)
+   в WheelsScraper.ScraperSettings.ReadConfig(String configFile, Type[] additionalTypes) в c:\Projects\EDF\WheelsScraper 2\Scraper.Shared\ScraperSettings.cs:строка 240
+   в WheelsScraper.Form1.DoLoadProcessorConfig(String edfFileName, String libFileName, String edfUrl) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 609
+   в WheelsScraper.Form1.LoadLocalDatafeeds() в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 2126
+2016-08-11 23:05:29,123 [1] ERROR  [(null)] - . В документе XML (676, 29) присутствует ошибка. 
+2016-08-11 23:05:29,474 [1] INFO   [(null)] - Checking forced version for UniversalMapper
+2016-08-11 23:05:29,809 [1] INFO   [(null)] - You are using latest version of UniversalMapper
+2016-08-11 23:05:30,522 [1] INFO   [(null)] - . Data feed UniversalMapper loaded 
+2016-08-11 23:05:30,905 [1] INFO   [(null)] - Checking forced version for Zeiglers
+2016-08-11 23:05:31,944 [1] INFO   [(null)] - . Data feed Zeiglers loaded 
+2016-08-11 23:05:50,769 [1] INFO   [(null)] - . Starting Eswimelite 
+2016-08-11 23:05:50,772 [1] INFO   [(null)] - Checking forced version for Eswimelite
+2016-08-11 23:05:54,390 [8] INFO   [(null)] - Eswimelite. Starting new loop 
+2016-08-11 23:05:54,521 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-11 23:05:54,538 [10] INFO   [(null)] - Eswimelite. Get Categories List ..  
+2016-08-11 23:06:20,744 [10] INFO   [(null)] - Eswimelite. CategoriesList list processed .. ok 
+2016-08-11 23:06:21,057 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-11 23:06:21,094 [4] ERROR  [(null)] - Eswimelite. Unknown action. ItemType = 2 
+2016-08-11 23:06:21,319 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-11 23:06:21,333 [5] ERROR  [(null)] - Eswimelite. Unknown action. ItemType = 2 
+2016-08-11 23:06:21,382 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-11 23:06:21,435 [4] ERROR  [(null)] - Eswimelite. Unknown action. ItemType = 2 
+2016-08-11 23:06:21,490 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-11 23:06:21,551 [5] ERROR  [(null)] - Eswimelite. Unknown action. ItemType = 2 
+2016-08-11 23:06:21,617 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-11 23:06:21,686 [10] ERROR  [(null)] - Eswimelite. Unknown action. ItemType = 2 
+2016-08-11 23:06:21,787 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-11 23:06:21,830 [11] ERROR  [(null)] - Eswimelite. Unknown action. ItemType = 2 
+2016-08-11 23:06:21,865 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-11 23:06:21,904 [4] ERROR  [(null)] - Eswimelite. Unknown action. ItemType = 2 
+2016-08-11 23:06:21,971 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-11 23:06:22,032 [11] ERROR  [(null)] - Eswimelite. Unknown action. ItemType = 2 
+2016-08-11 23:06:22,096 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-11 23:06:22,158 [4] ERROR  [(null)] - Eswimelite. Unknown action. ItemType = 2 
+2016-08-11 23:06:22,221 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-11 23:06:22,283 [11] ERROR  [(null)] - Eswimelite. Unknown action. ItemType = 2 
+2016-08-11 23:06:22,350 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-11 23:06:22,415 [4] ERROR  [(null)] - Eswimelite. Unknown action. ItemType = 2 
+2016-08-11 23:06:22,478 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-11 23:06:22,547 [11] ERROR  [(null)] - Eswimelite. Unknown action. ItemType = 2 
+2016-08-11 23:06:22,612 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-11 23:06:22,682 [4] ERROR  [(null)] - Eswimelite. Unknown action. ItemType = 2 
+2016-08-11 23:06:22,750 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-11 23:06:22,796 [11] ERROR  [(null)] - Eswimelite. Unknown action. ItemType = 2 
+2016-08-11 23:06:22,835 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-11 23:06:22,887 [5] ERROR  [(null)] - Eswimelite. Unknown action. ItemType = 2 
+2016-08-11 23:06:22,929 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-11 23:06:22,999 [4] ERROR  [(null)] - Eswimelite. Unknown action. ItemType = 2 
+2016-08-11 23:06:23,069 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-11 23:06:23,143 [11] ERROR  [(null)] - Eswimelite. Unknown action. ItemType = 2 
+2016-08-11 23:06:23,214 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-11 23:06:23,287 [10] ERROR  [(null)] - Eswimelite. Unknown action. ItemType = 2 
+2016-08-11 23:06:23,358 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-11 23:06:23,433 [11] ERROR  [(null)] - Eswimelite. Unknown action. ItemType = 2 
+2016-08-11 23:06:23,490 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-11 23:06:23,525 [5] ERROR  [(null)] - Eswimelite. Unknown action. ItemType = 2 
+2016-08-11 23:06:23,580 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-11 23:06:23,608 [10] ERROR  [(null)] - Eswimelite. Unknown action. ItemType = 2 
+2016-08-11 23:06:23,669 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-11 23:06:23,697 [11] ERROR  [(null)] - Eswimelite. Unknown action. ItemType = 2 
+2016-08-11 23:06:23,755 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-11 23:06:23,783 [5] ERROR  [(null)] - Eswimelite. Unknown action. ItemType = 2 
+2016-08-11 23:06:23,839 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-11 23:06:23,869 [5] ERROR  [(null)] - Eswimelite. Unknown action. ItemType = 2 
+2016-08-11 23:06:23,953 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-11 23:06:24,010 [5] ERROR  [(null)] - Eswimelite. Unknown action. ItemType = 2 
+2016-08-11 23:06:24,093 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-11 23:06:24,152 [5] ERROR  [(null)] - Eswimelite. Unknown action. ItemType = 2 
+2016-08-11 23:06:24,211 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-11 23:06:24,242 [10] ERROR  [(null)] - Eswimelite. Unknown action. ItemType = 2 
+2016-08-11 23:06:24,297 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-11 23:06:24,324 [11] ERROR  [(null)] - Eswimelite. Unknown action. ItemType = 2 
+2016-08-11 23:06:24,380 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-11 23:06:24,407 [10] ERROR  [(null)] - Eswimelite. Unknown action. ItemType = 2 
+2016-08-11 23:06:24,464 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-11 23:06:24,524 [5] ERROR  [(null)] - Eswimelite. Unknown action. ItemType = 2 
