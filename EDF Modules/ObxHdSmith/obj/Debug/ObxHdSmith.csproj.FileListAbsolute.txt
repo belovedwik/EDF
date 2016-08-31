@@ -1,0 +1,20 @@
+c:\users\lyask\documents\visual studio 2013\Projects\WheelsScraper 2\WheelsScraper\bin\Debug\ObxHdSmith.dll
+c:\users\lyask\documents\visual studio 2013\Projects\WheelsScraper 2\WheelsScraper\bin\Debug\ObxHdSmith.pdb
+c:\users\lyask\documents\visual studio 2013\Projects\ObxHdSmith\ObxHdSmith\obj\Debug\Databox.Libs.ObxHdSmith.ucExtSettings.resources
+c:\users\lyask\documents\visual studio 2013\Projects\ObxHdSmith\ObxHdSmith\obj\Debug\ObxHdSmith.csproj.GenerateResource.Cache
+c:\users\lyask\documents\visual studio 2013\Projects\ObxHdSmith\ObxHdSmith\obj\Debug\ObxHdSmith.dll.licenses
+c:\users\lyask\documents\visual studio 2013\Projects\ObxHdSmith\ObxHdSmith\obj\Debug\ObxHdSmith.dll
+c:\users\lyask\documents\visual studio 2013\Projects\ObxHdSmith\ObxHdSmith\obj\Debug\ObxHdSmith.pdb
+D:\С#\ObxHdSmith\ObxHdSmith\obj\Debug\ObxHdSmith.csprojResolveAssemblyReference.cache
+D:\С#\ObxHdSmith\ObxHdSmith\obj\Debug\Databox.Libs.ObxHdSmith.ucExtSettings.resources
+D:\С#\ObxHdSmith\ObxHdSmith\obj\Debug\ObxHdSmith.csproj.GenerateResource.Cache
+D:\С#\ObxHdSmith\ObxHdSmith\obj\Debug\ObxHdSmith.dll
+D:\С#\ObxHdSmith\ObxHdSmith\obj\Debug\ObxHdSmith.pdb
+D:\С#\WheelsScraper 2\WheelsScraper\bin\Debug\ObxHdSmith.dll
+D:\С#\WheelsScraper 2\WheelsScraper\bin\Debug\ObxHdSmith.pdb
+D:\С#\test\EDF\WheelsScraper 2\WheelsScraper\bin\Debug\ObxHdSmith.dll
+D:\С#\test\EDF\WheelsScraper 2\WheelsScraper\bin\Debug\ObxHdSmith.pdb
+D:\С#\test\EDF\EDF Modules\ObxHdSmith\obj\Debug\Databox.Libs.ObxHdSmith.ucExtSettings.resources
+D:\С#\test\EDF\EDF Modules\ObxHdSmith\obj\Debug\ObxHdSmith.csproj.GenerateResource.Cache
+D:\С#\test\EDF\EDF Modules\ObxHdSmith\obj\Debug\ObxHdSmith.dll
+D:\С#\test\EDF\EDF Modules\ObxHdSmith\obj\Debug\ObxHdSmith.pdb

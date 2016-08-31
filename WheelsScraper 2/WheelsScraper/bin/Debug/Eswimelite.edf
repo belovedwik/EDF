@@ -2,7 +2,7 @@
 <ScraperSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SpecialSettings xsi:type="ExtSettings" />
   <Name>Eswimelite</Name>
-  <MaxThreads>5</MaxThreads>
+  <MaxThreads>1</MaxThreads>
   <MaxDelay>0</MaxDelay>
   <MaxImageDownloadThreads>0</MaxImageDownloadThreads>
   <MaxImageUploadThreads>0</MaxImageUploadThreads>
@@ -53,7 +53,7 @@
           <Header>Product Type</Header>
           <VisibleIndex>-1</VisibleIndex>
           <Export>true</Export>
-          <CustomValue>3</CustomValue>
+          <CustomValue />
           <IsImageColumn>false</IsImageColumn>
           <IsRequired>false</IsRequired>
           <NoHtmlAllowed>false</NoHtmlAllowed>

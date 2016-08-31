@@ -1,0 +1,57 @@
+2016-08-17 00:59:13,761 [4] INFO   [(null)] - Checking for updates
+2016-08-17 00:59:15,595 [4] INFO   [(null)] - Update complete. Release = 67
+2016-08-17 00:59:27,451 [1] INFO   [(null)] - . Starting scheduler in 10 seconds 
+2016-08-17 00:59:28,091 [1] INFO   [(null)] - Checking forced version for Eswimelite
+2016-08-17 00:59:30,057 [1] INFO   [(null)] - . Data feed Eswimelite loaded 
+2016-08-17 00:59:30,579 [1] ERROR  [(null)] - System.InvalidOperationException: В документе XML (676, 29) присутствует ошибка. ---> System.FormatException: Строка "False" не является допустимым значением Boolean.
+   в System.Xml.XmlConvert.ToBoolean(String s)
+   в Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderScraperSettings.Read27_ScraperSettings(Boolean isNullable, Boolean checkType)
+   в Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderScraperSettings.Read28_ScraperSettings()
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   в System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader)
+   в WheelsScraper.ScraperSettings.ReadConfig(String configFile, Type[] additionalTypes) в c:\Projects\EDF\WheelsScraper 2\Scraper.Shared\ScraperSettings.cs:строка 240
+   в WheelsScraper.Form1.DoLoadProcessorConfig(String edfFileName, String libFileName, String edfUrl) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 609
+   в WheelsScraper.Form1.LoadLocalDatafeeds() в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 2126
+2016-08-17 00:59:30,602 [1] ERROR  [(null)] - . В документе XML (676, 29) присутствует ошибка. 
+2016-08-17 00:59:30,954 [1] INFO   [(null)] - Checking forced version for UniversalMapper
+2016-08-17 00:59:31,263 [1] INFO   [(null)] - You are using latest version of UniversalMapper
+2016-08-17 00:59:31,935 [1] INFO   [(null)] - . Data feed UniversalMapper loaded 
+2016-08-17 00:59:32,312 [1] INFO   [(null)] - Checking forced version for Zeiglers
+2016-08-17 00:59:33,308 [1] INFO   [(null)] - . Data feed Zeiglers loaded 
+2016-08-17 00:59:35,789 [1] INFO   [(null)] - . Starting Eswimelite 
+2016-08-17 00:59:35,794 [1] INFO   [(null)] - Checking forced version for Eswimelite
+2016-08-17 00:59:38,549 [12] INFO   [(null)] - Eswimelite. Starting new loop 
+2016-08-17 00:59:38,606 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:59:38,636 [11] INFO   [(null)] - Eswimelite. Get Categories List ..  
+2016-08-17 00:59:39,309 [11] INFO   [(null)] - Eswimelite. CategoriesList list processed .. ok 
+2016-08-17 00:59:39,618 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:59:39,994 [11] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-17 00:59:40,043 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:59:40,469 [4] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-17 00:59:40,483 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:59:40,929 [11] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-17 00:59:40,943 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:59:41,322 [6] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-17 00:59:41,349 [6] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-17 00:59:41,408 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:59:41,457 [6] INFO   [(null)] - Eswimelite. Get product info:The Majestic Male Drag Suit 
+2016-08-17 00:59:41,973 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:59:41,999 [11] INFO   [(null)] - Eswimelite. Get product info:The Majestic Male Drag Suit 
+2016-08-17 00:59:42,500 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:59:42,528 [6] INFO   [(null)] - Eswimelite. Get product info:The Majestic Male Drag Suit 
+2016-08-17 00:59:43,039 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:59:43,068 [4] INFO   [(null)] - Eswimelite. Get product info:The Majestic Classic Brief 
+2016-08-17 00:59:43,580 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:59:43,609 [6] INFO   [(null)] - Eswimelite. Get product info:The Majestic Classic Brief 
+2016-08-17 00:59:44,128 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:59:44,408 [11] INFO   [(null)] - Eswimelite. Get product info:The Majestic Classic Brief 
+2016-08-17 00:59:44,898 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:59:44,929 [6] INFO   [(null)] - Eswimelite. Get product info:Giraffe Womens Waterpolo 
+2016-08-17 00:59:45,405 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:59:45,436 [11] INFO   [(null)] - Eswimelite. Get product info:Giraffe Womens Waterpolo 
+2016-08-17 00:59:45,907 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:59:45,939 [4] INFO   [(null)] - Eswimelite. Get product info:Giraffe Womens Waterpolo 
+2016-08-17 01:00:27,953 [1] INFO   [(null)] - Eswimelite. Cancel 
+2016-08-17 01:00:27,992 [1] INFO   [(null)] - UniversalMapper. Cancel 
+2016-08-17 01:00:28,023 [1] INFO   [(null)] - Zeiglers. Cancel 

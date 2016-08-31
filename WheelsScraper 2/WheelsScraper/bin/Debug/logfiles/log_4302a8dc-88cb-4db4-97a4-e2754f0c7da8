@@ -1,0 +1,46 @@
+2016-08-17 01:26:36,952 [5] INFO   [(null)] - Checking for updates
+2016-08-17 01:26:38,867 [5] INFO   [(null)] - Update complete. Release = 67
+2016-08-17 01:26:49,817 [1] INFO   [(null)] - . Starting scheduler in 10 seconds 
+2016-08-17 01:26:50,458 [1] INFO   [(null)] - Checking forced version for Eswimelite
+2016-08-17 01:26:52,595 [1] INFO   [(null)] - . Data feed Eswimelite loaded 
+2016-08-17 01:26:53,063 [1] ERROR  [(null)] - System.InvalidOperationException: В документе XML (676, 29) присутствует ошибка. ---> System.FormatException: Строка "False" не является допустимым значением Boolean.
+   в System.Xml.XmlConvert.ToBoolean(String s)
+   в Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderScraperSettings.Read27_ScraperSettings(Boolean isNullable, Boolean checkType)
+   в Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderScraperSettings.Read28_ScraperSettings()
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   в System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader)
+   в WheelsScraper.ScraperSettings.ReadConfig(String configFile, Type[] additionalTypes) в c:\Projects\EDF\WheelsScraper 2\Scraper.Shared\ScraperSettings.cs:строка 240
+   в WheelsScraper.Form1.DoLoadProcessorConfig(String edfFileName, String libFileName, String edfUrl) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 609
+   в WheelsScraper.Form1.LoadLocalDatafeeds() в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 2126
+2016-08-17 01:26:53,073 [1] ERROR  [(null)] - . В документе XML (676, 29) присутствует ошибка. 
+2016-08-17 01:26:53,420 [1] INFO   [(null)] - Checking forced version for UniversalMapper
+2016-08-17 01:26:53,762 [1] INFO   [(null)] - You are using latest version of UniversalMapper
+2016-08-17 01:26:54,443 [1] INFO   [(null)] - . Data feed UniversalMapper loaded 
+2016-08-17 01:26:54,831 [1] INFO   [(null)] - Checking forced version for Zeiglers
+2016-08-17 01:26:55,818 [1] INFO   [(null)] - . Data feed Zeiglers loaded 
+2016-08-17 01:27:01,631 [1] INFO   [(null)] - . Starting Eswimelite 
+2016-08-17 01:27:01,634 [1] INFO   [(null)] - Checking forced version for Eswimelite
+2016-08-17 01:27:05,191 [8] INFO   [(null)] - Eswimelite. Starting new loop 
+2016-08-17 01:27:05,253 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 01:27:12,043 [11] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-17 01:27:12,992 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 01:27:13,919 [5] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-17 01:27:14,401 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 01:27:15,348 [11] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-17 01:27:15,856 [8] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 01:27:15,875 [10] INFO   [(null)] - Eswimelite. Complete 
+2016-08-17 01:27:33,774 [1] INFO   [(null)] - . Starting Eswimelite 
+2016-08-17 01:27:33,825 [1] INFO   [(null)] - Checking forced version for Eswimelite
+2016-08-17 01:27:36,103 [12] INFO   [(null)] - Eswimelite. Starting new loop 
+2016-08-17 01:27:36,127 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 01:27:38,461 [6] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-17 01:27:39,074 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 01:27:39,810 [10] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-17 01:27:40,272 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 01:27:41,084 [11] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-17 01:27:41,587 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 01:27:41,618 [4] INFO   [(null)] - Eswimelite. Complete 
+2016-08-17 01:27:44,905 [1] INFO   [(null)] - Eswimelite. Cancel 
+2016-08-17 01:27:44,956 [1] INFO   [(null)] - UniversalMapper. Cancel 
+2016-08-17 01:27:44,985 [1] INFO   [(null)] - Zeiglers. Cancel 

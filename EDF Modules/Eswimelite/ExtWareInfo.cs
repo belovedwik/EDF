@@ -6,7 +6,7 @@ using WheelsScraper;
 
 namespace Eswimelite
 {
-    public class ExtWareInfo : WareInfo
+    public class ExtWareInfo : WareInfo, ICloneable
     {
         public string Action { get; set; }
         public int ProductType { get; set; }
@@ -24,5 +24,9 @@ namespace Eswimelite
         public string Specification { get; set; }
         public string PrimaryOptionTitle { get; set; }
         public string PrimaryOptionChoice { get; set; }
+
+        public object Clone() {
+            return MemberwiseClone();
+        }
     }
 }

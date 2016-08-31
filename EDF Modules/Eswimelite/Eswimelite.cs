@@ -16,11 +16,11 @@ namespace WheelsScraper
         public Eswimelite()
         {
             Name = "Eswimelite";
-            Url = "http://qswimwear.com";
+            Url = "http://qswimwear.com/";
             PageRetriever.Referer = Url;
             WareInfoList = new List<ExtWareInfo>();
             Wares.Clear();
-            BrandItemType = 2;
+            //BrandItemType = 2;
 
             SpecialSettings = new ExtSettings();
         }
@@ -186,7 +186,8 @@ namespace WheelsScraper
 
             var doc = CreateDoc(html);
 
-           wi.Action = "ADD";
+            wi.Action = "ADD";
+            wi.URL = pqi.URL;
 
             wi.ImageUrl = doc.DocumentNode.SelectSingleNode("//div[@id='product-photos']/div[contains(@class, 'bigimage')]/img").AttributeOrNull("src");
             wi.ImageUrl = wi.ImageUrl.Substring(0, wi.ImageUrl.LastIndexOf("?"));
@@ -194,7 +195,7 @@ namespace WheelsScraper
             var ImgList = doc.DocumentNode.SelectNodes("//div[@id='product-photos']//div[contains(@class, 'slide')]/a");
             wi.ImagesList = string.Join(",", ImgList.Select(i => i.AttributeOrNull("data-image").Substring(0, i.AttributeOrNull("data-image").LastIndexOf("?") )  ).ToList() );
 
-            wi.ProductTitle = doc.DocumentNode.SelectSingleNode("//div[@id='product-description']/h1").InnerTextOrNull();
+            wi.Name = wi.ProductTitle = doc.DocumentNode.SelectSingleNode("//div[@id='product-description']/h1").InnerTextOrNull();
 
             var MetaDesc = doc.DocumentNode.SelectSingleNode("//meta[@name='description']");
             wi.MetaDescription = (!string.IsNullOrEmpty(MetaDesc.AttributeOrNull("content"))) ? MetaDesc.AttributeOrNull("content") : wi.ProductTitle;
@@ -213,8 +214,8 @@ namespace WheelsScraper
 
             var Breadcrumb = doc.DocumentNode.SelectSingleNode("//div[@id='breadcrumb']").InnerTextOrNull().Split('/');
 
-            wi.MainCategory = Breadcrumb[1] ?? "";
-            wi.SubCategory = Breadcrumb[2] ?? "";
+            wi.MainCategory = Breadcrumb[1].Trim() ?? "";
+            wi.SubCategory = Breadcrumb[2].Trim() ?? "";
             wi.Section = "";
             wi.PartNumber = doc.DocumentNode.SelectSingleNode("//form/div[@class='select']//select/option").AttributeOrNull("data-sku"); 
 
@@ -227,17 +228,22 @@ namespace WheelsScraper
                 foreach (var option in options.SelectNodes(".//label")) {
                     wi.PrimaryOptionChoice = option.InnerTextOrNull();
                     wi.Specification = "Item Spec##" + wi.PrimaryOptionTitle + "-" + wi.PrimaryOptionChoice;
-                    AddWareInfo(wi);
+                    
+                    var wi2 = (ExtWareInfo)wi.Clone();
+                    wi2.PartNumber += "-" + wi.PrimaryOptionChoice.Replace(" ","");
+                    AddWareInfo(wi2);
+                    OnItemLoaded(wi2);
                 }
+
             } 
             else {
                 wi.ProductType = 1; // 1 - universal, 2- with options
                 AddWareInfo(wi);
+                OnItemLoaded(wi);
             }
 
-            wi.Processed = true;
-
-            OnItemLoaded(wi);
+            wi.Processed = pqi.Processed = true;
+           
 
             StartOrPushPropertiesThread();
         }

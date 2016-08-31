@@ -1,0 +1,147 @@
+2016-08-17 01:31:06,506 [6] INFO   [(null)] - Checking for updates
+2016-08-17 01:31:08,287 [6] INFO   [(null)] - Update complete. Release = 67
+2016-08-17 01:31:19,243 [1] INFO   [(null)] - . Starting scheduler in 10 seconds 
+2016-08-17 01:31:19,895 [1] INFO   [(null)] - Checking forced version for Eswimelite
+2016-08-17 01:31:28,875 [1] INFO   [(null)] - . Data feed Eswimelite loaded 
+2016-08-17 01:31:29,403 [1] ERROR  [(null)] - System.InvalidOperationException: В документе XML (676, 29) присутствует ошибка. ---> System.FormatException: Строка "False" не является допустимым значением Boolean.
+   в System.Xml.XmlConvert.ToBoolean(String s)
+   в Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderScraperSettings.Read27_ScraperSettings(Boolean isNullable, Boolean checkType)
+   в Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderScraperSettings.Read28_ScraperSettings()
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   в System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader)
+   в WheelsScraper.ScraperSettings.ReadConfig(String configFile, Type[] additionalTypes) в c:\Projects\EDF\WheelsScraper 2\Scraper.Shared\ScraperSettings.cs:строка 240
+   в WheelsScraper.Form1.DoLoadProcessorConfig(String edfFileName, String libFileName, String edfUrl) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 609
+   в WheelsScraper.Form1.LoadLocalDatafeeds() в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 2126
+2016-08-17 01:31:29,413 [1] ERROR  [(null)] - . В документе XML (676, 29) присутствует ошибка. 
+2016-08-17 01:31:29,767 [1] INFO   [(null)] - Checking forced version for UniversalMapper
+2016-08-17 01:31:30,111 [1] INFO   [(null)] - You are using latest version of UniversalMapper
+2016-08-17 01:31:30,827 [1] INFO   [(null)] - . Data feed UniversalMapper loaded 
+2016-08-17 01:31:31,166 [1] INFO   [(null)] - Checking forced version for Zeiglers
+2016-08-17 01:31:32,217 [1] INFO   [(null)] - . Data feed Zeiglers loaded 
+2016-08-17 01:31:34,835 [1] INFO   [(null)] - . Starting Eswimelite 
+2016-08-17 01:31:34,838 [1] INFO   [(null)] - Checking forced version for Eswimelite
+2016-08-17 01:31:55,376 [9] INFO   [(null)] - Eswimelite. Starting new loop 
+2016-08-17 01:31:55,399 [9] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 01:31:56,894 [7] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-17 01:31:58,007 [9] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 01:31:59,245 [11] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-17 01:31:59,750 [9] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 01:32:02,232 [7] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-17 01:32:02,757 [9] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 01:32:02,777 [5] INFO   [(null)] - Eswimelite. Complete 
+2016-08-17 01:32:03,026 [5] ERROR  [(null)] - System.UnauthorizedAccessException: Отказано в доступе по пути "c:\Eswimelite.csv".
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   в System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   в WheelsScraper.Form1.CopyFiles(ISimpleScraper scraper, Dictionary`2 dicFiles, String fileName, Boolean overwriteFile, String path, Boolean ftpSave, Boolean localSave, Boolean zip, Boolean uploadToSCE) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 1376
+2016-08-17 01:32:03,028 [5] ERROR  [(null)] - . Отказано в доступе по пути "c:\Eswimelite.csv". 
+2016-08-17 01:32:03,084 [5] ERROR  [(null)] - System.UnauthorizedAccessException: Отказано в доступе по пути "c:\Eswimelite.csv".
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   в System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   в WheelsScraper.Form1.CopyFiles(ISimpleScraper scraper, Dictionary`2 dicFiles, String fileName, Boolean overwriteFile, String path, Boolean ftpSave, Boolean localSave, Boolean zip, Boolean uploadToSCE) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 1376
+2016-08-17 01:32:03,084 [5] ERROR  [(null)] - . Отказано в доступе по пути "c:\Eswimelite.csv". 
+2016-08-17 01:32:04,119 [6] ERROR  [(null)] - System.UnauthorizedAccessException: Отказано в доступе по пути "c:\144479b2-91a0-42ec-bda7-68efcd108253.csv".
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   в System.IO.FileStream..ctor(String path, FileMode mode)
+   в WheelsScraper.ScrapResultCsvExporter.GetOutStream(String path, Boolean zip) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\ScrapResultCsvExporter.cs:строка 20
+   в WheelsScraper.ScrapResultCsvExporter.Export(List`1 wares, List`1 fields, String path, Boolean zip, List`1& badWares, Boolean outputToError, Boolean onlyBad, ExportProfile profile) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\ScrapResultCsvExporter.cs:строка 136
+   в WheelsScraper.EDFManager.GenerateDataReportFile(Int32 count) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\EDFManager.cs:строка 391
+2016-08-17 01:32:04,121 [6] ERROR  [(null)] - . Failed to save file. Отказано в доступе по пути "c:\144479b2-91a0-42ec-bda7-68efcd108253.csv". 
+2016-08-17 01:33:22,451 [1] ERROR  [(null)] - . Файл "D:\С#\test\EDF\WheelsScraper 2\WheelsScraper\bin\Debug\Eswimelite.dll" уже существует. 
+2016-08-17 01:33:22,485 [1] INFO   [(null)] - . Saved 
+2016-08-17 01:33:31,533 [1] INFO   [(null)] - . Starting Eswimelite 
+2016-08-17 01:33:31,607 [1] INFO   [(null)] - Checking forced version for Eswimelite
+2016-08-17 01:33:36,529 [6] INFO   [(null)] - Eswimelite. Starting new loop 
+2016-08-17 01:33:36,572 [6] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 01:33:40,185 [5] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-17 01:33:41,109 [6] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 01:33:41,761 [11] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-17 01:33:42,277 [6] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 01:33:42,904 [7] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-17 01:33:43,406 [6] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 01:33:43,442 [4] INFO   [(null)] - Eswimelite. Complete 
+2016-08-17 01:33:43,541 [4] ERROR  [(null)] - System.UnauthorizedAccessException: Отказано в доступе по пути "c:\Eswimelite.csv".
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   в System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   в WheelsScraper.Form1.CopyFiles(ISimpleScraper scraper, Dictionary`2 dicFiles, String fileName, Boolean overwriteFile, String path, Boolean ftpSave, Boolean localSave, Boolean zip, Boolean uploadToSCE) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 1376
+2016-08-17 01:33:43,542 [4] ERROR  [(null)] - . Отказано в доступе по пути "c:\Eswimelite.csv". 
+2016-08-17 01:33:43,634 [4] ERROR  [(null)] - System.UnauthorizedAccessException: Отказано в доступе по пути "c:\Eswimelite.csv".
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   в System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   в WheelsScraper.Form1.CopyFiles(ISimpleScraper scraper, Dictionary`2 dicFiles, String fileName, Boolean overwriteFile, String path, Boolean ftpSave, Boolean localSave, Boolean zip, Boolean uploadToSCE) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 1376
+2016-08-17 01:33:43,634 [4] ERROR  [(null)] - . Отказано в доступе по пути "c:\Eswimelite.csv". 
+2016-08-17 01:33:44,466 [4] ERROR  [(null)] - System.UnauthorizedAccessException: Отказано в доступе по пути "c:\1537c64b-1bc7-418b-9bef-4226ec7c2ba2.csv".
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   в System.IO.FileStream..ctor(String path, FileMode mode)
+   в WheelsScraper.ScrapResultCsvExporter.GetOutStream(String path, Boolean zip) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\ScrapResultCsvExporter.cs:строка 20
+   в WheelsScraper.ScrapResultCsvExporter.Export(List`1 wares, List`1 fields, String path, Boolean zip, List`1& badWares, Boolean outputToError, Boolean onlyBad, ExportProfile profile) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\ScrapResultCsvExporter.cs:строка 136
+   в WheelsScraper.EDFManager.GenerateDataReportFile(Int32 count) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\EDFManager.cs:строка 391
+2016-08-17 01:33:44,467 [4] ERROR  [(null)] - . Failed to save file. Отказано в доступе по пути "c:\1537c64b-1bc7-418b-9bef-4226ec7c2ba2.csv". 
+2016-08-17 01:34:24,594 [1] ERROR  [(null)] - . Файл "D:\С#\test\EDF\WheelsScraper 2\WheelsScraper\bin\Debug\Eswimelite.dll" уже существует. 
+2016-08-17 01:34:24,645 [1] INFO   [(null)] - . Saved 
+2016-08-17 01:39:38,586 [1] INFO   [(null)] - . Starting Eswimelite 
+2016-08-17 01:39:38,658 [1] INFO   [(null)] - Checking forced version for Eswimelite
+2016-08-17 01:40:07,313 [17] INFO   [(null)] - Eswimelite. Starting new loop 
+2016-08-17 01:40:07,356 [17] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 01:40:15,176 [18] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-17 01:40:15,897 [17] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 01:40:44,663 [16] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-17 01:40:45,337 [17] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 01:40:45,382 [7] INFO   [(null)] - Eswimelite. Complete 
+2016-08-17 01:40:45,494 [7] ERROR  [(null)] - System.UnauthorizedAccessException: Отказано в доступе по пути "c:\Eswimelite.csv".
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   в System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   в WheelsScraper.Form1.CopyFiles(ISimpleScraper scraper, Dictionary`2 dicFiles, String fileName, Boolean overwriteFile, String path, Boolean ftpSave, Boolean localSave, Boolean zip, Boolean uploadToSCE) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 1376
+2016-08-17 01:40:45,495 [7] ERROR  [(null)] - . Отказано в доступе по пути "c:\Eswimelite.csv". 
+2016-08-17 01:40:45,597 [7] ERROR  [(null)] - System.UnauthorizedAccessException: Отказано в доступе по пути "c:\Eswimelite.csv".
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   в System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   в WheelsScraper.Form1.CopyFiles(ISimpleScraper scraper, Dictionary`2 dicFiles, String fileName, Boolean overwriteFile, String path, Boolean ftpSave, Boolean localSave, Boolean zip, Boolean uploadToSCE) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 1376
+2016-08-17 01:40:45,598 [7] ERROR  [(null)] - . Отказано в доступе по пути "c:\Eswimelite.csv". 
+2016-08-17 01:40:46,485 [20] ERROR  [(null)] - System.UnauthorizedAccessException: Отказано в доступе по пути "c:\3de52b85-1591-490e-b499-e31af5b34c8d.csv".
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   в System.IO.FileStream..ctor(String path, FileMode mode)
+   в WheelsScraper.ScrapResultCsvExporter.GetOutStream(String path, Boolean zip) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\ScrapResultCsvExporter.cs:строка 20
+   в WheelsScraper.ScrapResultCsvExporter.Export(List`1 wares, List`1 fields, String path, Boolean zip, List`1& badWares, Boolean outputToError, Boolean onlyBad, ExportProfile profile) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\ScrapResultCsvExporter.cs:строка 136
+   в WheelsScraper.EDFManager.GenerateDataReportFile(Int32 count) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\EDFManager.cs:строка 391
+2016-08-17 01:40:46,485 [20] ERROR  [(null)] - . Failed to save file. Отказано в доступе по пути "c:\3de52b85-1591-490e-b499-e31af5b34c8d.csv". 
+2016-08-17 01:40:49,359 [1] INFO   [(null)] - . Starting Eswimelite 
+2016-08-17 01:40:49,429 [1] INFO   [(null)] - Checking forced version for Eswimelite
+2016-08-17 01:40:54,642 [14] INFO   [(null)] - Eswimelite. Starting new loop 
+2016-08-17 01:40:54,684 [14] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 01:40:57,864 [18] INFO   [(null)] - Eswimelite. Get product info: 
+2016-08-17 01:40:58,334 [14] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 01:40:58,379 [7] INFO   [(null)] - Eswimelite. Complete 
+2016-08-17 01:40:58,475 [7] ERROR  [(null)] - System.UnauthorizedAccessException: Отказано в доступе по пути "c:\Eswimelite.csv".
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   в System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   в WheelsScraper.Form1.CopyFiles(ISimpleScraper scraper, Dictionary`2 dicFiles, String fileName, Boolean overwriteFile, String path, Boolean ftpSave, Boolean localSave, Boolean zip, Boolean uploadToSCE) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 1376
+2016-08-17 01:40:58,475 [7] ERROR  [(null)] - . Отказано в доступе по пути "c:\Eswimelite.csv". 
+2016-08-17 01:40:58,582 [7] ERROR  [(null)] - System.UnauthorizedAccessException: Отказано в доступе по пути "c:\Eswimelite.csv".
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   в System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   в WheelsScraper.Form1.CopyFiles(ISimpleScraper scraper, Dictionary`2 dicFiles, String fileName, Boolean overwriteFile, String path, Boolean ftpSave, Boolean localSave, Boolean zip, Boolean uploadToSCE) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 1376
+2016-08-17 01:40:58,583 [7] ERROR  [(null)] - . Отказано в доступе по пути "c:\Eswimelite.csv". 
+2016-08-17 01:40:59,439 [18] ERROR  [(null)] - System.UnauthorizedAccessException: Отказано в доступе по пути "c:\5c05b071-c5ad-432f-bce9-f6031b00fd5d.csv".
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   в System.IO.FileStream..ctor(String path, FileMode mode)
+   в WheelsScraper.ScrapResultCsvExporter.GetOutStream(String path, Boolean zip) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\ScrapResultCsvExporter.cs:строка 20
+   в WheelsScraper.ScrapResultCsvExporter.Export(List`1 wares, List`1 fields, String path, Boolean zip, List`1& badWares, Boolean outputToError, Boolean onlyBad, ExportProfile profile) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\ScrapResultCsvExporter.cs:строка 136
+   в WheelsScraper.EDFManager.GenerateDataReportFile(Int32 count) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\EDFManager.cs:строка 391
+2016-08-17 01:40:59,440 [18] ERROR  [(null)] - . Failed to save file. Отказано в доступе по пути "c:\5c05b071-c5ad-432f-bce9-f6031b00fd5d.csv". 

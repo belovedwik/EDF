@@ -1,0 +1,10 @@
+D:\С#\ObxHdSmith\ObxHdSmith\obj\Debug\Fakes\dflm\b\DataFeed.Lib.Main.Fakes.xml
+D:\С#\ObxHdSmith\ObxHdSmith\obj\Debug\Fakes\dflm\b\DataFeed.Lib.Main.Fakes.dll
+D:\С#\ObxHdSmith\ObxHdSmith\obj\Debug\Fakes\dflm\b\DataFeed.Lib.Main.Fakes.pdb
+D:\С#\ObxHdSmith\ObxHdSmith\obj\Debug\Fakes\dflm\b\DataFeed.Lib.Main.dll
+D:\С#\ObxHdSmith\ObxHdSmith\obj\Debug\Fakes\dflm\b\DataFeed.Shared.dll
+D:\С#\ObxHdSmith\ObxHdSmith\obj\Debug\Fakes\dflm\b\log4net.dll
+D:\С#\ObxHdSmith\ObxHdSmith\obj\Debug\Fakes\dflm\b\Microsoft.QualityTools.Testing.Fakes.dll
+D:\С#\ObxHdSmith\ObxHdSmith\obj\Debug\Fakes\dflm\o\f.csprojResolveAssemblyReference.cache
+D:\С#\ObxHdSmith\ObxHdSmith\obj\Debug\Fakes\dflm\o\DataFeed.Lib.Main.Fakes.dll
+D:\С#\ObxHdSmith\ObxHdSmith\obj\Debug\Fakes\dflm\o\DataFeed.Lib.Main.Fakes.pdb

@@ -1,0 +1,450 @@
+2016-08-17 00:47:39,781 [6] INFO   [(null)] - Checking for updates
+2016-08-17 00:47:41,582 [6] INFO   [(null)] - Update complete. Release = 67
+2016-08-17 00:47:52,903 [1] INFO   [(null)] - . Starting scheduler in 10 seconds 
+2016-08-17 00:47:53,545 [1] INFO   [(null)] - Checking forced version for Eswimelite
+2016-08-17 00:47:55,537 [1] INFO   [(null)] - . Data feed Eswimelite loaded 
+2016-08-17 00:47:56,007 [1] ERROR  [(null)] - System.InvalidOperationException: В документе XML (676, 29) присутствует ошибка. ---> System.FormatException: Строка "False" не является допустимым значением Boolean.
+   в System.Xml.XmlConvert.ToBoolean(String s)
+   в Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderScraperSettings.Read27_ScraperSettings(Boolean isNullable, Boolean checkType)
+   в Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderScraperSettings.Read28_ScraperSettings()
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   в System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader)
+   в WheelsScraper.ScraperSettings.ReadConfig(String configFile, Type[] additionalTypes) в c:\Projects\EDF\WheelsScraper 2\Scraper.Shared\ScraperSettings.cs:строка 240
+   в WheelsScraper.Form1.DoLoadProcessorConfig(String edfFileName, String libFileName, String edfUrl) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 609
+   в WheelsScraper.Form1.LoadLocalDatafeeds() в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 2126
+2016-08-17 00:47:56,017 [1] ERROR  [(null)] - . В документе XML (676, 29) присутствует ошибка. 
+2016-08-17 00:47:56,363 [1] INFO   [(null)] - Checking forced version for UniversalMapper
+2016-08-17 00:47:56,700 [1] INFO   [(null)] - You are using latest version of UniversalMapper
+2016-08-17 00:47:57,383 [1] INFO   [(null)] - . Data feed UniversalMapper loaded 
+2016-08-17 00:47:57,735 [1] INFO   [(null)] - Checking forced version for Zeiglers
+2016-08-17 00:47:58,777 [1] INFO   [(null)] - . Data feed Zeiglers loaded 
+2016-08-17 00:48:40,343 [1] ERROR  [(null)] - . Файл "D:\С#\test\EDF\WheelsScraper 2\WheelsScraper\bin\Debug\Eswimelite.dll" уже существует. 
+2016-08-17 00:48:40,653 [1] INFO   [(null)] - . Saved 
+2016-08-17 00:48:46,389 [1] INFO   [(null)] - . Starting Eswimelite 
+2016-08-17 00:48:46,426 [1] INFO   [(null)] - Checking forced version for Eswimelite
+2016-08-17 00:48:49,068 [12] INFO   [(null)] - Eswimelite. Starting new loop 
+2016-08-17 00:48:49,104 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:49,138 [9] INFO   [(null)] - Eswimelite. Get Categories List ..  
+2016-08-17 00:48:49,833 [9] INFO   [(null)] - Eswimelite. CategoriesList list processed .. ok 
+2016-08-17 00:48:50,146 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:50,618 [6] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-17 00:48:50,670 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:51,107 [9] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-17 00:48:51,125 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:51,584 [10] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-17 00:48:51,607 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:52,097 [6] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-17 00:48:52,146 [6] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-17 00:48:52,200 [12] INFO   [(null)] - Eswimelite. Starting 5 threads 
+2016-08-17 00:48:52,259 [9] INFO   [(null)] - Eswimelite. Get product info:The Majestic Male Drag Suit 
+2016-08-17 00:48:52,259 [6] INFO   [(null)] - Eswimelite. Get product info:The Majestic Classic Brief 
+2016-08-17 00:48:52,259 [10] INFO   [(null)] - Eswimelite. Get product info:Giraffe Womens Waterpolo 
+2016-08-17 00:48:52,799 [9] INFO   [(null)] - Eswimelite. Get product info:Purple Gariffe Jammer 
+2016-08-17 00:48:52,799 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:52,953 [6] INFO   [(null)] - Eswimelite. Get product info:Green Giraffe Jammer 
+2016-08-17 00:48:52,953 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:53,019 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:53,080 [10] INFO   [(null)] - Eswimelite. Get product info:The Majestic Male Drag Suit 
+2016-08-17 00:48:53,278 [9] INFO   [(null)] - Eswimelite. Get product info:The Majestic Classic Brief 
+2016-08-17 00:48:53,279 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:53,406 [6] INFO   [(null)] - Eswimelite. Get product info:Giraffe Womens Waterpolo 
+2016-08-17 00:48:53,406 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:53,580 [10] INFO   [(null)] - Eswimelite. Get product info:Purple Gariffe Jammer 
+2016-08-17 00:48:53,580 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:53,732 [9] INFO   [(null)] - Eswimelite. Get product info:Green Giraffe Jammer 
+2016-08-17 00:48:53,732 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:53,881 [6] INFO   [(null)] - Eswimelite. Get product info:The Majestic Male Drag Suit 
+2016-08-17 00:48:53,881 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:54,047 [11] INFO   [(null)] - Eswimelite. Get product info:The Majestic Classic Brief 
+2016-08-17 00:48:54,047 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:54,047 [10] INFO   [(null)] - Eswimelite. Get product info:Giraffe Womens Waterpolo 
+2016-08-17 00:48:54,223 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:54,223 [9] INFO   [(null)] - Eswimelite. Get product info:Purple Gariffe Jammer 
+2016-08-17 00:48:54,328 [6] INFO   [(null)] - Eswimelite. Get product info:Green Giraffe Jammer 
+2016-08-17 00:48:54,328 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:54,505 [11] INFO   [(null)] - Eswimelite. Get product info:Blue Giraffe Jammer 
+2016-08-17 00:48:54,505 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:54,600 [10] INFO   [(null)] - Eswimelite. Get product info:Strawberry Classic Brief 
+2016-08-17 00:48:54,600 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:54,734 [9] INFO   [(null)] - Eswimelite. Get product info:Strawberry Waterpolo Brief 
+2016-08-17 00:48:54,734 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:54,903 [6] INFO   [(null)] - Eswimelite. Get product info:Blue Giraffe Skinny Strap 
+2016-08-17 00:48:54,903 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:54,981 [11] INFO   [(null)] - Eswimelite. Get product info:Scaled Skinny Strap 
+2016-08-17 00:48:54,981 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:55,103 [10] INFO   [(null)] - Eswimelite. Get product info:Blue Giraffe Jammer 
+2016-08-17 00:48:55,104 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:55,206 [9] INFO   [(null)] - Eswimelite. Get product info:Strawberry Classic Brief 
+2016-08-17 00:48:55,206 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:55,413 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:55,413 [6] INFO   [(null)] - Eswimelite. Get product info:Strawberry Waterpolo Brief 
+2016-08-17 00:48:55,487 [11] INFO   [(null)] - Eswimelite. Get product info:Blue Giraffe Skinny Strap 
+2016-08-17 00:48:55,487 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:55,583 [10] INFO   [(null)] - Eswimelite. Get product info:Scaled Skinny Strap 
+2016-08-17 00:48:55,583 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:55,697 [9] INFO   [(null)] - Eswimelite. Get product info:Blue Giraffe Jammer 
+2016-08-17 00:48:55,697 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:55,912 [6] INFO   [(null)] - Eswimelite. Get product info:Strawberry Classic Brief 
+2016-08-17 00:48:55,912 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:56,012 [11] INFO   [(null)] - Eswimelite. Get product info:Strawberry Waterpolo Brief 
+2016-08-17 00:48:56,012 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:56,211 [10] INFO   [(null)] - Eswimelite. Get product info:Blue Giraffe Skinny Strap 
+2016-08-17 00:48:56,211 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:56,306 [9] INFO   [(null)] - Eswimelite. Get product info:Scaled Skinny Strap 
+2016-08-17 00:48:56,306 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:56,434 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:56,502 [6] INFO   [(null)] - Eswimelite. Get product info:Scaled Classic Strap 
+2016-08-17 00:48:56,502 [11] INFO   [(null)] - Eswimelite. Get product info:Misunderstood Jammer 
+2016-08-17 00:48:56,503 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:56,695 [10] INFO   [(null)] - Eswimelite. Get product info:Cherry Picked Skinny Strap 
+2016-08-17 00:48:56,695 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:56,832 [9] INFO   [(null)] - Eswimelite. Get product info:Cherry Picked Sunback Tank 
+2016-08-17 00:48:56,832 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:56,991 [6] INFO   [(null)] - Eswimelite. Get product info:Vortex Skinny Strap 
+2016-08-17 00:48:56,991 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:57,055 [11] INFO   [(null)] - Eswimelite. Get product info:Scaled Classic Strap 
+2016-08-17 00:48:57,055 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:57,179 [10] INFO   [(null)] - Eswimelite. Get product info:Misunderstood Jammer 
+2016-08-17 00:48:57,180 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:57,301 [9] INFO   [(null)] - Eswimelite. Get product info:Cherry Picked Skinny Strap 
+2016-08-17 00:48:57,302 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:57,465 [6] INFO   [(null)] - Eswimelite. Get product info:Cherry Picked Sunback Tank 
+2016-08-17 00:48:57,465 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:57,587 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:57,587 [11] INFO   [(null)] - Eswimelite. Get product info:Vortex Skinny Strap 
+2016-08-17 00:48:57,684 [10] INFO   [(null)] - Eswimelite. Get product info:Scaled Classic Strap 
+2016-08-17 00:48:57,684 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:57,794 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:57,918 [6] INFO   [(null)] - Eswimelite. Get product info:Misunderstood Jammer 
+2016-08-17 00:48:57,918 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:58,100 [11] INFO   [(null)] - Eswimelite. Get product info:Cherry Picked Skinny Strap 
+2016-08-17 00:48:58,100 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:58,172 [10] INFO   [(null)] - Eswimelite. Get product info:Cherry Picked Sunback Tank 
+2016-08-17 00:48:58,173 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:58,386 [6] INFO   [(null)] - Eswimelite. Get product info:Vortex Skinny Strap 
+2016-08-17 00:48:58,386 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:58,567 [11] INFO   [(null)] - Eswimelite. Get product info:Back in my day Sunback Tank 
+2016-08-17 00:48:58,567 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:58,647 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:58,647 [10] INFO   [(null)] - Eswimelite. Get product info:Dash-White Waterpolo 
+2016-08-17 00:48:58,909 [6] INFO   [(null)] - Eswimelite. Get product info:Main Lobster Jammer 
+2016-08-17 00:48:58,909 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:59,032 [11] INFO   [(null)] - Eswimelite. Get product info:Main Lobster Sunback Tank 
+2016-08-17 00:48:59,032 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:59,126 [10] INFO   [(null)] - Eswimelite. Get product info:Stealth Sunback Tank 
+2016-08-17 00:48:59,126 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:59,390 [6] INFO   [(null)] - Eswimelite. Get product info:Back in my day Sunback Tank 
+2016-08-17 00:48:59,390 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:59,500 [11] INFO   [(null)] - Eswimelite. Get product info:Dash-White Waterpolo 
+2016-08-17 00:48:59,500 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:59,587 [10] INFO   [(null)] - Eswimelite. Get product info:Main Lobster Jammer 
+2016-08-17 00:48:59,587 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:48:59,896 [6] INFO   [(null)] - Eswimelite. Get product info:Main Lobster Sunback Tank 
+2016-08-17 00:48:59,896 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:00,006 [11] INFO   [(null)] - Eswimelite. Get product info:Stealth Sunback Tank 
+2016-08-17 00:49:00,006 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:00,087 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:00,087 [10] INFO   [(null)] - Eswimelite. Get product info:Back in my day Sunback Tank 
+2016-08-17 00:49:00,418 [6] INFO   [(null)] - Eswimelite. Get product info:Dash-White Waterpolo 
+2016-08-17 00:49:00,418 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:00,506 [11] INFO   [(null)] - Eswimelite. Get product info:Main Lobster Jammer 
+2016-08-17 00:49:00,506 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:00,590 [10] INFO   [(null)] - Eswimelite. Get product info:Main Lobster Sunback Tank 
+2016-08-17 00:49:00,590 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:01,066 [11] INFO   [(null)] - Eswimelite. Get product info:Stealth Sunback Tank 
+2016-08-17 00:49:01,076 [6] INFO   [(null)] - Eswimelite. Get product info:Sunset Glitch Skinny Strap 
+2016-08-17 00:49:01,348 [12] INFO   [(null)] - Eswimelite. Starting 3 threads 
+2016-08-17 00:49:01,431 [10] INFO   [(null)] - Eswimelite. Get product info:Sunset Glitch Sunback Tank 
+2016-08-17 00:49:01,540 [11] INFO   [(null)] - Eswimelite. Get product info:Glitch Waterpolo Brief 
+2016-08-17 00:49:01,540 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:01,623 [9] INFO   [(null)] - Eswimelite. Get product info:Glitch Jammer 
+2016-08-17 00:49:01,623 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:01,623 [6] INFO   [(null)] - Eswimelite. Get product info:Glitch Sunback Tank 
+2016-08-17 00:49:01,694 [3] INFO   [(null)] - Eswimelite. Get product info:Sunset Glitch Skinny Strap 
+2016-08-17 00:49:02,336 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:02,378 [14] INFO   [(null)] - Eswimelite. Get product info:Sunset Glitch Skinny Strap 
+2016-08-17 00:49:02,451 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:02,504 [3] INFO   [(null)] - Eswimelite. Get product info:Glitch Waterpolo Brief 
+2016-08-17 00:49:02,504 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:02,596 [15] INFO   [(null)] - Eswimelite. Get product info:Glitch Sunback Tank 
+2016-08-17 00:49:02,638 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:02,737 [6] INFO   [(null)] - Eswimelite. Get product info:Sunset Glitch Sunback Tank 
+2016-08-17 00:49:02,737 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:02,819 [9] INFO   [(null)] - Eswimelite. Get product info:Glitch Jammer 
+2016-08-17 00:49:02,928 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:02,983 [11] INFO   [(null)] - Eswimelite. Get product info:Paint Drip Sunback Tank 
+2016-08-17 00:49:02,983 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:03,123 [14] INFO   [(null)] - Eswimelite. Get product info:Glitch Waterpolo Brief 
+2016-08-17 00:49:03,124 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:03,231 [10] INFO   [(null)] - Eswimelite. Get product info:Glitch Sunback Tank 
+2016-08-17 00:49:03,231 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:03,309 [3] INFO   [(null)] - Eswimelite. Get product info:Sunset Glitch Sunback Tank 
+2016-08-17 00:49:03,309 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:03,376 [6] INFO   [(null)] - Eswimelite. Get product info:Glitch Jammer 
+2016-08-17 00:49:03,680 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:03,746 [16] INFO   [(null)] - Eswimelite. Get product info:Paint Drip Jammer 
+2016-08-17 00:49:04,062 [12] INFO   [(null)] - Eswimelite. Starting 4 threads 
+2016-08-17 00:49:04,131 [9] INFO   [(null)] - Eswimelite. Get product info:Paint Drip Sunback Tank 
+2016-08-17 00:49:04,131 [3] INFO   [(null)] - Eswimelite. Get product info:1969 Classic Brief 
+2016-08-17 00:49:04,131 [14] INFO   [(null)] - Eswimelite. Get product info:1969 Jammer 
+2016-08-17 00:49:04,131 [15] INFO   [(null)] - Eswimelite. Get product info:1969 Sunback Tank 
+2016-08-17 00:49:04,619 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:04,654 [6] INFO   [(null)] - Eswimelite. Get product info:Paint Drip Sunback Tank 
+2016-08-17 00:49:04,894 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:04,930 [11] INFO   [(null)] - Eswimelite. Get product info:Paint Drip Jammer 
+2016-08-17 00:49:05,004 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:05,042 [9] INFO   [(null)] - Eswimelite. Get product info:1969 Jammer 
+2016-08-17 00:49:05,115 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:05,149 [16] INFO   [(null)] - Eswimelite. Get product info:Texas Jammer 
+2016-08-17 00:49:05,225 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:05,262 [6] INFO   [(null)] - Eswimelite. Get product info:1969 Sunback Tank 
+2016-08-17 00:49:05,394 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:05,431 [14] INFO   [(null)] - Eswimelite. Get product info:Paint Drip Jammer 
+2016-08-17 00:49:05,486 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:05,545 [15] INFO   [(null)] - Eswimelite. Get product info:1969 Classic Brief 
+2016-08-17 00:49:05,573 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:05,622 [10] INFO   [(null)] - Eswimelite. Get product info:1969 Jammer 
+2016-08-17 00:49:05,716 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:05,751 [11] INFO   [(null)] - Eswimelite. Get product info:1969 Sunback Tank 
+2016-08-17 00:49:05,933 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:05,987 [17] INFO   [(null)] - Eswimelite. Get product info:Texas Sunback Tank 
+2016-08-17 00:49:06,005 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:06,094 [14] INFO   [(null)] - Eswimelite. Get product info:1969 Classic Brief 
+2016-08-17 00:49:06,094 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:06,226 [10] INFO   [(null)] - Eswimelite. Get product info:5th Dimension Jammer 
+2016-08-17 00:49:06,227 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:06,295 [3] INFO   [(null)] - Eswimelite. Get product info:Texas Jammer 
+2016-08-17 00:49:06,295 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:06,377 [9] INFO   [(null)] - Eswimelite. Get product info:Connected Waterpolo Brief 
+2016-08-17 00:49:06,594 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:06,628 [15] INFO   [(null)] - Eswimelite. Get product info:Lonely Jelly Sunback Tank 
+2016-08-17 00:49:06,747 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:06,787 [11] INFO   [(null)] - Eswimelite. Get product info:Texas Jammer 
+2016-08-17 00:49:06,883 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:06,916 [14] INFO   [(null)] - Eswimelite. Get product info:Texas Sunback Tank 
+2016-08-17 00:49:07,052 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:07,088 [16] INFO   [(null)] - Eswimelite. Get product info:5th Dimension Jammer 
+2016-08-17 00:49:07,312 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:07,348 [6] INFO   [(null)] - Eswimelite. Get product info:The Last Elephant Skinny Strap 
+2016-08-17 00:49:07,348 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:07,441 [11] INFO   [(null)] - Eswimelite. Get product info:Connected Waterpolo Brief 
+2016-08-17 00:49:07,541 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:07,587 [3] INFO   [(null)] - Eswimelite. Get product info:5th Dimension Jammer 
+2016-08-17 00:49:07,628 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:07,683 [17] INFO   [(null)] - Eswimelite. Get product info:Lonely Jelly Sunback Tank 
+2016-08-17 00:49:07,835 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:07,903 [10] INFO   [(null)] - Eswimelite. Get product info:Texas Sunback Tank 
+2016-08-17 00:49:07,910 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:07,994 [16] INFO   [(null)] - Eswimelite. Get product info:Connected Waterpolo Brief 
+2016-08-17 00:49:08,083 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:08,209 [3] INFO   [(null)] - Eswimelite. Get product info:Sea Lion Games Skinny Strap 
+2016-08-17 00:49:08,209 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:08,295 [11] INFO   [(null)] - Eswimelite. Get product info:The Last Elephant Skinny Strap 
+2016-08-17 00:49:08,295 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:08,377 [14] INFO   [(null)] - Eswimelite. Get product info:Lonely Jelly Sunback Tank 
+2016-08-17 00:49:08,382 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:08,451 [6] INFO   [(null)] - Eswimelite. Get product info:Octopus Hug Skinny Strap 
+2016-08-17 00:49:08,491 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:08,533 [9] INFO   [(null)] - Eswimelite. Get product info:Lonely Jelly Skinny Strap 
+2016-08-17 00:49:08,804 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:08,849 [17] INFO   [(null)] - Eswimelite. Get product info:The Last Elephant Skinny Strap 
+2016-08-17 00:49:08,860 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:08,920 [11] INFO   [(null)] - Eswimelite. Get product info:Curious Kelp Skinny Strap 
+2016-08-17 00:49:09,038 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:09,072 [10] INFO   [(null)] - Eswimelite. Get product info:Sea Lion Games Skinny Strap 
+2016-08-17 00:49:09,393 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:09,451 [16] INFO   [(null)] - Eswimelite. Get product info:You are my Penguin Skinny Strap 
+2016-08-17 00:49:09,451 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:09,541 [14] INFO   [(null)] - Eswimelite. Get product info:Lonely Jelly Skinny Strap 
+2016-08-17 00:49:09,542 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:09,617 [17] INFO   [(null)] - Eswimelite. Get product info:Octopus Hug Skinny Strap 
+2016-08-17 00:49:09,618 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:09,685 [10] INFO   [(null)] - Eswimelite. Get product info:Sea Lion Games Skinny Strap 
+2016-08-17 00:49:09,811 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:09,846 [6] INFO   [(null)] - Eswimelite. Get product info:Curious Kelp Skinny Strap 
+2016-08-17 00:49:10,104 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:10,160 [3] INFO   [(null)] - Eswimelite. Get product info:Lonely Jelly Skinny Strap 
+2016-08-17 00:49:10,160 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:10,240 [17] INFO   [(null)] - Eswimelite. Get product info:Octopus Hug Skinny Strap 
+2016-08-17 00:49:10,240 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:10,360 [14] INFO   [(null)] - Eswimelite. Get product info:Tree of Life Skinny Strap 
+2016-08-17 00:49:10,361 [12] INFO   [(null)] - Eswimelite. Starting 2 threads 
+2016-08-17 00:49:10,431 [11] INFO   [(null)] - Eswimelite. Get product info:Curious Kelp Skinny Strap 
+2016-08-17 00:49:10,431 [6] INFO   [(null)] - Eswimelite. Get product info:You are my Penguin Skinny Strap 
+2016-08-17 00:49:10,662 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:10,714 [9] INFO   [(null)] - Eswimelite. Get product info:Sunny Day Skinny Strap 
+2016-08-17 00:49:10,732 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:10,782 [3] INFO   [(null)] - Eswimelite. Get product info:The Last Elephant Classic Strap 
+2016-08-17 00:49:10,879 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:10,932 [15] INFO   [(null)] - Eswimelite. Get product info:Lonely Jelly Classic Strap 
+2016-08-17 00:49:10,932 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:10,997 [11] INFO   [(null)] - Eswimelite. Get product info:You are my Penguin Skinny Strap 
+2016-08-17 00:49:11,275 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:11,309 [17] INFO   [(null)] - Eswimelite. Get product info:Tree of Life Skinny Strap 
+2016-08-17 00:49:11,447 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:11,500 [6] INFO   [(null)] - Eswimelite. Get product info:You are my Penguin Classic Brief 
+2016-08-17 00:49:11,544 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:11,594 [14] INFO   [(null)] - Eswimelite. Get product info:Sunny Day Skinny Strap 
+2016-08-17 00:49:11,699 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:11,765 [16] INFO   [(null)] - Eswimelite. Get product info:The Last Elephant Classic Strap 
+2016-08-17 00:49:11,772 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:11,856 [17] INFO   [(null)] - Eswimelite. Get product info:Tree of Life Skinny Strap 
+2016-08-17 00:49:11,940 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:11,987 [3] INFO   [(null)] - Eswimelite. Get product info:Lonely Jelly Classic Strap 
+2016-08-17 00:49:12,104 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:12,147 [15] INFO   [(null)] - Eswimelite. Get product info:Sunny Day Skinny Strap 
+2016-08-17 00:49:12,268 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:12,323 [11] INFO   [(null)] - Eswimelite. Get product info:The Last Elephant Classic Strap 
+2016-08-17 00:49:12,368 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:12,430 [9] INFO   [(null)] - Eswimelite. Get product info:Tree of Life Classic Brief 
+2016-08-17 00:49:12,448 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:12,511 [16] INFO   [(null)] - Eswimelite. Get product info:You are my Penguin Classic Brief 
+2016-08-17 00:49:12,511 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:12,610 [14] INFO   [(null)] - Eswimelite. Get product info:Lonely Jelly Classic Strap 
+2016-08-17 00:49:12,638 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:12,686 [6] INFO   [(null)] - Eswimelite. Get product info:Sea Lion Games Jammer 
+2016-08-17 00:49:13,108 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:13,176 [11] INFO   [(null)] - Eswimelite. Get product info:You are my Penguin Classic Brief 
+2016-08-17 00:49:13,426 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:13,460 [15] INFO   [(null)] - Eswimelite. Get product info:Tree of Life Classic Brief 
+2016-08-17 00:49:13,585 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:13,646 [17] INFO   [(null)] - Eswimelite. Get product info:Sea Lion Games Jammer 
+2016-08-17 00:49:13,946 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:13,986 [6] INFO   [(null)] - Eswimelite. Get product info:Tree of Life Classic Brief 
+2016-08-17 00:49:14,090 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:14,123 [9] INFO   [(null)] - Eswimelite. Get product info:Sea Lion Games Jammer 
+2016-08-17 00:49:14,784 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:15,291 [17] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-17 00:49:15,335 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:15,774 [11] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-17 00:49:15,812 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:16,260 [17] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-17 00:49:16,295 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:16,718 [6] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-17 00:49:16,768 [6] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-17 00:49:16,802 [12] INFO   [(null)] - Eswimelite. Starting 5 threads 
+2016-08-17 00:49:16,835 [17] INFO   [(null)] - Eswimelite. Get product info:America! Yeah! Male Drag Suit 
+2016-08-17 00:49:16,835 [11] INFO   [(null)] - Eswimelite. Get product info:Argentina Classic Brief 
+2016-08-17 00:49:16,835 [6] INFO   [(null)] - Eswimelite. Get product info:Argentina Waterpolo Brief 
+2016-08-17 00:49:17,564 [9] INFO   [(null)] - Eswimelite. Get product info:Armenia Waterpolo Brief 
+2016-08-17 00:49:17,891 [17] INFO   [(null)] - Eswimelite. Get product info:Australia Classic Brief 
+2016-08-17 00:49:17,891 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:18,009 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:18,009 [6] INFO   [(null)] - Eswimelite. Get product info:America! Yeah! Male Drag Suit 
+2016-08-17 00:49:18,046 [11] INFO   [(null)] - Eswimelite. Get product info:Argentina Waterpolo Brief 
+2016-08-17 00:49:18,046 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:18,473 [9] INFO   [(null)] - Eswimelite. Get product info:Argentina Classic Brief 
+2016-08-17 00:49:18,473 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:18,589 [6] INFO   [(null)] - Eswimelite. Get product info:Armenia Waterpolo Brief 
+2016-08-17 00:49:18,590 [12] INFO   [(null)] - Eswimelite. Starting 2 threads 
+2016-08-17 00:49:18,656 [11] INFO   [(null)] - Eswimelite. Get product info:America! Yeah! Male Drag Suit 
+2016-08-17 00:49:18,784 [17] INFO   [(null)] - Eswimelite. Get product info:Argentina Waterpolo Brief 
+2016-08-17 00:49:18,784 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:18,962 [9] INFO   [(null)] - Eswimelite. Get product info:Australia Classic Brief 
+2016-08-17 00:49:18,962 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:19,065 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:19,065 [6] INFO   [(null)] - Eswimelite. Get product info:Argentina Classic Brief 
+2016-08-17 00:49:19,117 [11] INFO   [(null)] - Eswimelite. Get product info:Armenia Waterpolo Brief 
+2016-08-17 00:49:19,118 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:19,238 [17] INFO   [(null)] - Eswimelite. Get product info:Australia Jammer 
+2016-08-17 00:49:19,239 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:19,473 [9] INFO   [(null)] - Eswimelite. Get product info:Australia Skinny Strap 
+2016-08-17 00:49:19,473 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:19,615 [6] INFO   [(null)] - Eswimelite. Get product info:Australia Classic Brief 
+2016-08-17 00:49:19,615 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:19,722 [11] INFO   [(null)] - Eswimelite. Get product info:Australia Sunback Tank 
+2016-08-17 00:49:19,722 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:19,790 [17] INFO   [(null)] - Eswimelite. Get product info:Austria 2.0 Jammer 
+2016-08-17 00:49:19,790 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:20,214 [6] INFO   [(null)] - Eswimelite. Get product info:Australia Jammer 
+2016-08-17 00:49:20,215 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:20,314 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:20,348 [11] INFO   [(null)] - Eswimelite. Get product info:Austria 2.0 Skinny Strap 
+2016-08-17 00:49:20,597 [9] INFO   [(null)] - Eswimelite. Get product info:Australia Sunback Tank 
+2016-08-17 00:49:20,597 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:20,690 [17] INFO   [(null)] - Eswimelite. Get product info:Australia Skinny Strap 
+2016-08-17 00:49:20,690 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:20,786 [6] INFO   [(null)] - Eswimelite. Get product info:Austria 2.0 Jammer 
+2016-08-17 00:49:20,786 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:21,115 [9] INFO   [(null)] - Eswimelite. Get product info:Australia Jammer 
+2016-08-17 00:49:21,115 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:21,252 [15] INFO   [(null)] - Eswimelite. Get product info:Australia Sunback Tank 
+2016-08-17 00:49:21,553 [12] INFO   [(null)] - Eswimelite. Starting 3 threads 
+2016-08-17 00:49:21,649 [11] INFO   [(null)] - Eswimelite. Get product info:Austria 2.0 Skinny Strap 
+2016-08-17 00:49:21,649 [16] INFO   [(null)] - Eswimelite. Get product info:Austria 2.0 Jammer 
+2016-08-17 00:49:21,650 [17] INFO   [(null)] - Eswimelite. Get product info:Australia Skinny Strap 
+2016-08-17 00:49:21,697 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:21,816 [9] INFO   [(null)] - Eswimelite. Get product info:Austria 2.0 Sunback Tank 
+2016-08-17 00:49:21,817 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:21,884 [3] INFO   [(null)] - Eswimelite. Get product info:Austria 2.1 Jammer 
+2016-08-17 00:49:22,134 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:22,180 [15] INFO   [(null)] - Eswimelite. Get product info:Austria 2.0 Skinny Strap 
+2016-08-17 00:49:22,187 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:22,266 [14] INFO   [(null)] - Eswimelite. Get product info:Austria Classic Brief 
+2016-08-17 00:49:22,266 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:49:22,849 [6] INFO   [(null)] - Eswimelite. Get product info:Austria Jammer 
+2016-08-17 00:50:33,744 [1] INFO   [(null)] - Eswimelite. Cancel 
+2016-08-17 00:50:37,855 [4] INFO   [(null)] - Eswimelite. Complete 
+2016-08-17 00:50:39,057 [17] ERROR  [(null)] - System.UnauthorizedAccessException: Отказано в доступе по пути "c:\fc1a7e30-1637-4511-abf3-076a55dc6594.csv".
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   в System.IO.FileStream..ctor(String path, FileMode mode)
+   в WheelsScraper.ScrapResultCsvExporter.GetOutStream(String path, Boolean zip) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\ScrapResultCsvExporter.cs:строка 20
+   в WheelsScraper.ScrapResultCsvExporter.Export(List`1 wares, List`1 fields, String path, Boolean zip, List`1& badWares, Boolean outputToError, Boolean onlyBad, ExportProfile profile) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\ScrapResultCsvExporter.cs:строка 136
+   в WheelsScraper.EDFManager.GenerateDataReportFile(Int32 count) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\EDFManager.cs:строка 391
+2016-08-17 00:50:39,065 [17] ERROR  [(null)] - . Failed to save file. Отказано в доступе по пути "c:\fc1a7e30-1637-4511-abf3-076a55dc6594.csv". 
+2016-08-17 00:50:49,201 [1] ERROR  [(null)] - . Файл "D:\С#\test\EDF\WheelsScraper 2\WheelsScraper\bin\Debug\Eswimelite.dll" уже существует. 
+2016-08-17 00:50:49,244 [1] INFO   [(null)] - . Saved 
+2016-08-17 00:50:50,775 [1] INFO   [(null)] - . Starting Eswimelite 
+2016-08-17 00:50:50,812 [1] INFO   [(null)] - Checking forced version for Eswimelite
+2016-08-17 00:50:54,095 [15] INFO   [(null)] - Eswimelite. Starting new loop 
+2016-08-17 00:51:05,868 [1] INFO   [(null)] - Eswimelite. Cancel 
+2016-08-17 00:51:05,905 [1] INFO   [(null)] - Eswimelite. Cancel 
+2016-08-17 00:51:05,947 [1] INFO   [(null)] - Eswimelite. Cancel 
+2016-08-17 00:51:05,985 [1] INFO   [(null)] - Eswimelite. Cancel 
+2016-08-17 00:51:09,128 [17] INFO   [(null)] - Eswimelite. Complete 
+2016-08-17 00:51:12,206 [1] INFO   [(null)] - . Starting Eswimelite 
+2016-08-17 00:51:12,239 [1] INFO   [(null)] - Checking forced version for Eswimelite
+2016-08-17 00:51:14,639 [12] INFO   [(null)] - Eswimelite. Starting new loop 
+2016-08-17 00:51:14,681 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:51:14,742 [16] INFO   [(null)] - Eswimelite. Get Categories List ..  
+2016-08-17 00:51:15,341 [16] INFO   [(null)] - Eswimelite. CategoriesList list processed .. ok 
+2016-08-17 00:51:15,375 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:51:15,819 [17] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-17 00:51:15,850 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:51:16,286 [4] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-17 00:51:16,318 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:51:16,766 [9] INFO   [(null)] - Eswimelite. Empty SubCategory ..  
+2016-08-17 00:51:16,800 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:51:17,275 [4] INFO   [(null)] - Eswimelite. Get Product List ..  
+2016-08-17 00:51:17,311 [4] INFO   [(null)] - Eswimelite. Product List end ..  
+2016-08-17 00:51:17,370 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:51:17,430 [9] INFO   [(null)] - Eswimelite. Get product info:The Majestic Male Drag Suit 
+2016-08-17 00:51:17,923 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:51:17,956 [17] INFO   [(null)] - Eswimelite. Get product info:The Majestic Male Drag Suit 
+2016-08-17 00:51:18,441 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:51:18,473 [16] INFO   [(null)] - Eswimelite. Get product info:The Majestic Male Drag Suit 
+2016-08-17 00:51:18,962 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:51:18,996 [17] INFO   [(null)] - Eswimelite. Get product info:The Majestic Classic Brief 
+2016-08-17 00:51:19,501 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:51:19,534 [16] INFO   [(null)] - Eswimelite. Get product info:The Majestic Classic Brief 
+2016-08-17 00:51:19,996 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:51:20,031 [4] INFO   [(null)] - Eswimelite. Get product info:The Majestic Classic Brief 
+2016-08-17 00:51:20,538 [12] INFO   [(null)] - Eswimelite. Starting 1 threads 
+2016-08-17 00:51:20,573 [9] INFO   [(null)] - Eswimelite. Get product info:Giraffe Womens Waterpolo 
+2016-08-17 00:51:20,991 [1] INFO   [(null)] - Eswimelite. Cancel 
+2016-08-17 00:51:21,063 [11] INFO   [(null)] - Eswimelite. Complete 
+2016-08-17 00:51:21,986 [9] ERROR  [(null)] - System.UnauthorizedAccessException: Отказано в доступе по пути "c:\bed1a3f9-52ab-4606-9d3a-6a6a35f8f7bb.csv".
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   в System.IO.FileStream..ctor(String path, FileMode mode)
+   в WheelsScraper.ScrapResultCsvExporter.GetOutStream(String path, Boolean zip) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\ScrapResultCsvExporter.cs:строка 20
+   в WheelsScraper.ScrapResultCsvExporter.Export(List`1 wares, List`1 fields, String path, Boolean zip, List`1& badWares, Boolean outputToError, Boolean onlyBad, ExportProfile profile) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\ScrapResultCsvExporter.cs:строка 136
+   в WheelsScraper.EDFManager.GenerateDataReportFile(Int32 count) в c:\Projects\EDF\WheelsScraper 2\WheelsScraper\EDFManager.cs:строка 391
+2016-08-17 00:51:21,986 [9] ERROR  [(null)] - . Failed to save file. Отказано в доступе по пути "c:\bed1a3f9-52ab-4606-9d3a-6a6a35f8f7bb.csv". 
+2016-08-17 00:51:23,435 [1] INFO   [(null)] - Eswimelite. Cancel 
+2016-08-17 00:51:23,467 [1] INFO   [(null)] - UniversalMapper. Cancel 
+2016-08-17 00:51:23,497 [1] INFO   [(null)] - Zeiglers. Cancel 

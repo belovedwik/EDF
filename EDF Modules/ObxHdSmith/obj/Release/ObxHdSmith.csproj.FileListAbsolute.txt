@@ -1,0 +1,3 @@
+C:\Users\lyask\Documents\Visual Studio 2013\Projects\ObxHdSmith\ObxHdSmith\obj\Release\Databox.Libs.ObxHdSmith.ucExtSettings.resources
+C:\Users\lyask\Documents\Visual Studio 2013\Projects\ObxHdSmith\ObxHdSmith\obj\Release\ObxHdSmith.csproj.GenerateResource.Cache
+C:\Users\lyask\Documents\Visual Studio 2013\Projects\ObxHdSmith\ObxHdSmith\obj\Release\ObxHdSmith.dll.licenses

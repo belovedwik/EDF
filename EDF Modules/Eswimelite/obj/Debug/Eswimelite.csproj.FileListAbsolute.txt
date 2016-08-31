@@ -8,4 +8,3 @@ D:\С#\test\EDF\EDF Modules\Eswimelite\obj\Debug\Databox.Libs.Eswimelite.ucExtSe
 D:\С#\test\EDF\EDF Modules\Eswimelite\obj\Debug\Eswimelite.csproj.GenerateResource.Cache
 D:\С#\test\EDF\EDF Modules\Eswimelite\obj\Debug\Eswimelite.dll
 D:\С#\test\EDF\EDF Modules\Eswimelite\obj\Debug\Eswimelite.pdb
-D:\С#\test\EDF\EDF Modules\Eswimelite\obj\Debug\Eswimelite.csprojResolveAssemblyReference.cache

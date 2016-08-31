@@ -2,7 +2,7 @@
 <ScraperSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SpecialSettings xsi:type="ExtSettings" />
   <Name>Zeiglers</Name>
-  <MaxThreads>1</MaxThreads>
+  <MaxThreads>5</MaxThreads>
   <MaxDelay>0</MaxDelay>
   <MaxImageDownloadThreads>0</MaxImageDownloadThreads>
   <MaxImageUploadThreads>0</MaxImageUploadThreads>
