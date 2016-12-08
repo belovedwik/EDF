@@ -225,12 +225,16 @@ namespace WheelsScraper
                 {
                     wi.Title2=wi.Title2.Replace("  ", " ").Replace("  ", " ").Replace("  ", " ").Replace("  ", " ").Replace("  ", " ").Replace("  ", " ").Replace("  ", " ").Replace("  ", " ");
                 }
+                if (string.IsNullOrEmpty(wi.Title))
+                    wi.Title = wi.Title2;
+
                 wi.Description = htmlDoc.DocumentNode.SelectSingleNode("//*[@id='lbHhcLongDescription']").InnerTextOrNull();
                 if (string.IsNullOrEmpty(wi.Description))
                 {
                     wi.Description = htmlDoc.DocumentNode.SelectSingleNode("//fieldset[@class='fullHeightWidth']/table[@class='width100']//tr[./td[1]/span[@class='HDDesc' and contains(text(),'Therapeutic Description')]]/td[2]").InnerTextOrNull();
                 }
-
+                if (string.IsNullOrEmpty(wi.Description))
+                    wi.Description = wi.Title2;
                 string Price = htmlDoc.DocumentNode.SelectSingleNode("//*[@id='lbPrice']").InnerTextOrNull();
                 if(!string.IsNullOrEmpty(Price)){
                     wi.Cost = ParseDouble(Price.Replace("$","").Trim());

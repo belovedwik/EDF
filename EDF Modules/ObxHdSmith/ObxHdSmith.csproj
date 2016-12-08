@@ -90,7 +90,6 @@
     <Compile Include="DataSerialization.cs" />
     <Compile Include="ExtSettings.cs" />
     <Compile Include="ExtWareInfo.cs" />
-    <Compile Include="JavaScriptSerializer.cs" />
     <Compile Include="ObxHdSmith.cs" />
     <None Include="EDF\ObxHdSmith.edf">
       <SubType>Designer</SubType>

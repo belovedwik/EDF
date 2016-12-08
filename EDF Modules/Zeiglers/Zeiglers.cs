@@ -124,7 +124,7 @@ namespace WheelsScraper
             //AddWareInfo(wi);
 			OnItemLoaded(null);
 
-			pqi.Processed = true;
+			
 			MessagePrinter.PrintMessage("Categories List .. ok");
 			StartOrPushPropertiesThread();
 		}
