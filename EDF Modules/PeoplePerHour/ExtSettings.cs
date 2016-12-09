@@ -7,6 +7,12 @@ namespace Databox.Libs.PeoplePerHour
 {
     public class ExtSettings
     {
-        public string Tags { get; set; }
+
+        public List<Tags> TagList { get; set; }
+    }
+
+    public class Tags {
+        public string SearchTag { get; set; }
+        public string SearchKeyword { get; set; }
     }
 }

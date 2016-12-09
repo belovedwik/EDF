@@ -8,6 +8,7 @@ namespace PeoplePerHour
 {
     public class ExtWareInfo : WareInfo
     {
+        public string TAGs { get; set; }
         public string Title { get; set; }
         public decimal Price { get; set; }
         //public string Name { get; set; }

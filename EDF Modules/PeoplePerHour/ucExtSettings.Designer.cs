@@ -29,53 +29,73 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.lblTags = new System.Windows.Forms.Label();
-            this.txtTags = new System.Windows.Forms.TextBox();
             this.bsSett = new System.Windows.Forms.BindingSource(this.components);
+            this.dgTags = new System.Windows.Forms.DataGridView();
+            this.tagListBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.bsSett)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgTags)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tagListBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lblTags
-            // 
-            this.lblTags.AutoSize = true;
-            this.lblTags.Location = new System.Drawing.Point(32, 47);
-            this.lblTags.Name = "lblTags";
-            this.lblTags.Size = new System.Drawing.Size(32, 13);
-            this.lblTags.TabIndex = 0;
-            this.lblTags.Text = "TAGs";
-            // 
-            // txtTags
-            // 
-            this.txtTags.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.bsSett, "Tags", true));
-            this.txtTags.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsSett, "Tags", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.txtTags.Location = new System.Drawing.Point(35, 63);
-            this.txtTags.Name = "txtTags";
-            this.txtTags.Size = new System.Drawing.Size(149, 21);
-            this.txtTags.TabIndex = 1;
             // 
             // bsSett
             // 
             this.bsSett.DataSource = typeof(Databox.Libs.PeoplePerHour.ExtSettings);
             // 
+            // dgTags
+            // 
+            this.dgTags.AutoGenerateColumns = false;
+            this.dgTags.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgTags.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2});
+            this.dgTags.DataSource = this.tagListBindingSource;
+            this.dgTags.Location = new System.Drawing.Point(21, 24);
+            this.dgTags.Name = "dgTags";
+            this.dgTags.Size = new System.Drawing.Size(498, 127);
+            this.dgTags.TabIndex = 4;
+            // 
+            // tagListBindingSource
+            // 
+            this.tagListBindingSource.DataMember = "TagList";
+            this.tagListBindingSource.DataSource = this.bsSett;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "SearchTag";
+            this.dataGridViewTextBoxColumn1.HeaderText = "SearchTag";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "SearchKeyword";
+            this.dataGridViewTextBoxColumn2.HeaderText = "SearchKeyword";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 300;
+            // 
             // ucExtSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.txtTags);
-            this.Controls.Add(this.lblTags);
+            this.Controls.Add(this.dgTags);
             this.Name = "ucExtSettings";
-            this.Size = new System.Drawing.Size(257, 244);
+            this.Size = new System.Drawing.Size(541, 244);
             ((System.ComponentModel.ISupportInitialize)(this.bsSett)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgTags)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tagListBindingSource)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.BindingSource bsSett;
-        private System.Windows.Forms.Label lblTags;
-        private System.Windows.Forms.TextBox txtTags;
+       private System.Windows.Forms.DataGridView dgTags;
+        private System.Windows.Forms.BindingSource tagListBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
 
     }
 }

@@ -12,7 +12,7 @@ namespace WheelsScraper
 {
     public class PeoplePerHour : BaseScraper
     {
-        readonly string EntSearchText = @"-hourlies?ref=search&filter=all";
+        readonly string EndSearchText = @"-hourlies?ref=search&filter=all";
         public PeoplePerHour()
         {
             Name = "PeoplePerHour";
@@ -72,14 +72,17 @@ namespace WheelsScraper
             if (cancel)
                 return;
 
-            if (string.IsNullOrEmpty(extSett.Tags)) {
+            if (extSett.TagList.Count() == 0)
+            {
                 MessagePrinter.PrintMessage("TAGs is empty, exit", ImportanceLevel.High);
                 return;
             }
 
-            lock (this)
-                lstProcessQueue.Add(new ProcessQueueItem { ItemType = 2, URL = (Url + extSett.Tags.Trim() + EntSearchText) });
-      
+            foreach (var tag in extSett.TagList) {
+                lock (this)
+                    lstProcessQueue.Add(new ProcessQueueItem { ItemType = 2, Name = tag.SearchTag, URL = (Url + tag.SearchTag.Trim() + EndSearchText), Item = tag.SearchKeyword });
+            }
+            
             pqi.Processed = true;
             OnItemLoaded(null);
 
@@ -89,6 +92,9 @@ namespace WheelsScraper
 
         private void ProcessSearchResultPage(ProcessQueueItem pqi) {
 
+            var keywords = (string)pqi.Item ?? "";
+            var searchTag = pqi.Name;
+
             var html = PageRetriever.ReadFromServer(pqi.URL);
             var doc = CreateDoc(html);
 
@@ -96,7 +102,7 @@ namespace WheelsScraper
 
             if (main_profiles == null)
             {
-                MessagePrinter.PrintMessage("Not found any results with text: " + extSett.Tags, ImportanceLevel.High);
+                MessagePrinter.PrintMessage("Not found any results with text: " + searchTag, ImportanceLevel.High);
                 return;
             }
             foreach (var profile in main_profiles)
@@ -113,6 +119,19 @@ namespace WheelsScraper
                 wi.Delivery = profile.SelectSingleNode(".//span[@class='hourlie-info-value']").InnerTextOrNull();
                 wi.Name = profile.SelectSingleNode(".//div[contains(@class,'user-info-container')]/a").InnerTextOrNull();
                 wi.Price = decimal.Parse(price != null ? price : "0");
+                wi.TAGs = "";
+
+                var keywordList = keywords.Split(' ');
+                if (keywordList.Count() > 0) {
+                    foreach (var word in keywordList) {
+                        if (wi.Title.Contains(word)) {
+                            wi.TAGs = searchTag;
+                            break;
+                        }
+                    }
+                }    
+
+               
 
                 lock (this)
                     lstProcessQueue.Add(new ProcessQueueItem { ItemType = 10, Item = wi });
@@ -126,7 +145,7 @@ namespace WheelsScraper
                 if (!next_url.Contains(Url))
                     next_url = Url + next_url;
 
-                ProcessQueueItem link_next = new ProcessQueueItem { URL = next_url, ItemType = 2 };
+                ProcessQueueItem link_next = new ProcessQueueItem { URL = next_url, ItemType = 2, Item = keywords, Name = searchTag };
                 lock (this)
                     lstProcessQueue.Add(link_next);
             }
@@ -151,19 +170,22 @@ namespace WheelsScraper
             var _info = userProfile.SelectNodes("//div[contains(@class,'detailed-information')]/ul/li");
             var _sales = "0";
             var _view = "0";
-            foreach (var info_node in _info)
-            {
-                if (info_node.ChildNodes != null){
-                    if (info_node.ChildNodes[1].InnerText.Contains("Sales"))
-                        _sales = info_node.ChildNodes[3].InnerText;
-                    if (info_node.ChildNodes[1].InnerText.Contains("Views"))
-                        _view = info_node.ChildNodes[3].InnerText;
-                } 
-            }
+           
+            if (_info != null)
+                foreach (var info_node in _info)
+                {
+                    if (info_node.ChildNodes != null){
+                        if (info_node.ChildNodes[1].InnerText.Contains("Sales"))
+                            _sales = info_node.ChildNodes[3].InnerText;
+                        if (info_node.ChildNodes[1].InnerText.Contains("Views"))
+                            _view = info_node.ChildNodes[3].InnerText;
+                    } 
+                }
             wi.Sales = Int32.Parse(_sales.Replace(",", "").Replace(" ", ""));
             wi.Views = Int32.Parse(_view.Replace(",", "").Replace(" ", ""));
             var _favorites = userProfile.SelectSingleNode("//span[contains(@class,'count-stars')]").InnerTextOrNull();
-            wi.Favorites = Int32.Parse(_favorites);
+            if (_favorites != null)
+                wi.Favorites = Int32.Parse(_favorites);
             wi.ReviewRating = userProfile.SelectSingleNode("//div[@data-content-selector='.popover-feedback']/div/span").InnerTextOrNull();
             wi.Responce = userProfile.SelectSingleNode("//div[@data-content-selector='.popover-response']/div/span").InnerTextOrNull();
             wi.Review = userProfile.SelectSingleNode("//div[contains(@class,'feedbacks-list-container')]/h2").InnerTextOrNull();

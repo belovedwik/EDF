@@ -4,7 +4,7 @@ using System.Linq;
 using DevExpress.XtraEditors;
 using WheelsScraper;
 
-namespace Databox.Libs.PeoplePerHour
+namespace Databox.Libs.BackLinks
 {
     public partial class ucExtSettings : XtraUserControl
     {
@@ -32,5 +32,6 @@ namespace Databox.Libs.PeoplePerHour
             bsSett.DataSource = ExtSett;
         }
 
+     
     }
 }
