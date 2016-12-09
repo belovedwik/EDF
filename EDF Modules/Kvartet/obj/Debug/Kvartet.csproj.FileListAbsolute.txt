@@ -1,0 +1,7 @@
+D:\С#\EDF\WheelsScraper 2\WheelsScraper\bin\Debug\EDF\Kvartet.edf
+D:\С#\EDF\WheelsScraper 2\WheelsScraper\bin\Debug\Kvartet.dll
+D:\С#\EDF\WheelsScraper 2\WheelsScraper\bin\Debug\Kvartet.pdb
+D:\С#\EDF\EDF Modules\Kvartet\obj\Debug\Databox.Libs.Kvartet.ucExtSettings.resources
+D:\С#\EDF\EDF Modules\Kvartet\obj\Debug\Kvartet.csproj.GenerateResource.Cache
+D:\С#\EDF\EDF Modules\Kvartet\obj\Debug\Kvartet.dll
+D:\С#\EDF\EDF Modules\Kvartet\obj\Debug\Kvartet.pdb
