@@ -1,7 +1,0 @@
-D:\С#\EDF\WheelsScraper 2\WheelsScraper\bin\Debug\PeoplePerHour.dll
-D:\С#\EDF\WheelsScraper 2\WheelsScraper\bin\Debug\PeoplePerHour.pdb
-D:\С#\EDF\EDF Modules\PeoplePerHour\obj\Debug\PeoplePerHour.csprojResolveAssemblyReference.cache
-D:\С#\EDF\EDF Modules\PeoplePerHour\obj\Debug\Databox.Libs.PeoplePerHour.ucExtSettings.resources
-D:\С#\EDF\EDF Modules\PeoplePerHour\obj\Debug\PeoplePerHour.csproj.GenerateResource.Cache
-D:\С#\EDF\EDF Modules\PeoplePerHour\obj\Debug\PeoplePerHour.dll
-D:\С#\EDF\EDF Modules\PeoplePerHour\obj\Debug\PeoplePerHour.pdb

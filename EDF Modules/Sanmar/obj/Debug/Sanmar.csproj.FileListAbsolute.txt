@@ -1,6 +1,0 @@
-D:\С#\EDF\WheelsScraper 2\WheelsScraper\bin\Debug\Sanmar.dll
-D:\С#\EDF\WheelsScraper 2\WheelsScraper\bin\Debug\Sanmar.pdb
-D:\С#\EDF\EDF Modules\Sanmar\obj\Debug\Databox.Libs.Sanmar.ucExtSettings.resources
-D:\С#\EDF\EDF Modules\Sanmar\obj\Debug\Sanmar.csproj.GenerateResource.Cache
-D:\С#\EDF\EDF Modules\Sanmar\obj\Debug\Sanmar.dll
-D:\С#\EDF\EDF Modules\Sanmar\obj\Debug\Sanmar.pdb
