@@ -4,3 +4,4 @@ D:\С#\EDF\EDF Modules\BackLinks\obj\Debug\Databox.Libs.BackLinks.ucExtSettings.
 D:\С#\EDF\EDF Modules\BackLinks\obj\Debug\BackLinks.csproj.GenerateResource.Cache
 D:\С#\EDF\EDF Modules\BackLinks\obj\Debug\BackLinks.dll
 D:\С#\EDF\EDF Modules\BackLinks\obj\Debug\BackLinks.pdb
+D:\С#\EDF\EDF Modules\BackLinks\obj\Debug\BackLinks.csprojResolveAssemblyReference.cache
