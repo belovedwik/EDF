@@ -1,0 +1,245 @@
+2016-12-09 23:49:56,364 [1] INFO   [(null)] - . Starting scheduler in 10 seconds 
+2016-12-09 23:49:57,365 [1] INFO   [(null)] - Checking forced version for BackLinks
+2016-12-09 23:49:59,597 [1] INFO   [(null)] - . Data feed BackLinks loaded 
+2016-12-09 23:50:00,084 [1] INFO   [(null)] - Checking forced version for Eswimelite
+2016-12-09 23:50:00,780 [1] INFO   [(null)] - . Data feed Eswimelite loaded 
+2016-12-09 23:50:01,217 [1] INFO   [(null)] - Checking forced version for Kvartet
+2016-12-09 23:50:01,867 [1] INFO   [(null)] - . Data feed Kvartet loaded 
+2016-12-09 23:50:02,330 [1] INFO   [(null)] - Checking forced version for ObxHdSmith
+2016-12-09 23:50:02,975 [1] INFO   [(null)] - . Data feed ObxHdSmith loaded 
+2016-12-09 23:50:03,443 [1] INFO   [(null)] - Checking forced version for PeoplePerHour
+2016-12-09 23:50:04,110 [1] INFO   [(null)] - . Data feed PeoplePerHour loaded 
+2016-12-09 23:50:04,575 [1] INFO   [(null)] - Checking forced version for Sanmar
+2016-12-09 23:50:05,295 [1] INFO   [(null)] - . Data feed Sanmar loaded 
+2016-12-09 23:50:05,905 [1] ERROR  [(null)] - System.InvalidOperationException: В документе XML (676, 29) присутствует ошибка. ---> System.FormatException: Строка "False" не является допустимым значением Boolean.
+   в System.Xml.XmlConvert.ToBoolean(String s)
+   в Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderScraperSettings.Read27_ScraperSettings(Boolean isNullable, Boolean checkType)
+   в Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderScraperSettings.Read28_ScraperSettings()
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   в System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader)
+   в WheelsScraper.ScraperSettings.ReadConfig(String configFile, Type[] additionalTypes) в c:\Projects\EDF\WheelsScraper 2\Scraper.Shared\ScraperSettings.cs:строка 240
+   в WheelsScraper.Form1.DoLoadProcessorConfig(String edfFileName, String libFileName, String edfUrl) в C:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 706
+   в WheelsScraper.Form1.LoadLocalDatafeeds() в C:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 2288
+2016-12-09 23:50:05,915 [1] ERROR  [(null)] - . В документе XML (676, 29) присутствует ошибка. 
+2016-12-09 23:50:06,428 [1] INFO   [(null)] - Checking forced version for UniversalMapper
+2016-12-09 23:50:06,569 [1] INFO   [(null)] - You are using latest version of UniversalMapper
+2016-12-09 23:50:07,091 [1] INFO   [(null)] - . Data feed UniversalMapper loaded 
+2016-12-09 23:50:07,587 [1] INFO   [(null)] - Checking forced version for Zeiglers
+2016-12-09 23:50:08,255 [1] INFO   [(null)] - . Data feed Zeiglers loaded 
+2016-12-09 23:50:12,570 [1] INFO   [(null)] - . Starting BackLinks 
+2016-12-09 23:50:12,688 [1] INFO   [(null)] - Checking forced version for BackLinks
+2016-12-09 23:50:15,997 [6] INFO   [(null)] - BackLinks. Starting login 
+2016-12-09 23:50:16,556 [6] INFO   [(null)] - BackLinks. Login done. 
+2016-12-09 23:50:17,723 [12] INFO   [(null)] - BackLinks. Starting new loop 
+2016-12-09 23:50:17,907 [12] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:50:18,076 [10] INFO   [(null)] - BackLinks. Start process category Advertising, page1 
+2016-12-09 23:50:19,581 [10] INFO   [(null)] - BackLinks.   Process Advertising / New monetization, advertising 
+2016-12-09 23:50:20,074 [10] INFO   [(null)] - BackLinks. End process category Advertising, page1 
+2016-12-09 23:50:20,515 [12] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:50:20,664 [8] INFO   [(null)] - BackLinks. Start process category E-Commerce, page1 
+2016-12-09 23:50:22,359 [8] INFO   [(null)] - BackLinks.   Process E-Commerce / printer ink, ink cartridges 
+2016-12-09 23:50:22,890 [8] INFO   [(null)] - BackLinks. End process category E-Commerce, page1 
+2016-12-09 23:50:23,049 [12] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:50:23,222 [10] INFO   [(null)] - BackLinks. Start process category Web Design, page1 
+2016-12-09 23:50:24,484 [10] INFO   [(null)] - BackLinks.   Process Web Design / Articles - Web Tool Bag 
+2016-12-09 23:50:24,990 [10] INFO   [(null)] - BackLinks. End process category Web Design, page1 
+2016-12-09 23:50:25,148 [12] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:50:25,342 [10] ERROR  [(null)] - System.InvalidCastException: Не удалось привести тип объекта "System.Char" к типу "System.String".
+   в WheelsScraper.BackLinks.ProcessCategoryListPage(ProcessQueueItem pqi) в d:\С#\EDF\EDF Modules\BackLinks\BackLinks.cs:строка 117
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-12-09 23:50:25,350 [10] ERROR  [(null)] - BackLinks. Не удалось привести тип объекта "System.Char" к типу "System.String". 
+2016-12-09 23:50:25,530 [12] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:50:25,713 [5] ERROR  [(null)] - System.InvalidCastException: Не удалось привести тип объекта "System.Char" к типу "System.String".
+   в WheelsScraper.BackLinks.ProcessCategoryListPage(ProcessQueueItem pqi) в d:\С#\EDF\EDF Modules\BackLinks\BackLinks.cs:строка 117
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-12-09 23:50:25,714 [5] ERROR  [(null)] - BackLinks. Не удалось привести тип объекта "System.Char" к типу "System.String". 
+2016-12-09 23:50:25,875 [12] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:50:26,060 [13] ERROR  [(null)] - System.InvalidCastException: Не удалось привести тип объекта "System.Char" к типу "System.String".
+   в WheelsScraper.BackLinks.ProcessCategoryListPage(ProcessQueueItem pqi) в d:\С#\EDF\EDF Modules\BackLinks\BackLinks.cs:строка 117
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-12-09 23:50:26,061 [13] ERROR  [(null)] - BackLinks. Не удалось привести тип объекта "System.Char" к типу "System.String". 
+2016-12-09 23:50:26,224 [12] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:50:26,412 [5] ERROR  [(null)] - System.InvalidCastException: Не удалось привести тип объекта "System.Char" к типу "System.String".
+   в WheelsScraper.BackLinks.ProcessCategoryListPage(ProcessQueueItem pqi) в d:\С#\EDF\EDF Modules\BackLinks\BackLinks.cs:строка 117
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-12-09 23:50:26,413 [5] ERROR  [(null)] - BackLinks. Не удалось привести тип объекта "System.Char" к типу "System.String". 
+2016-12-09 23:50:26,572 [12] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:50:26,753 [10] ERROR  [(null)] - System.InvalidCastException: Не удалось привести тип объекта "System.Char" к типу "System.String".
+   в WheelsScraper.BackLinks.ProcessCategoryListPage(ProcessQueueItem pqi) в d:\С#\EDF\EDF Modules\BackLinks\BackLinks.cs:строка 117
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-12-09 23:50:26,753 [10] ERROR  [(null)] - BackLinks. Не удалось привести тип объекта "System.Char" к типу "System.String". 
+2016-12-09 23:50:26,920 [12] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:50:27,099 [8] ERROR  [(null)] - System.InvalidCastException: Не удалось привести тип объекта "System.Char" к типу "System.String".
+   в WheelsScraper.BackLinks.ProcessCategoryListPage(ProcessQueueItem pqi) в d:\С#\EDF\EDF Modules\BackLinks\BackLinks.cs:строка 117
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-12-09 23:50:27,099 [8] ERROR  [(null)] - BackLinks. Не удалось привести тип объекта "System.Char" к типу "System.String". 
+2016-12-09 23:50:27,297 [12] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:50:27,490 [13] ERROR  [(null)] - System.InvalidCastException: Не удалось привести тип объекта "System.Char" к типу "System.String".
+   в WheelsScraper.BackLinks.ProcessCategoryListPage(ProcessQueueItem pqi) в d:\С#\EDF\EDF Modules\BackLinks\BackLinks.cs:строка 117
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-12-09 23:50:27,491 [13] ERROR  [(null)] - BackLinks. Не удалось привести тип объекта "System.Char" к типу "System.String". 
+2016-12-09 23:50:27,654 [12] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:50:27,836 [8] ERROR  [(null)] - System.InvalidCastException: Не удалось привести тип объекта "System.Char" к типу "System.String".
+   в WheelsScraper.BackLinks.ProcessCategoryListPage(ProcessQueueItem pqi) в d:\С#\EDF\EDF Modules\BackLinks\BackLinks.cs:строка 117
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-12-09 23:50:27,836 [8] ERROR  [(null)] - BackLinks. Не удалось привести тип объекта "System.Char" к типу "System.String". 
+2016-12-09 23:50:28,002 [12] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:50:28,185 [8] ERROR  [(null)] - System.InvalidCastException: Не удалось привести тип объекта "System.Char" к типу "System.String".
+   в WheelsScraper.BackLinks.ProcessCategoryListPage(ProcessQueueItem pqi) в d:\С#\EDF\EDF Modules\BackLinks\BackLinks.cs:строка 117
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-12-09 23:50:28,186 [8] ERROR  [(null)] - BackLinks. Не удалось привести тип объекта "System.Char" к типу "System.String". 
+2016-12-09 23:50:28,359 [12] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:50:28,631 [6] INFO   [(null)] - BackLinks. Complete 
+2016-12-09 23:50:28,884 [6] ERROR  [(null)] - System.UnauthorizedAccessException: Отказано в доступе по пути "c:\BackLinks.csv".
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   в System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   в WheelsScraper.Form1.CopyFiles(ISimpleScraper scraper, Dictionary`2 dicFiles, String fileName, Boolean overwriteFile, String path, Boolean ftpSave, Boolean localSave, Boolean zip, Boolean uploadToSCE) в C:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 1488
+2016-12-09 23:50:28,886 [6] ERROR  [(null)] - . Отказано в доступе по пути "c:\BackLinks.csv". 
+2016-12-09 23:50:29,105 [6] ERROR  [(null)] - System.UnauthorizedAccessException: Отказано в доступе по пути "c:\BackLinks.csv".
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   в System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   в WheelsScraper.Form1.CopyFiles(ISimpleScraper scraper, Dictionary`2 dicFiles, String fileName, Boolean overwriteFile, String path, Boolean ftpSave, Boolean localSave, Boolean zip, Boolean uploadToSCE) в C:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 1488
+2016-12-09 23:50:29,105 [6] ERROR  [(null)] - . Отказано в доступе по пути "c:\BackLinks.csv". 
+2016-12-09 23:50:30,333 [5] ERROR  [(null)] - System.UnauthorizedAccessException: Отказано в доступе по пути "c:\ebcba498-7a88-4a7e-bef0-d11eb35a9e57.csv".
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   в System.IO.FileStream..ctor(String path, FileMode mode)
+   в WheelsScraper.ScrapResultCsvExporter.GetOutStream(String path, Boolean zip) в C:\Projects\EDF\WheelsScraper 2\WheelsScraper\ScrapResultCsvExporter.cs:строка 20
+   в WheelsScraper.ScrapResultCsvExporter.Export(List`1 wares, List`1 fields, String path, Boolean zip, List`1& badWares, Boolean outputToError, Boolean onlyBad, ExportProfile profile) в C:\Projects\EDF\WheelsScraper 2\WheelsScraper\ScrapResultCsvExporter.cs:строка 136
+   в WheelsScraper.EDFManager.GenerateDataReportFile(Int32 count) в C:\Projects\EDF\WheelsScraper 2\WheelsScraper\EDFManager.cs:строка 394
+2016-12-09 23:50:30,334 [5] ERROR  [(null)] - . Failed to save file. Отказано в доступе по пути "c:\ebcba498-7a88-4a7e-bef0-d11eb35a9e57.csv". 
+2016-12-09 23:51:12,291 [1] INFO   [(null)] - . Starting BackLinks 
+2016-12-09 23:51:12,433 [1] INFO   [(null)] - Checking forced version for BackLinks
+2016-12-09 23:51:14,501 [6] INFO   [(null)] - BackLinks. Starting login 
+2016-12-09 23:51:15,091 [6] INFO   [(null)] - BackLinks. Login done. 
+2016-12-09 23:51:15,658 [11] INFO   [(null)] - BackLinks. Starting new loop 
+2016-12-09 23:51:15,821 [11] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:51:15,988 [8] INFO   [(null)] - BackLinks. Start process category Advertising, page1 
+2016-12-09 23:51:17,553 [8] INFO   [(null)] - BackLinks.   Process Advertising / New monetization, advertising 
+2016-12-09 23:51:42,222 [8] INFO   [(null)] - BackLinks. End process category Advertising, page1 
+2016-12-09 23:51:42,413 [11] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:51:42,600 [15] INFO   [(null)] - BackLinks. Start process category E-Commerce, page1 
+2016-12-09 23:51:44,221 [15] INFO   [(null)] - BackLinks.   Process E-Commerce / printer ink, ink cartridges 
+2016-12-09 23:51:50,046 [15] INFO   [(null)] - BackLinks. End process category E-Commerce, page1 
+2016-12-09 23:51:50,221 [11] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:51:50,386 [14] INFO   [(null)] - BackLinks. Start process category Web Design, page1 
+2016-12-09 23:51:51,848 [14] INFO   [(null)] - BackLinks.   Process Web Design / Articles - Web Tool Bag 
+2016-12-09 23:51:57,194 [14] INFO   [(null)] - BackLinks. End process category Web Design, page1 
+2016-12-09 23:51:57,672 [11] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:51:57,829 [8] INFO   [(null)] - BackLinks. Start process category Advertising, page2 
+2016-12-09 23:51:59,711 [8] INFO   [(null)] - BackLinks.   Process Advertising / Mishre Directory- Games 
+2016-12-09 23:52:20,291 [8] INFO   [(null)] - BackLinks. End process category Advertising, page2 
+2016-12-09 23:52:20,483 [11] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:52:20,651 [15] INFO   [(null)] - BackLinks. Start process category E-Commerce, page2 
+2016-12-09 23:52:21,947 [15] INFO   [(null)] - BackLinks.   Process E-Commerce / Toyota has no plans to release a machine CarPlay ... 
+2016-12-09 23:52:28,420 [15] INFO   [(null)] - BackLinks. End process category E-Commerce, page2 
+2016-12-09 23:52:28,594 [11] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:52:28,768 [13] INFO   [(null)] - BackLinks. Start process category Web Design, page2 
+2016-12-09 23:52:30,018 [13] INFO   [(null)] - BackLinks.   Process Web Design / here - Web Tool Bag 
+2016-12-09 23:52:30,568 [13] INFO   [(null)] - BackLinks. End process category Web Design, page2 
+2016-12-09 23:52:30,735 [11] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:52:30,909 [5] INFO   [(null)] - BackLinks. Start process category Advertising, page3 
+2016-12-09 23:52:32,518 [5] INFO   [(null)] - BackLinks.   Process Advertising / Social Media Marketing 
+2016-12-09 23:52:33,045 [5] INFO   [(null)] - BackLinks. End process category Advertising, page3 
+2016-12-09 23:52:33,215 [11] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:52:33,384 [4] INFO   [(null)] - BackLinks. Start process category E-Commerce, page3 
+2016-12-09 23:52:34,840 [4] INFO   [(null)] - BackLinks.   Process E-Commerce / Website templates - Entertainment - OsCommerce Templates 
+2016-12-09 23:52:35,359 [4] INFO   [(null)] - BackLinks. End process category E-Commerce, page3 
+2016-12-09 23:52:35,527 [11] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:52:35,701 [8] INFO   [(null)] - BackLinks. Start process category Web Design, page3 
+2016-12-09 23:52:36,912 [8] INFO   [(null)] - BackLinks.   Process Web Design / Hundreds of WordPress themes 
+2016-12-09 23:52:37,454 [8] INFO   [(null)] - BackLinks. End process category Web Design, page3 
+2016-12-09 23:52:37,635 [11] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:52:37,805 [14] INFO   [(null)] - BackLinks. Start process category Advertising, page4 
+2016-12-09 23:52:39,283 [14] INFO   [(null)] - BackLinks.   Process Advertising / September | 2014 | Balikopat 
+2016-12-09 23:52:39,811 [14] INFO   [(null)] - BackLinks. End process category Advertising, page4 
+2016-12-09 23:52:39,977 [11] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:52:40,156 [10] INFO   [(null)] - BackLinks. Start process category E-Commerce, page4 
+2016-12-09 23:52:41,669 [10] INFO   [(null)] - BackLinks.   Process E-Commerce / Sample Page – ElectricMountainFestival.com 
+2016-12-09 23:52:42,204 [10] INFO   [(null)] - BackLinks. End process category E-Commerce, page4 
+2016-12-09 23:52:42,377 [11] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:52:42,564 [14] INFO   [(null)] - BackLinks. Start process category Web Design, page4 
+2016-12-09 23:52:44,311 [14] INFO   [(null)] - BackLinks.   Process Web Design / Web Design Reviews » Tag » Ink Web 
+2016-12-09 23:52:44,826 [14] INFO   [(null)] - BackLinks. End process category Web Design, page4 
+2016-12-09 23:52:44,995 [11] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:52:45,171 [16] INFO   [(null)] - BackLinks. Start process category Advertising, page5 
+2016-12-09 23:52:46,507 [16] INFO   [(null)] - BackLinks.   Process Advertising / The Beginner's Guide to Experts | ablak-tanacsado 
+2016-12-09 23:52:47,025 [16] INFO   [(null)] - BackLinks. End process category Advertising, page5 
+2016-12-09 23:52:47,210 [11] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:52:47,381 [10] INFO   [(null)] - BackLinks. Start process category E-Commerce, page5 
+2016-12-09 23:52:48,889 [10] INFO   [(null)] - BackLinks.   Process E-Commerce / fantasybars 
+2016-12-09 23:52:49,403 [10] INFO   [(null)] - BackLinks. End process category E-Commerce, page5 
+2016-12-09 23:52:49,574 [11] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:52:49,741 [13] INFO   [(null)] - BackLinks. Start process category Web Design, page5 
+2016-12-09 23:52:51,569 [13] INFO   [(null)] - BackLinks.   Process Web Design / Coral and Grassy Diamonds 
+2016-12-09 23:52:52,097 [13] INFO   [(null)] - BackLinks. End process category Web Design, page5 
+2016-12-09 23:52:52,309 [11] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:52:52,485 [14] INFO   [(null)] - BackLinks. Start process category Advertising, page6 
+2016-12-09 23:52:54,143 [14] INFO   [(null)] - BackLinks.   Process Advertising / Utilizing A Specialist In Order To Optimize Your Site | israelated 
+2016-12-09 23:52:54,656 [14] INFO   [(null)] - BackLinks. End process category Advertising, page6 
+2016-12-09 23:52:54,826 [11] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:52:55,007 [12] INFO   [(null)] - BackLinks. Start process category E-Commerce, page6 
+2016-12-09 23:52:56,454 [12] INFO   [(null)] - BackLinks.   Process E-Commerce / E - Commerce Services 
+2016-12-09 23:52:56,981 [12] INFO   [(null)] - BackLinks. End process category E-Commerce, page6 
+2016-12-09 23:52:57,169 [11] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:52:57,356 [4] INFO   [(null)] - BackLinks. Start process category Web Design, page6 
+2016-12-09 23:52:59,107 [4] INFO   [(null)] - BackLinks.   Process Web Design / Custom website Design :: Web design 
+2016-12-09 23:52:59,627 [4] INFO   [(null)] - BackLinks. End process category Web Design, page6 
+2016-12-09 23:52:59,792 [11] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:52:59,962 [16] INFO   [(null)] - BackLinks. Start process category Advertising, page7 
+2016-12-09 23:53:02,013 [16] INFO   [(null)] - BackLinks.   Process Advertising / Print Advertising 
+2016-12-09 23:53:02,533 [16] INFO   [(null)] - BackLinks. End process category Advertising, page7 
+2016-12-09 23:53:02,731 [11] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:53:02,907 [12] INFO   [(null)] - BackLinks. Start process category E-Commerce, page7 
+2016-12-09 23:53:04,260 [12] INFO   [(null)] - BackLinks.   Process E-Commerce / January 2015 – Kreativniklaster.com 
+2016-12-09 23:53:04,777 [12] INFO   [(null)] - BackLinks. End process category E-Commerce, page7 
+2016-12-09 23:53:04,947 [11] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:53:05,111 [10] INFO   [(null)] - BackLinks. Start process category Web Design, page7 
+2016-12-09 23:53:06,271 [10] INFO   [(null)] - BackLinks.   Process Web Design / Java Script – zgriis.com 
+2016-12-09 23:53:06,780 [10] INFO   [(null)] - BackLinks. End process category Web Design, page7 
+2016-12-09 23:53:06,943 [11] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:53:07,127 [14] INFO   [(null)] - BackLinks. Start process category Advertising, page8 
+2016-12-09 23:53:09,070 [14] INFO   [(null)] - BackLinks.   Process Advertising / High Island Infiniti: The crowning community of owning a ... 
+2016-12-09 23:53:09,592 [14] INFO   [(null)] - BackLinks. End process category Advertising, page8 
+2016-12-09 23:53:09,758 [11] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:53:09,928 [10] INFO   [(null)] - BackLinks. Start process category E-Commerce, page8 
+2016-12-09 23:53:11,433 [10] INFO   [(null)] - BackLinks.   Process E-Commerce / alfapromotion 
+2016-12-09 23:53:11,963 [10] INFO   [(null)] - BackLinks. End process category E-Commerce, page8 
+2016-12-09 23:53:12,133 [11] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:53:12,303 [16] INFO   [(null)] - BackLinks. Start process category Web Design, page8 
+2016-12-09 23:53:13,935 [16] INFO   [(null)] - BackLinks.   Process Web Design / www.tyneweb.ga 
+2016-12-09 23:53:14,469 [16] INFO   [(null)] - BackLinks. End process category Web Design, page8 
+2016-12-09 23:53:14,645 [11] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:53:14,816 [5] INFO   [(null)] - BackLinks. Start process category Advertising, page9 
+2016-12-09 23:53:16,227 [5] INFO   [(null)] - BackLinks.   Process Advertising / ximacheng | All Publications Information - Part 3 
+2016-12-09 23:53:16,764 [5] INFO   [(null)] - BackLinks. End process category Advertising, page9 
+2016-12-09 23:53:16,940 [11] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:53:17,111 [12] INFO   [(null)] - BackLinks. Start process category E-Commerce, page9 
+2016-12-09 23:53:18,514 [12] INFO   [(null)] - BackLinks.   Process E-Commerce / admin – NoblesTube.com 
+2016-12-09 23:53:19,071 [12] INFO   [(null)] - BackLinks. End process category E-Commerce, page9 
+2016-12-09 23:53:19,254 [11] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:53:19,431 [14] INFO   [(null)] - BackLinks. Start process category Web Design, page9 
+2016-12-09 23:53:20,851 [14] INFO   [(null)] - BackLinks.   Process Web Design / design your own shirts 
+2016-12-09 23:53:21,390 [14] INFO   [(null)] - BackLinks. End process category Web Design, page9 
+2016-12-09 23:53:21,652 [11] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:53:21,826 [5] INFO   [(null)] - BackLinks. Start process category Advertising, page0 
+2016-12-09 23:53:23,910 [5] INFO   [(null)] - BackLinks.   Process Advertising / Advertising 
+2016-12-09 23:53:24,434 [5] INFO   [(null)] - BackLinks. End process category Advertising, page0 
+2016-12-09 23:53:24,612 [11] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:53:24,785 [4] INFO   [(null)] - BackLinks. Start process category E-Commerce, page0 
+2016-12-09 23:53:26,737 [4] INFO   [(null)] - BackLinks.   Process E-Commerce / E-commerce platforms 
+2016-12-09 23:53:27,259 [4] INFO   [(null)] - BackLinks. End process category E-Commerce, page0 
+2016-12-09 23:53:27,431 [11] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:53:27,605 [14] INFO   [(null)] - BackLinks. Start process category Web Design, page0 
+2016-12-09 23:53:28,833 [14] INFO   [(null)] - BackLinks.   Process Web Design / FJ Website and Internet 
+2016-12-09 23:53:29,373 [14] INFO   [(null)] - BackLinks. End process category Web Design, page0 
+2016-12-09 23:53:29,540 [11] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:53:29,725 [13] INFO   [(null)] - BackLinks. Start process category Advertising, page1 
+2016-12-09 23:53:31,494 [13] INFO   [(null)] - BackLinks.   Process Advertising / localpaintings.ga 
+2016-12-09 23:53:32,034 [13] INFO   [(null)] - BackLinks. End process category Advertising, page1 
+2016-12-09 23:53:32,310 [11] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:53:32,482 [13] INFO   [(null)] - BackLinks. Start process category E-Commerce, page1 

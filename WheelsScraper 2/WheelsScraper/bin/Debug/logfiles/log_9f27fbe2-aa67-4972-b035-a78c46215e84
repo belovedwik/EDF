@@ -1,0 +1,130 @@
+2016-12-09 23:31:01,861 [1] INFO   [(null)] - . Starting scheduler in 10 seconds 
+2016-12-09 23:31:03,203 [1] INFO   [(null)] - Checking forced version for BackLinks
+2016-12-09 23:31:07,124 [1] INFO   [(null)] - . Data feed BackLinks loaded 
+2016-12-09 23:31:07,698 [1] INFO   [(null)] - Checking forced version for Eswimelite
+2016-12-09 23:31:08,423 [1] INFO   [(null)] - . Data feed Eswimelite loaded 
+2016-12-09 23:31:08,928 [1] INFO   [(null)] - Checking forced version for Kvartet
+2016-12-09 23:31:09,970 [1] INFO   [(null)] - . Data feed Kvartet loaded 
+2016-12-09 23:31:10,466 [1] INFO   [(null)] - Checking forced version for ObxHdSmith
+2016-12-09 23:31:11,155 [1] INFO   [(null)] - . Data feed ObxHdSmith loaded 
+2016-12-09 23:31:11,638 [1] INFO   [(null)] - Checking forced version for PeoplePerHour
+2016-12-09 23:31:12,414 [1] INFO   [(null)] - . Data feed PeoplePerHour loaded 
+2016-12-09 23:31:12,884 [1] INFO   [(null)] - Checking forced version for Sanmar
+2016-12-09 23:31:13,608 [1] INFO   [(null)] - . Data feed Sanmar loaded 
+2016-12-09 23:31:14,292 [1] ERROR  [(null)] - System.InvalidOperationException: В документе XML (676, 29) присутствует ошибка. ---> System.FormatException: Строка "False" не является допустимым значением Boolean.
+   в System.Xml.XmlConvert.ToBoolean(String s)
+   в Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderScraperSettings.Read27_ScraperSettings(Boolean isNullable, Boolean checkType)
+   в Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderScraperSettings.Read28_ScraperSettings()
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   в System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader)
+   в WheelsScraper.ScraperSettings.ReadConfig(String configFile, Type[] additionalTypes) в c:\Projects\EDF\WheelsScraper 2\Scraper.Shared\ScraperSettings.cs:строка 240
+   в WheelsScraper.Form1.DoLoadProcessorConfig(String edfFileName, String libFileName, String edfUrl) в C:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 706
+   в WheelsScraper.Form1.LoadLocalDatafeeds() в C:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 2288
+2016-12-09 23:31:14,560 [1] ERROR  [(null)] - . В документе XML (676, 29) присутствует ошибка. 
+2016-12-09 23:31:15,066 [1] INFO   [(null)] - Checking forced version for UniversalMapper
+2016-12-09 23:31:15,213 [1] INFO   [(null)] - You are using latest version of UniversalMapper
+2016-12-09 23:31:15,758 [1] INFO   [(null)] - . Data feed UniversalMapper loaded 
+2016-12-09 23:31:16,281 [1] INFO   [(null)] - Checking forced version for Zeiglers
+2016-12-09 23:31:16,960 [1] INFO   [(null)] - . Data feed Zeiglers loaded 
+2016-12-09 23:31:59,012 [1] INFO   [(null)] - . Starting BackLinks 
+2016-12-09 23:31:59,131 [1] INFO   [(null)] - Checking forced version for BackLinks
+2016-12-09 23:32:02,553 [10] INFO   [(null)] - BackLinks. Starting login 
+2016-12-09 23:32:03,305 [10] INFO   [(null)] - BackLinks. Login done. 
+2016-12-09 23:32:05,519 [8] INFO   [(null)] - BackLinks. Starting new loop 
+2016-12-09 23:32:05,679 [8] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:32:05,876 [11] INFO   [(null)] - BackLinks. Start process category Advertising, page1 
+2016-12-09 23:32:43,264 [11] INFO   [(null)] - BackLinks. End process category Advertising, page1 
+2016-12-09 23:32:43,706 [8] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:32:43,850 [11] INFO   [(null)] - BackLinks. Start process category E-Commerce, page1 
+2016-12-09 23:33:19,881 [11] INFO   [(null)] - BackLinks. End process category E-Commerce, page1 
+2016-12-09 23:33:20,033 [8] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:33:20,215 [13] INFO   [(null)] - BackLinks. Start process category Web Design, page1 
+2016-12-09 23:33:56,350 [13] INFO   [(null)] - BackLinks. End process category Web Design, page1 
+2016-12-09 23:33:56,519 [8] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:33:56,789 [13] ERROR  [(null)] - System.InvalidCastException: Не удалось привести тип объекта "System.Char" к типу "System.String".
+   в WheelsScraper.BackLinks.ProcessCategoryListPage(ProcessQueueItem pqi) в d:\С#\EDF\EDF Modules\BackLinks\BackLinks.cs:строка 117
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-12-09 23:33:56,797 [13] ERROR  [(null)] - BackLinks. Не удалось привести тип объекта "System.Char" к типу "System.String". 
+2016-12-09 23:33:56,991 [8] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:33:57,225 [13] ERROR  [(null)] - System.InvalidCastException: Не удалось привести тип объекта "System.Char" к типу "System.String".
+   в WheelsScraper.BackLinks.ProcessCategoryListPage(ProcessQueueItem pqi) в d:\С#\EDF\EDF Modules\BackLinks\BackLinks.cs:строка 117
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-12-09 23:33:57,226 [13] ERROR  [(null)] - BackLinks. Не удалось привести тип объекта "System.Char" к типу "System.String". 
+2016-12-09 23:33:57,721 [8] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:33:57,932 [12] ERROR  [(null)] - System.InvalidCastException: Не удалось привести тип объекта "System.Char" к типу "System.String".
+   в WheelsScraper.BackLinks.ProcessCategoryListPage(ProcessQueueItem pqi) в d:\С#\EDF\EDF Modules\BackLinks\BackLinks.cs:строка 117
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-12-09 23:33:57,933 [12] ERROR  [(null)] - BackLinks. Не удалось привести тип объекта "System.Char" к типу "System.String". 
+2016-12-09 23:33:58,123 [8] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:33:58,330 [12] ERROR  [(null)] - System.InvalidCastException: Не удалось привести тип объекта "System.Char" к типу "System.String".
+   в WheelsScraper.BackLinks.ProcessCategoryListPage(ProcessQueueItem pqi) в d:\С#\EDF\EDF Modules\BackLinks\BackLinks.cs:строка 117
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-12-09 23:33:58,331 [12] ERROR  [(null)] - BackLinks. Не удалось привести тип объекта "System.Char" к типу "System.String". 
+2016-12-09 23:33:58,561 [8] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:33:58,785 [11] ERROR  [(null)] - System.InvalidCastException: Не удалось привести тип объекта "System.Char" к типу "System.String".
+   в WheelsScraper.BackLinks.ProcessCategoryListPage(ProcessQueueItem pqi) в d:\С#\EDF\EDF Modules\BackLinks\BackLinks.cs:строка 117
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-12-09 23:33:58,785 [11] ERROR  [(null)] - BackLinks. Не удалось привести тип объекта "System.Char" к типу "System.String". 
+2016-12-09 23:33:58,992 [8] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:33:59,244 [11] ERROR  [(null)] - System.InvalidCastException: Не удалось привести тип объекта "System.Char" к типу "System.String".
+   в WheelsScraper.BackLinks.ProcessCategoryListPage(ProcessQueueItem pqi) в d:\С#\EDF\EDF Modules\BackLinks\BackLinks.cs:строка 117
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-12-09 23:33:59,245 [11] ERROR  [(null)] - BackLinks. Не удалось привести тип объекта "System.Char" к типу "System.String". 
+2016-12-09 23:33:59,767 [8] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:33:59,966 [11] ERROR  [(null)] - System.InvalidCastException: Не удалось привести тип объекта "System.Char" к типу "System.String".
+   в WheelsScraper.BackLinks.ProcessCategoryListPage(ProcessQueueItem pqi) в d:\С#\EDF\EDF Modules\BackLinks\BackLinks.cs:строка 117
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-12-09 23:33:59,967 [11] ERROR  [(null)] - BackLinks. Не удалось привести тип объекта "System.Char" к типу "System.String". 
+2016-12-09 23:34:00,460 [8] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:34:00,666 [5] ERROR  [(null)] - System.InvalidCastException: Не удалось привести тип объекта "System.Char" к типу "System.String".
+   в WheelsScraper.BackLinks.ProcessCategoryListPage(ProcessQueueItem pqi) в d:\С#\EDF\EDF Modules\BackLinks\BackLinks.cs:строка 117
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-12-09 23:34:00,667 [5] ERROR  [(null)] - BackLinks. Не удалось привести тип объекта "System.Char" к типу "System.String". 
+2016-12-09 23:34:00,851 [8] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:34:01,071 [13] ERROR  [(null)] - System.InvalidCastException: Не удалось привести тип объекта "System.Char" к типу "System.String".
+   в WheelsScraper.BackLinks.ProcessCategoryListPage(ProcessQueueItem pqi) в d:\С#\EDF\EDF Modules\BackLinks\BackLinks.cs:строка 117
+   в WheelsScraper.BaseScraper.ExecuteActionWithoutWait(Action`1 act, ProcessQueueItem pqi) в c:\Projects\EDF\WheelsScraper 2\Scraper.Lib.Main\BaseScraper.cs:строка 847
+2016-12-09 23:34:01,071 [13] ERROR  [(null)] - BackLinks. Не удалось привести тип объекта "System.Char" к типу "System.String". 
+2016-12-09 23:34:01,259 [8] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:34:01,453 [10] INFO   [(null)] - BackLinks. Complete 
+2016-12-09 23:34:01,954 [10] ERROR  [(null)] - System.UnauthorizedAccessException: Отказано в доступе по пути "c:\BackLinks.csv".
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   в System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   в WheelsScraper.Form1.CopyFiles(ISimpleScraper scraper, Dictionary`2 dicFiles, String fileName, Boolean overwriteFile, String path, Boolean ftpSave, Boolean localSave, Boolean zip, Boolean uploadToSCE) в C:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 1488
+2016-12-09 23:34:01,993 [10] ERROR  [(null)] - . Отказано в доступе по пути "c:\BackLinks.csv". 
+2016-12-09 23:34:02,339 [10] ERROR  [(null)] - System.UnauthorizedAccessException: Отказано в доступе по пути "c:\BackLinks.csv".
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   в System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   в WheelsScraper.Form1.CopyFiles(ISimpleScraper scraper, Dictionary`2 dicFiles, String fileName, Boolean overwriteFile, String path, Boolean ftpSave, Boolean localSave, Boolean zip, Boolean uploadToSCE) в C:\Projects\EDF\WheelsScraper 2\WheelsScraper\Form1.cs:строка 1488
+2016-12-09 23:34:02,339 [10] ERROR  [(null)] - . Отказано в доступе по пути "c:\BackLinks.csv". 
+2016-12-09 23:34:03,466 [5] ERROR  [(null)] - System.UnauthorizedAccessException: Отказано в доступе по пути "c:\37487c15-773d-43e3-a1b7-fc430a27ff79.csv".
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   в System.IO.FileStream..ctor(String path, FileMode mode)
+   в WheelsScraper.ScrapResultCsvExporter.GetOutStream(String path, Boolean zip) в C:\Projects\EDF\WheelsScraper 2\WheelsScraper\ScrapResultCsvExporter.cs:строка 20
+   в WheelsScraper.ScrapResultCsvExporter.Export(List`1 wares, List`1 fields, String path, Boolean zip, List`1& badWares, Boolean outputToError, Boolean onlyBad, ExportProfile profile) в C:\Projects\EDF\WheelsScraper 2\WheelsScraper\ScrapResultCsvExporter.cs:строка 136
+   в WheelsScraper.EDFManager.GenerateDataReportFile(Int32 count) в C:\Projects\EDF\WheelsScraper 2\WheelsScraper\EDFManager.cs:строка 394
+2016-12-09 23:34:03,468 [5] ERROR  [(null)] - . Failed to save file. Отказано в доступе по пути "c:\37487c15-773d-43e3-a1b7-fc430a27ff79.csv". 
+2016-12-09 23:36:34,735 [1] INFO   [(null)] - . Starting BackLinks 
+2016-12-09 23:36:34,910 [1] INFO   [(null)] - Checking forced version for BackLinks
+2016-12-09 23:36:37,066 [12] INFO   [(null)] - BackLinks. Starting login 
+2016-12-09 23:36:37,612 [12] INFO   [(null)] - BackLinks. Login done. 
+2016-12-09 23:36:38,181 [9] INFO   [(null)] - BackLinks. Starting new loop 
+2016-12-09 23:36:38,356 [9] INFO   [(null)] - BackLinks. Starting 1 threads 
+2016-12-09 23:36:38,524 [5] INFO   [(null)] - BackLinks. Start process category Advertising, page1 
+2016-12-09 23:38:55,037 [5] INFO   [(null)] - BackLinks. End process category Advertising, page1 
+2016-12-09 23:38:56,091 [1] INFO   [(null)] - BackLinks. Cancel 
+2016-12-09 23:39:00,342 [12] INFO   [(null)] - BackLinks. Complete 
+2016-12-09 23:39:01,243 [14] ERROR  [(null)] - System.UnauthorizedAccessException: Отказано в доступе по пути "c:\d7710b0c-9fdc-4831-a8de-b9bb2fa94a6d.csv".
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   в System.IO.FileStream..ctor(String path, FileMode mode)
+   в WheelsScraper.ScrapResultCsvExporter.GetOutStream(String path, Boolean zip) в C:\Projects\EDF\WheelsScraper 2\WheelsScraper\ScrapResultCsvExporter.cs:строка 20
+   в WheelsScraper.ScrapResultCsvExporter.Export(List`1 wares, List`1 fields, String path, Boolean zip, List`1& badWares, Boolean outputToError, Boolean onlyBad, ExportProfile profile) в C:\Projects\EDF\WheelsScraper 2\WheelsScraper\ScrapResultCsvExporter.cs:строка 136
+   в WheelsScraper.EDFManager.GenerateDataReportFile(Int32 count) в C:\Projects\EDF\WheelsScraper 2\WheelsScraper\EDFManager.cs:строка 394
+2016-12-09 23:39:01,244 [14] ERROR  [(null)] - . Failed to save file. Отказано в доступе по пути "c:\d7710b0c-9fdc-4831-a8de-b9bb2fa94a6d.csv". 
