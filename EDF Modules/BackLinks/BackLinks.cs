@@ -67,6 +67,7 @@ namespace WheelsScraper
 
         protected override bool Login()
         {
+            return true;
 
             MessagePrinter.PrintMessage("Starting login");
             var login = GetLoginInfo();
@@ -76,6 +77,8 @@ namespace WheelsScraper
             string loginURL = Url + "login.php?FormAction=login&FormName=Login&isAjax=1&Login=" + login.Login + "&Password=" + login.Password;
             string data = "Login=" + login.Login + "&Password=" + login.Password;
           //  PageRetriever.Referer = Url;
+            //PageRetriever.GetRandomProxy();
+            //MessagePrinter.PrintMessage("UseProxy:" + PageRetriever.proxy.Address.OriginalString);
             var html = PageRetriever.ReadFromServer(loginURL, true, true);
 
            // html = PageRetriever.ReadFromServer(Url + "advertisers/myaccount.php", true);
@@ -93,6 +96,8 @@ namespace WheelsScraper
             string ecomerceLink = "t=block&l=http://www.ecommercespot.com";
             var html = PageRetriever.ReadFromServer(Url + "advertisers/dir.php?" + ecomerceLink, true);
 
+       
+
             // find categories 
             var doc = CreateDoc(html);
             var _select = doc.DocumentNode.SelectNodes("//option[ancestor::select[@name='CID']]");
@@ -101,8 +106,12 @@ namespace WheelsScraper
             {
                 var catId = option.AttributeOrNull("value");
                 var catName = option.NextSibling.InnerTextOrNull();
-                if (extSett.CategotyList.Any(n => n.CategoryName!= null && n.CategoryName.Contains(catName)))
+                if (extSett.CategotySearchList.Any(n => n.CategoryName!= null && n.CategoryName.Contains(catName)))
                 {
+                    MessagePrinter.PrintMessage("Get category: " + catName);
+                    if (!extSett.CategotyFoundList.Any(n=>n.Contains(catName)))
+                        extSett.CategotyFoundList.Add(catName);
+
                     var catUrl = Url + "advertisers/links.php?" + ecomerceLink + "&CID=" + catId + "&f=all&cr=US&lng=en";
                     lstProcessQueue.Add(new ProcessQueueItem { URL = catUrl, ItemType = 2, Name = catName, Item ="1" });
                 }
@@ -131,7 +140,7 @@ namespace WheelsScraper
                 return;
             }
 
-            foreach (var link in links.Take(1)) {
+            foreach (var link in links) {
                 
                 var wi = new ExtWareInfo();
                 wi.Title = link.SelectSingleNode(".//span[@class='smallb']").InnerTextOrNull();

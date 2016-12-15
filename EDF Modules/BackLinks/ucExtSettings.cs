@@ -32,6 +32,11 @@ namespace Databox.Libs.BackLinks
             bsSett.DataSource = ExtSett;
         }
 
+        private void categotyFoundListBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
      
     }
 }
