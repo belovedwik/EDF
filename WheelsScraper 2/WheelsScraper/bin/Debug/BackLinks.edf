@@ -52,15 +52,9 @@
       </Category>
     </CategotySearchList>
     <CategotyFoundList>
-      <Category>
-        <CategoryName>Advertising</CategoryName>
-      </Category>
-      <Category>
-        <CategoryName>E-Commerce</CategoryName>
-      </Category>
-      <Category>
-        <CategoryName>Web Design</CategoryName>
-      </Category>
+      <string>Advertising</string>
+      <string>E-Commerce</string>
+      <string>Web Design</string>
     </CategotyFoundList>
   </SpecialSettings>
   <Name>BackLinks</Name>
@@ -54390,7 +54384,7 @@
           <FieldName>Name</FieldName>
           <Header>Product Title</Header>
           <VisibleIndex>1</VisibleIndex>
-          <Export>true</Export>
+          <Export>false</Export>
           <IsImageColumn>false</IsImageColumn>
           <IsRequired>false</IsRequired>
           <NoHtmlAllowed>false</NoHtmlAllowed>
@@ -56228,25 +56222,6 @@
         </FieldInfo>
         <FieldInfo>
           <ExcludeRules />
-          <FieldName>PriceText</FieldName>
-          <Header>PriceText</Header>
-          <VisibleIndex>3</VisibleIndex>
-          <Export>true</Export>
-          <IsImageColumn>false</IsImageColumn>
-          <IsRequired>false</IsRequired>
-          <NoHtmlAllowed>false</NoHtmlAllowed>
-          <NoDuplicatesAllowed>false</NoDuplicatesAllowed>
-          <UseDataFromAdditionalSources>false</UseDataFromAdditionalSources>
-          <Case>Ignore</Case>
-          <StripHtml>false</StripHtml>
-          <MaxLength>0</MaxLength>
-          <SearchForImage>false</SearchForImage>
-          <SearchForAttachments>false</SearchForAttachments>
-          <ValidateAgainstRules>false</ValidateAgainstRules>
-          <ValidationProfileCode xsi:nil="true" />
-        </FieldInfo>
-        <FieldInfo>
-          <ExcludeRules />
           <FieldName>Price</FieldName>
           <Header>Price</Header>
           <VisibleIndex>4</VisibleIndex>
@@ -56326,7 +56301,7 @@
           <FieldName>MozRank</FieldName>
           <Header>MozRank</Header>
           <VisibleIndex>8</VisibleIndex>
-          <Export>true</Export>
+          <Export>false</Export>
           <IsImageColumn>false</IsImageColumn>
           <IsRequired>false</IsRequired>
           <NoHtmlAllowed>false</NoHtmlAllowed>
@@ -56383,7 +56358,7 @@
           <FieldName>Name</FieldName>
           <Header>Name</Header>
           <VisibleIndex>13</VisibleIndex>
-          <Export>true</Export>
+          <Export>false</Export>
           <IsImageColumn>false</IsImageColumn>
           <IsRequired>false</IsRequired>
           <NoHtmlAllowed>false</NoHtmlAllowed>
@@ -56421,7 +56396,7 @@
           <FieldName>URL</FieldName>
           <Header>URL</Header>
           <VisibleIndex>19</VisibleIndex>
-          <Export>true</Export>
+          <Export>false</Export>
           <IsImageColumn>false</IsImageColumn>
           <IsRequired>false</IsRequired>
           <NoHtmlAllowed>false</NoHtmlAllowed>

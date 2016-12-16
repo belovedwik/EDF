@@ -14,7 +14,7 @@ namespace WheelsScraper
 {
     public static class StringExt {
         public static string ClearQ(this string str){
-            return str.Replace("'","");
+            return str.Replace("'","").Replace("N/A","");
         }
         public static string GetStrQ(string str) {
             return str != null ? str.ClearQ() : string.Empty;
@@ -67,8 +67,7 @@ namespace WheelsScraper
 
         protected override bool Login()
         {
-            return true;
-
+       
             MessagePrinter.PrintMessage("Starting login");
             var login = GetLoginInfo();
             if (login == null)
@@ -145,7 +144,9 @@ namespace WheelsScraper
                 var wi = new ExtWareInfo();
                 wi.Title = link.SelectSingleNode(".//span[@class='smallb']").InnerTextOrNull();
                 MessagePrinter.PrintMessage("  Process " + pqi.Name + " / "+wi.Title);
-                wi.LandingPage = link.SelectSingleNode(".//span[@class='smallb']/following-sibling::text()").InnerTextOrNull().Replace(Environment.NewLine,"").Trim();
+                var landingPage = link.SelectSingleNode(".//span[@class='smallb']/following-sibling::text()").InnerTextOrNull().Replace(Environment.NewLine, "").Trim();
+                if (landingPage.Contains(")"))
+                    wi.LandingPage = landingPage.Substring(0, landingPage.IndexOf(")")+1); 
                 wi.PriceText = link.SelectSingleNode(".//font[@class='smallb']").InnerTextOrNull();
                 Regex regPrice = new Regex(@"[0-9]+(\.[0-9]+)?");
                 var price = !string.IsNullOrEmpty(wi.PriceText) ? regPrice.Match(wi.PriceText).Value : "0";
